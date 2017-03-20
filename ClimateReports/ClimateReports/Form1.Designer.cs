@@ -101,6 +101,7 @@
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btniniciar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

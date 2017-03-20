@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace ClimateReports
 {
     public partial class Form1 : Form
     {
-        MySqlConnection conn = ConexionBD.ObtenerConexion();
+       SqlConnection  conn = ConexionBD.ObtenerConexion();
         
         public Form1()
         {
@@ -27,7 +27,45 @@ namespace ClimateReports
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-            string query_inicio = "select * from usuarios where Usuario='"+txtusuario.Text+"' and Contrasena='"+txtcontra.Text+"'";
-               }
+            conn.Open();
+           
+
+            string query_inicio = "select * from usuarios where USU_Usuario = '" + txtusuario.Text + "' AND USU_Contra ='" + txtcontra.Text + "'";
+            SqlCommand exe_query_inicio = new SqlCommand(query_inicio, conn);
+            string cap;
+            SqlDataReader leer_exe;
+
+            try
+            {
+                leer_exe = exe_query_inicio.ExecuteReader();
+
+                if (leer_exe.Read())
+                {
+                  //  cap = leer_exe.GetString("USU.Tipo_Usuario");
+                    MessageBox.Show("CONECTADO");
+
+                }
+                else if (leer_exe.Read() == false)
+                {
+
+                  MessageBox.Show("Inicio Fallido, Verifique Conexion");
+
+           }
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+        }
+
+
+
     }
-}
+    }
+
