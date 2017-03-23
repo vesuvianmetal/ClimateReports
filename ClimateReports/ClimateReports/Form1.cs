@@ -41,9 +41,13 @@ namespace ClimateReports
 
                 if (leer_exe.Read())
                 {
-                  //  cap = leer_exe.GetString("USU.Tipo_Usuario");
+                   
                     MessageBox.Show("CONECTADO");
-
+                    cap = leer_exe.GetString(6);
+                    if (cap.Equals("Administrador"))
+                    {
+                         
+                    }
                 }
                 else if (leer_exe.Read() == false)
                 {
