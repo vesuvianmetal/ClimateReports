@@ -98,7 +98,7 @@
             this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(786, 300);
             this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            this.chart1.Text = "chartpresion";
             // 
             // Presion
             // 
