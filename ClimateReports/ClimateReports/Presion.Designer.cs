@@ -52,7 +52,7 @@
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(547, 93);
+            this.btnimprimir.Location = new System.Drawing.Point(401, 104);
             this.btnimprimir.Name = "btnimprimir";
             this.btnimprimir.Size = new System.Drawing.Size(75, 23);
             this.btnimprimir.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(654, 93);
+            this.btnenviar.Location = new System.Drawing.Point(482, 104);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(75, 23);
             this.btnenviar.TabIndex = 2;
@@ -96,7 +96,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(786, 300);
+            this.chart1.Size = new System.Drawing.Size(545, 300);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chartpresion";
             // 
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 526);
+            this.ClientSize = new System.Drawing.Size(589, 526);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.txtpresionat);
             this.Controls.Add(this.label2);

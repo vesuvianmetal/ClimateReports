@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.btnimprimir = new System.Windows.Forms.Button();
             this.btnenviar = new System.Windows.Forms.Button();
@@ -142,16 +142,16 @@
             // 
             // charttemperatura
             // 
-            chartArea1.Name = "ChartArea1";
-            this.charttemperatura.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.charttemperatura.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.charttemperatura.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.charttemperatura.Legends.Add(legend2);
             this.charttemperatura.Location = new System.Drawing.Point(12, 212);
             this.charttemperatura.Name = "charttemperatura";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.charttemperatura.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.charttemperatura.Series.Add(series2);
             this.charttemperatura.Size = new System.Drawing.Size(586, 300);
             this.charttemperatura.TabIndex = 11;
             this.charttemperatura.Text = "chart1";
@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 524);
+            this.ClientSize = new System.Drawing.Size(608, 524);
             this.Controls.Add(this.radiofar);
             this.Controls.Add(this.radiocel);
             this.Controls.Add(this.charttemperatura);

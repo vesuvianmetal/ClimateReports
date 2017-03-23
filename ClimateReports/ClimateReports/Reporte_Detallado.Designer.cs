@@ -63,7 +63,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(956, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(771, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -122,7 +122,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(932, 282);
+            this.dataGridView1.Size = new System.Drawing.Size(733, 282);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1
@@ -245,7 +245,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 578);
+            this.ClientSize = new System.Drawing.Size(771, 578);
             this.Controls.Add(this.btncomentario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcomentario);

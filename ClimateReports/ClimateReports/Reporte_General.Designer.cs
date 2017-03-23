@@ -64,7 +64,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(19, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(969, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(758, 246);
             this.dataGridView1.TabIndex = 1;
             // 
             // label2
@@ -175,7 +175,7 @@
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(801, 531);
+            this.btnimprimir.Location = new System.Drawing.Point(601, 531);
             this.btnimprimir.Name = "btnimprimir";
             this.btnimprimir.Size = new System.Drawing.Size(75, 23);
             this.btnimprimir.TabIndex = 15;
@@ -184,7 +184,7 @@
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(901, 531);
+            this.btnenviar.Location = new System.Drawing.Point(702, 531);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(75, 23);
             this.btnenviar.TabIndex = 16;
@@ -195,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 587);
+            this.ClientSize = new System.Drawing.Size(791, 587);
             this.Controls.Add(this.btnenviar);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.btncomentario);
