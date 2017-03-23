@@ -46,7 +46,15 @@ namespace ClimateReports
                     cap = leer_exe.GetString(6);
                     if (cap.Equals("Administrador"))
                     {
-                         
+                        Reporte_Detallado RD = new Reporte_Detallado();
+                        RD.Show();
+                        this.Hide();
+                    }
+                    else if (cap.Equals("General"))
+                    {
+                        Reporte_General RG = new Reporte_General();
+                        RG.Show();
+                        this.Hide();
                     }
                 }
                 else if (leer_exe.Read() == false)
