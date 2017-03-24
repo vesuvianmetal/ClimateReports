@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.btnimprimir = new System.Windows.Forms.Button();
             this.btnenviar = new System.Windows.Forms.Button();
@@ -46,26 +46,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(10, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 32);
+            this.label1.Size = new System.Drawing.Size(114, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Humedad";
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(581, 70);
+            this.btnimprimir.Location = new System.Drawing.Point(436, 57);
+            this.btnimprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnimprimir.Name = "btnimprimir";
-            this.btnimprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnimprimir.Size = new System.Drawing.Size(56, 24);
             this.btnimprimir.TabIndex = 1;
             this.btnimprimir.Text = "Imprimir";
             this.btnimprimir.UseVisualStyleBackColor = true;
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(700, 70);
+            this.btnenviar.Location = new System.Drawing.Point(525, 57);
+            this.btnenviar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnenviar.Name = "btnenviar";
-            this.btnenviar.Size = new System.Drawing.Size(75, 23);
+            this.btnenviar.Size = new System.Drawing.Size(56, 24);
             this.btnenviar.TabIndex = 2;
             this.btnenviar.Text = "Enviar";
             this.btnenviar.UseVisualStyleBackColor = true;
@@ -73,56 +76,61 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 70);
+            this.label2.Location = new System.Drawing.Point(50, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Humedad:";
             // 
             // txthumedad
             // 
-            this.txthumedad.Location = new System.Drawing.Point(146, 75);
+            this.txthumedad.Location = new System.Drawing.Point(110, 61);
+            this.txthumedad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txthumedad.Name = "txthumedad";
-            this.txthumedad.Size = new System.Drawing.Size(100, 22);
+            this.txthumedad.Size = new System.Drawing.Size(76, 20);
             this.txthumedad.TabIndex = 4;
             // 
             // txthumedadrelativa
             // 
-            this.txthumedadrelativa.Location = new System.Drawing.Point(146, 124);
+            this.txthumedadrelativa.Location = new System.Drawing.Point(110, 101);
+            this.txthumedadrelativa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txthumedadrelativa.Name = "txthumedadrelativa";
-            this.txthumedadrelativa.Size = new System.Drawing.Size(100, 22);
+            this.txthumedadrelativa.Size = new System.Drawing.Size(76, 20);
             this.txthumedadrelativa.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 124);
+            this.label3.Location = new System.Drawing.Point(9, 101);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 17);
+            this.label3.Size = new System.Drawing.Size(98, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Humedad Relativa:";
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(12, 175);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(9, 142);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(831, 300);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(623, 244);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "charthumedad";
             // 
             // Humedad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 487);
+            this.ClientSize = new System.Drawing.Size(646, 396);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txthumedadrelativa);
@@ -131,6 +139,7 @@
             this.Controls.Add(this.btnenviar);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Humedad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Humedad";
