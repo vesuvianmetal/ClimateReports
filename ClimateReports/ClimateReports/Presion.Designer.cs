@@ -44,26 +44,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(10, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 32);
+            this.label1.Size = new System.Drawing.Size(93, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Presion";
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(401, 104);
+            this.btnimprimir.Location = new System.Drawing.Point(306, 84);
+            this.btnimprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnimprimir.Name = "btnimprimir";
-            this.btnimprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnimprimir.Size = new System.Drawing.Size(52, 22);
             this.btnimprimir.TabIndex = 1;
             this.btnimprimir.Text = "Imprimir";
             this.btnimprimir.UseVisualStyleBackColor = true;
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(482, 104);
+            this.btnenviar.Location = new System.Drawing.Point(362, 84);
+            this.btnenviar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnenviar.Name = "btnenviar";
-            this.btnenviar.Size = new System.Drawing.Size(75, 23);
+            this.btnenviar.Size = new System.Drawing.Size(56, 22);
             this.btnenviar.TabIndex = 2;
             this.btnenviar.Text = "Enviar";
             this.btnenviar.UseVisualStyleBackColor = true;
@@ -71,17 +74,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 104);
+            this.label2.Location = new System.Drawing.Point(27, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 17);
+            this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Presion Atmosferica:";
             // 
             // txtpresionat
             // 
-            this.txtpresionat.Location = new System.Drawing.Point(180, 104);
+            this.txtpresionat.Location = new System.Drawing.Point(135, 84);
+            this.txtpresionat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpresionat.Name = "txtpresionat";
-            this.txtpresionat.Size = new System.Drawing.Size(163, 22);
+            this.txtpresionat.Size = new System.Drawing.Size(123, 20);
             this.txtpresionat.TabIndex = 4;
             // 
             // chart1
@@ -90,27 +95,29 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 214);
+            this.chart1.Location = new System.Drawing.Point(9, 174);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(545, 300);
+            this.chart1.Size = new System.Drawing.Size(409, 244);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chartpresion";
             // 
             // Presion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 526);
+            this.ClientSize = new System.Drawing.Size(442, 427);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.txtpresionat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnenviar);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Presion";
             this.Text = "Presion";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
