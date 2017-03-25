@@ -23,5 +23,28 @@ namespace ClimateReports
             T.Show();
             
         }
+
+        private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void vientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Viento v = new Viento();
+            v.Show();
+        }
+
+        private void humedadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Humedad H = new Humedad();
+            H.Show();
+        }
+
+        private void presionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Presion P = new Presion();
+            P.Show();
+        }
     }
 }

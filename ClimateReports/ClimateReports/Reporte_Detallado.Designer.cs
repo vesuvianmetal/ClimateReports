@@ -90,18 +90,21 @@
             this.vientoToolStripMenuItem.Name = "vientoToolStripMenuItem";
             this.vientoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.vientoToolStripMenuItem.Text = "Viento";
+            this.vientoToolStripMenuItem.Click += new System.EventHandler(this.vientoToolStripMenuItem_Click);
             // 
             // humedadToolStripMenuItem
             // 
             this.humedadToolStripMenuItem.Name = "humedadToolStripMenuItem";
             this.humedadToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.humedadToolStripMenuItem.Text = "Humedad";
+            this.humedadToolStripMenuItem.Click += new System.EventHandler(this.humedadToolStripMenuItem_Click);
             // 
             // presionToolStripMenuItem
             // 
             this.presionToolStripMenuItem.Name = "presionToolStripMenuItem";
             this.presionToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.presionToolStripMenuItem.Text = "Presion";
+            this.presionToolStripMenuItem.Click += new System.EventHandler(this.presionToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -267,6 +270,7 @@
             this.Name = "Reporte_Detallado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Detallado";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reporte_Detallado_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
