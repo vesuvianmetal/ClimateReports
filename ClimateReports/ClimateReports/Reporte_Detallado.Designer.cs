@@ -83,6 +83,7 @@
             this.tempraturaToolStripMenuItem.Name = "tempraturaToolStripMenuItem";
             this.tempraturaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.tempraturaToolStripMenuItem.Text = "Tempratura";
+            this.tempraturaToolStripMenuItem.Click += new System.EventHandler(this.tempraturaToolStripMenuItem_Click);
             // 
             // vientoToolStripMenuItem
             // 

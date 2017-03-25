@@ -16,5 +16,12 @@ namespace ClimateReports
         {
             InitializeComponent();
         }
+
+        private void tempraturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Temperatura T = new Temperatura();
+            T.Show();
+            
+        }
     }
 }
