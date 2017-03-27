@@ -27,10 +27,17 @@ namespace ClimateReports
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-            conn.Open();
+           
 
+            if (txtusuario.Text.Equals("") || txtcontra.Text.Equals(""))
+            {
+                MessageBox.Show("Usuario O Contraseña Invalidad, Porfavor Intente Denuevo");
+            }
+            else
+            {
+                conn.Open();
 
-            string query_inicio = "select * from usuarios where USU_Usuario = '" + txtusuario.Text + "' AND USU_Contra ='" + txtcontra.Text + "'";
+                string query_inicio = "select * from usuarios where USU_Usuario = '" + txtusuario.Text + "' AND USU_Contra ='" + txtcontra.Text + "'";
             SqlCommand exe_query_inicio = new SqlCommand(query_inicio, conn);
             string cap;
             SqlDataReader leer_exe;
@@ -60,7 +67,7 @@ namespace ClimateReports
                 else if (leer_exe.Read() == false)
                 {
 
-                    MessageBox.Show("Inicio Fallido, Verifique Conexion");
+                    MessageBox.Show("Inicio Fallido, Usuario Y Contraseña O La Conexion");
 
                 }
 
@@ -75,6 +82,7 @@ namespace ClimateReports
             }
             conn.Close();
         }
+             }
 
 
     }

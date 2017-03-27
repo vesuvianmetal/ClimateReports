@@ -16,5 +16,10 @@ namespace ClimateReports
         {
             InitializeComponent();
         }
+
+        private void Reporte_General_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
