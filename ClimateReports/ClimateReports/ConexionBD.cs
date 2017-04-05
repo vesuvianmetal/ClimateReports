@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+
+//Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
+using MySql.Data.MySqlClient;
+
 namespace ClimateReports
 {
     class ConexionBD
     {
 
-        public static SqlConnection ObtenerConexion()
+        public static MySqlConnection ObtenerConexion()
         {
-            SqlConnection conectar = new SqlConnection( "Data Source=DESKTOP-URL35RD;Initial Catalog=UEM    ; Integrated Security=True;");
-            return conectar;
+            
+      
+           ///Declaracion de la conexion hacia la base de datos utilizando la informacion de la base de datos
+           ///incluyendo su nombre, el servidor en el que esta alojada, usuario y contraseña para poder acceder
+            MySqlConnection Conectar = new MySqlConnection("Server = localhost ; database = ClimateReports ; Userid = root; password = 1234");
+            return Conectar;
         }
+    }
 
     }
 }
