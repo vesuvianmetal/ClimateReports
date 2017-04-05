@@ -52,7 +52,7 @@ namespace ClimateReports
                 conn.Open();
             
                 ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-            string query_inicio = "select * from usuarios where USU_Usuario = '" + txtusuario.Text + "' AND USU_Contra ='" + txtcontra.Text + "'";
+            string query_inicio = "select * from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS ='" + txtcontra.Text + "'";
 
                 ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
                 ///para asi poder convertirlo en un comando a realizar.
@@ -79,13 +79,13 @@ namespace ClimateReports
 
                     MessageBox.Show("CONECTADO");
 
-                        ///se le indica a la variable cap que valor de la columna va a obtener, el (6) significa el numero
+                        ///se le indica a la variable cap que valor de la columna va a obtener, el (8) significa el numero
                         ///de columna que va a obtener
-                    cap = leer_exe.GetString(6);
+                    cap = leer_exe.GetString("USU_TIPO_USU");
 
                         ///si existe el usuario, verifica con la variable cap que tipo de usuario es
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
-                    if (cap.Equals("Administrador"))
+                    if (cap.Equals("Admin"))
                     {
                         Reporte_Detallado RD = new Reporte_Detallado();
                         RD.Show();

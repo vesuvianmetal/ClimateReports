@@ -8,13 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
+using MySql.Data.MySqlClient;
+
+
+
 namespace ClimateReports
 {
     public partial class Presion : Form
     {
+
+        /// <summary>
+        /// conn = declaracion de variable para obtener conexion a la base de datos 
+        /// </summary>
+        MySqlConnection conn = ConexionBD.ObtenerConexion();
+
+
+
         public Presion()
         {
             InitializeComponent();
+        }
+
+        private void btnimprimir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

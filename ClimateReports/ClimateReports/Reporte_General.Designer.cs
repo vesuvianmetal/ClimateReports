@@ -190,6 +190,7 @@
             this.btnimprimir.TabIndex = 15;
             this.btnimprimir.Text = "Imprimir";
             this.btnimprimir.UseVisualStyleBackColor = true;
+            this.btnimprimir.Click += new System.EventHandler(this.btnimprimir_Click);
             // 
             // btnenviar
             // 
