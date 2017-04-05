@@ -80,6 +80,7 @@
             // 
             this.txtusuario.Location = new System.Drawing.Point(161, 57);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtusuario.MaxLength = 20;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 22);
             this.txtusuario.TabIndex = 4;
@@ -88,11 +89,11 @@
             // 
             this.txtcontra.Location = new System.Drawing.Point(161, 86);
             this.txtcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcontra.MaxLength = 45;
             this.txtcontra.Name = "txtcontra";
             this.txtcontra.Size = new System.Drawing.Size(100, 22);
             this.txtcontra.TabIndex = 5;
             this.txtcontra.UseSystemPasswordChar = true;
-//            this.txtcontra.Enter += new System.EventHandler(this.txtcontra_Enter);
             // 
             // Form1
             // 

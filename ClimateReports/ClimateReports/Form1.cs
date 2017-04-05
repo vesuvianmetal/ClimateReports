@@ -42,7 +42,7 @@ namespace ClimateReports
             if (txtusuario.Text.Equals("") || txtcontra.Text.Equals(""))
             {
                 ///muestra ventana con error si se presenta la validacion.
-                MessageBox.Show("Usuario O Contraseña Invalidad, Porfavor Intente Denuevo");
+                MessageBox.Show("Usuario O Contraseña Invalida, Porfavor Intente Denuevo");
             }
 
             ///si los campos no presentan error de que esten vacios se procede a correr este codigo
