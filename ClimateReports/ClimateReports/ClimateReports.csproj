@@ -146,6 +146,51 @@
   <ItemGroup>
     <None Include="Resources\fondologinnn.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palabras-clave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-inicio-de-sesion-con-flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lolollll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-inicio-de-sesion-con-flecha-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-inicio-de-sesion-con-flecha-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion-21.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

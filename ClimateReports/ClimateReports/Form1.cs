@@ -124,7 +124,21 @@ namespace ClimateReports
         }
              }
 
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+            this.BackColor = Color.Transparent;
+        }
     }
 }
     
