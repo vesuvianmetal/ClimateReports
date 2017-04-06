@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 //Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
-
 namespace ClimateReports
 {
     class ConexionBD
