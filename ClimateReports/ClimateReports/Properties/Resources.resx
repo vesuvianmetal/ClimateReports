@@ -118,44 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iniciar-sesion-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iniciar-sesion-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton-de-inicio-de-sesion-con-flecha-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usuario-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usuario-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton-de-inicio-de-sesion-con-flecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lolollll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lolollll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondologinnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondologinnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="iniciar-sesion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iniciar-sesion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nuevo fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nuevo fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boton-de-inicio-de-sesion-con-flecha-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="palabras-clave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\palabras-clave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,10 +130,79 @@
   <data name="iniciar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iniciar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menudos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menudos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="analitica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analitica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuario-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="presion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\presion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="termometro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\termometro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="documentos-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documentos-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-de-inicio-de-sesion-con-flecha-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lolollll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lolollll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="documentos-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documentos-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton-de-inicio-de-sesion-con-flecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iniciar-sesion-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iniciar-sesion-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="molino-de-viento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\molino-de-viento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuario-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iniciar-sesion-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iniciar-sesion-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondopardemas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondopardemas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="documentos-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documentos-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gota-de-agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gota-de-agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondologinnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondologinnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-de-inicio-de-sesion-con-flecha-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-de-inicio-de-sesion-con-flecha-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondopardemas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondopardemas1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

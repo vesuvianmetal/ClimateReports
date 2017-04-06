@@ -16,5 +16,20 @@ namespace ClimateReports
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mesaDeAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

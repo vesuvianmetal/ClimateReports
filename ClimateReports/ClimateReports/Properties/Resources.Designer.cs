@@ -63,6 +63,16 @@ namespace ClimateReports.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap analitica {
+            get {
+                object obj = ResourceManager.GetObject("analitica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boton_de_inicio_de_sesion_con_flecha {
             get {
                 object obj = ResourceManager.GetObject("boton-de-inicio-de-sesion-con-flecha", resourceCulture);
@@ -93,9 +103,69 @@ namespace ClimateReports.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap documentos_1 {
+            get {
+                object obj = ResourceManager.GetObject("documentos-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentos_11 {
+            get {
+                object obj = ResourceManager.GetObject("documentos-11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documentos_2 {
+            get {
+                object obj = ResourceManager.GetObject("documentos-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondologinnn {
             get {
                 object obj = ResourceManager.GetObject("fondologinnn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondopardemas {
+            get {
+                object obj = ResourceManager.GetObject("fondopardemas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondopardemas1 {
+            get {
+                object obj = ResourceManager.GetObject("fondopardemas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gota_de_agua {
+            get {
+                object obj = ResourceManager.GetObject("gota-de-agua", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +253,36 @@ namespace ClimateReports.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap menu1 {
+            get {
+                object obj = ResourceManager.GetObject("menu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menudos {
+            get {
+                object obj = ResourceManager.GetObject("menudos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap molino_de_viento {
+            get {
+                object obj = ResourceManager.GetObject("molino-de-viento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nuevo_fondo {
             get {
                 object obj = ResourceManager.GetObject("nuevo fondo", resourceCulture);
@@ -196,6 +296,26 @@ namespace ClimateReports.Properties {
         internal static System.Drawing.Bitmap palabras_clave {
             get {
                 object obj = ResourceManager.GetObject("palabras-clave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap presion {
+            get {
+                object obj = ResourceManager.GetObject("presion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap termometro {
+            get {
+                object obj = ResourceManager.GetObject("termometro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -36,8 +36,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,8 +134,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.linkLabel2);
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.txtcontra);
@@ -148,27 +148,29 @@
             this.panel1.Size = new System.Drawing.Size(270, 297);
             this.panel1.TabIndex = 14;
             // 
-            // label4
+            // linkLabel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(18, 243);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 16);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Recuperar Contraseña";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(18, 245);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(137, 16);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Recuperar Contraseña";
             // 
-            // label3
+            // linkLabel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 16);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Ayuda?";
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(18, 265);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(49, 16);
+            this.linkLabel2.TabIndex = 17;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Ayuda?";
             // 
             // Form1
             // 
@@ -198,8 +200,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
