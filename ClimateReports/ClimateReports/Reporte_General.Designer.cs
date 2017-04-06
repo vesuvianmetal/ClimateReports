@@ -61,12 +61,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(19, 58);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(757, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(734, 246);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label2
             // 
@@ -107,7 +110,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 430);
+            this.label6.Location = new System.Drawing.Point(19, 438);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 17);
             this.label6.TabIndex = 6;
@@ -118,6 +121,7 @@
             this.txtporhumedad.Location = new System.Drawing.Point(149, 350);
             this.txtporhumedad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtporhumedad.Name = "txtporhumedad";
+            this.txtporhumedad.ReadOnly = true;
             this.txtporhumedad.Size = new System.Drawing.Size(100, 22);
             this.txtporhumedad.TabIndex = 7;
             // 
@@ -126,6 +130,7 @@
             this.txtsensor.Location = new System.Drawing.Point(149, 322);
             this.txtsensor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtsensor.Name = "txtsensor";
+            this.txtsensor.ReadOnly = true;
             this.txtsensor.Size = new System.Drawing.Size(100, 22);
             this.txtsensor.TabIndex = 8;
             // 
@@ -134,6 +139,7 @@
             this.txtviento.Location = new System.Drawing.Point(149, 379);
             this.txtviento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtviento.Name = "txtviento";
+            this.txtviento.ReadOnly = true;
             this.txtviento.Size = new System.Drawing.Size(100, 22);
             this.txtviento.TabIndex = 9;
             // 
@@ -142,6 +148,7 @@
             this.txtpresion.Location = new System.Drawing.Point(149, 409);
             this.txtpresion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtpresion.Name = "txtpresion";
+            this.txtpresion.ReadOnly = true;
             this.txtpresion.Size = new System.Drawing.Size(100, 22);
             this.txtpresion.TabIndex = 10;
             // 
@@ -150,6 +157,7 @@
             this.txttemperatura.Location = new System.Drawing.Point(149, 438);
             this.txttemperatura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttemperatura.Name = "txttemperatura";
+            this.txttemperatura.ReadOnly = true;
             this.txttemperatura.Size = new System.Drawing.Size(100, 22);
             this.txttemperatura.TabIndex = 11;
             // 
@@ -159,7 +167,7 @@
             this.txtcomentario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcomentario.Multiline = true;
             this.txtcomentario.Name = "txtcomentario";
-            this.txtcomentario.Size = new System.Drawing.Size(393, 134);
+            this.txtcomentario.Size = new System.Drawing.Size(370, 134);
             this.txtcomentario.TabIndex = 12;
             // 
             // label7
@@ -206,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 587);
+            this.ClientSize = new System.Drawing.Size(782, 587);
             this.Controls.Add(this.btnenviar);
             this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.btncomentario);
