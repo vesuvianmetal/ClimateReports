@@ -19,7 +19,7 @@ namespace ClimateReports
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
-        MySqlConnection conn = ConexionBD.ObtenerConexion();
+        //MySqlConnection conn = ConexionBD.ObtenerConexion();
 
         public Form1()
         {
@@ -49,14 +49,14 @@ namespace ClimateReports
             else
             {
                 ///con.open() sirve para abrir la conexion a la base de datos.
-                conn.Open();
+               // conn.Open();
             
                 ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
             string query_inicio = "select * from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS ='" + txtcontra.Text + "'";
 
                 ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
                 ///para asi poder convertirlo en un comando a realizar.
-                MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+               // MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
 
                 ///string cap es la declaracion de variable que servira para capturar un valor dentro
                 ///de la base de datos.
@@ -64,7 +64,7 @@ namespace ClimateReports
 
 
                 
-            MySqlDataReader leer_exe;
+          //  MySqlDataReader leer_exe;
 
             try
             {
@@ -74,14 +74,14 @@ namespace ClimateReports
 
                     ///validacion
                     ///validacion de usuario existente
-                if (leer_exe.Read())
+                /*if (leer_exe.Read())
                 {
 
                     MessageBox.Show("CONECTADO");
 
                         ///se le indica a la variable cap que valor de la columna va a obtener, el (8) significa el numero
                         ///de columna que va a obtener
-                    cap = leer_exe.GetString("USU_TIPO_USU");
+                    //cap = leer_exe.GetString("USU_TIPO_USU");
 
                         ///si existe el usuario, verifica con la variable cap que tipo de usuario es
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
@@ -122,7 +122,7 @@ namespace ClimateReports
                 ///conn.close() sirve para cerrar la conexion a la base de datos
             conn.Close();
         }
-             }
+             }*/
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {

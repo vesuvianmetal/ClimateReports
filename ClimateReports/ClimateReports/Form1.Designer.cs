@@ -36,8 +36,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,17 +148,6 @@
             this.panel1.Size = new System.Drawing.Size(270, 297);
             this.panel1.TabIndex = 14;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 16);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Ayuda?";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -170,6 +159,17 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Recuperar Contraseña";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(18, 267);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 16);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Ayuda?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +177,8 @@
             this.BackgroundImage = global::ClimateReports.Properties.Resources.fondologinnn;
             this.ClientSize = new System.Drawing.Size(439, 510);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
