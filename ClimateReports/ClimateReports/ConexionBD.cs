@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
-//using MySql.Data.MySqlClient;
-
+using MySql.Data.MySqlClient;
 namespace ClimateReports
 {
     class ConexionBD
     {
-        /*
+
         public static MySqlConnection ObtenerConexion()
         {
             
@@ -21,7 +20,6 @@ namespace ClimateReports
             MySqlConnection Conectar = new MySqlConnection("Server = localhost ; database = mydb ; Userid = root; password = metroid123");
             return Conectar;
         }
-    }*/
+    }
 
     }
-}
