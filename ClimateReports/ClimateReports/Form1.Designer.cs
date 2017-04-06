@@ -44,11 +44,13 @@
             // txtusuario
             // 
             this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusuario.ForeColor = System.Drawing.Color.Black;
             this.txtusuario.Location = new System.Drawing.Point(60, 148);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.MaxLength = 20;
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
+            this.txtusuario.PasswordChar = '*';
             this.txtusuario.Size = new System.Drawing.Size(192, 41);
             this.txtusuario.TabIndex = 4;
             this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
@@ -56,6 +58,7 @@
             // txtcontra
             // 
             this.txtcontra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtcontra.ForeColor = System.Drawing.Color.Black;
             this.txtcontra.Location = new System.Drawing.Point(60, 55);
             this.txtcontra.Margin = new System.Windows.Forms.Padding(2);
             this.txtcontra.MaxLength = 45;
@@ -130,6 +133,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
