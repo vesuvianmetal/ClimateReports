@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.txtusuario = new System.Windows.Forms.TextBox();
-            this.txtcontra = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +37,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtcontra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtusuario
             // 
             this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(79, 69);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtusuario.MaxLength = 20;
@@ -53,19 +54,6 @@
             this.txtusuario.TabIndex = 4;
             this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
-            // txtcontra
-            // 
-            this.txtcontra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtcontra.Location = new System.Drawing.Point(79, 183);
-            this.txtcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtcontra.MaxLength = 20;
-            this.txtcontra.Multiline = true;
-            this.txtcontra.Name = "txtcontra";
-            this.txtcontra.PasswordChar = '*';
-            this.txtcontra.Size = new System.Drawing.Size(255, 50);
-            this.txtcontra.TabIndex = 5;
-            this.txtcontra.UseSystemPasswordChar = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -73,7 +61,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ClimateReports.Properties.Resources.usuario_1;
             this.button1.Location = new System.Drawing.Point(13, 66);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 53);
             this.button1.TabIndex = 8;
@@ -113,7 +101,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::ClimateReports.Properties.Resources.iniciar_sesion_21;
             this.button3.Location = new System.Drawing.Point(139, 239);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(108, 44);
             this.button3.TabIndex = 12;
@@ -127,7 +115,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ClimateReports.Properties.Resources.palabras_clave;
             this.button2.Location = new System.Drawing.Point(13, 180);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 53);
             this.button2.TabIndex = 13;
@@ -136,8 +124,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtcontra);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
@@ -146,7 +134,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(113, 247);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 366);
             this.panel1.TabIndex = 14;
@@ -175,6 +163,16 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Ayuda?";
             // 
+            // txtcontra
+            // 
+            this.txtcontra.AcceptsTab = true;
+            this.txtcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontra.Location = new System.Drawing.Point(79, 183);
+            this.txtcontra.Name = "txtcontra";
+            this.txtcontra.Size = new System.Drawing.Size(255, 45);
+            this.txtcontra.TabIndex = 5;
+            this.txtcontra.UseSystemPasswordChar = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,7 +192,6 @@
 
         #endregion
         private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.TextBox txtcontra;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -203,6 +200,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtcontra;
     }
 }
 
