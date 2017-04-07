@@ -103,6 +103,26 @@ namespace ClimateReports.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carta {
+            get {
+                object obj = ResourceManager.GetObject("carta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carta_1 {
+            get {
+                object obj = ResourceManager.GetObject("carta-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap documentos_1 {
             get {
                 object obj = ResourceManager.GetObject("documentos-1", resourceCulture);
@@ -166,6 +186,26 @@ namespace ClimateReports.Properties {
         internal static System.Drawing.Bitmap gota_de_agua {
             get {
                 object obj = ResourceManager.GetObject("gota-de-agua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap impresora {
+            get {
+                object obj = ResourceManager.GetObject("impresora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap impresora_1 {
+            get {
+                object obj = ResourceManager.GetObject("impresora-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

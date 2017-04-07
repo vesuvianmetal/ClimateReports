@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtcomentario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnimprimir = new System.Windows.Forms.Button();
-            this.btnenviar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,6 +49,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -91,27 +93,6 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Comentario";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // btnimprimir
-            // 
-            this.btnimprimir.Location = new System.Drawing.Point(35, 469);
-            this.btnimprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnimprimir.Name = "btnimprimir";
-            this.btnimprimir.Size = new System.Drawing.Size(89, 26);
-            this.btnimprimir.TabIndex = 15;
-            this.btnimprimir.Text = "Imprimir";
-            this.btnimprimir.UseVisualStyleBackColor = true;
-            this.btnimprimir.Click += new System.EventHandler(this.btnimprimir_Click);
-            // 
-            // btnenviar
-            // 
-            this.btnenviar.Location = new System.Drawing.Point(150, 469);
-            this.btnenviar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnenviar.Name = "btnenviar";
-            this.btnenviar.Size = new System.Drawing.Size(89, 26);
-            this.btnenviar.TabIndex = 16;
-            this.btnenviar.Text = "Enviar a Correo";
-            this.btnenviar.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -289,12 +270,64 @@
             this.dataGridView1.Size = new System.Drawing.Size(695, 176);
             this.dataGridView1.TabIndex = 44;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::ClimateReports.Properties.Resources.carta_1;
+            this.button1.Location = new System.Drawing.Point(218, 460);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 35);
+            this.button1.TabIndex = 46;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
+            this.button5.Location = new System.Drawing.Point(44, 460);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(35, 41);
+            this.button5.TabIndex = 45;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(85, 464);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 32);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "Imprimir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Font = new System.Drawing.Font("Unified", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(264, 460);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(121, 31);
+            this.button3.TabIndex = 48;
+            this.button3.Text = "Enviar a Correo";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // Reporte_General
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ClimateReports.Properties.Resources.fondopardemas;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(771, 527);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -305,8 +338,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.btnenviar);
-            this.Controls.Add(this.btnimprimir);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcomentario);
             this.Controls.Add(this.label1);
@@ -328,8 +359,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtcomentario;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnimprimir;
-        private System.Windows.Forms.Button btnenviar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
@@ -348,5 +377,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
