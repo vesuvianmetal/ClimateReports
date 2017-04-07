@@ -75,6 +75,12 @@
     <Compile Include="Humedad.Designer.cs">
       <DependentUpon>Humedad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Admin.Designer.cs">
+      <DependentUpon>Interfaz_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Humedad.resx">
       <DependentUpon>Humedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Admin.resx">
+      <DependentUpon>Interfaz_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presion.resx">
       <DependentUpon>Presion.cs</DependentUpon>
