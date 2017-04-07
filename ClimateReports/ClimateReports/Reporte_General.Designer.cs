@@ -74,7 +74,7 @@
             // txtcomentario
             // 
             this.txtcomentario.Location = new System.Drawing.Point(130, 380);
-            this.txtcomentario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcomentario.Margin = new System.Windows.Forms.Padding(2);
             this.txtcomentario.Multiline = true;
             this.txtcomentario.Name = "txtcomentario";
             this.txtcomentario.Size = new System.Drawing.Size(255, 58);
@@ -321,7 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ClimateReports.Properties.Resources.fondopardemas;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(771, 527);
             this.Controls.Add(this.button3);
@@ -341,7 +341,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcomentario);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reporte_General";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte General";
