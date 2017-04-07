@@ -229,7 +229,7 @@
             legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(280, 263);
+            this.chart1.Location = new System.Drawing.Point(286, 279);
             this.chart1.Name = "chart1";
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
@@ -272,6 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::ClimateReports.Properties.Resources.menudos;
             this.ClientSize = new System.Drawing.Size(806, 473);
             this.Controls.Add(this.chart1);

@@ -79,5 +79,10 @@ namespace ClimateReports
         {
 
         }
+
+        private void txtviento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
