@@ -34,5 +34,20 @@ namespace ClimateReports
         {
 
         }
+
+        private void Temperatura_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnenviar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtter_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
