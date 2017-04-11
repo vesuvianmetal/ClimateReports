@@ -16,44 +16,9 @@ namespace ClimateReports
 {
     public partial class Form1 : Form
     {
-        /// <summary>
-        /// conn = declaracion de variable para obtener conexion a la base de datos 
-        /// </summary>
-        MySqlConnection conn = ConexionBD.ObtenerConexion();
 
-        public Form1()
+        void iniciar_sesion()
         {
-            ///metodo que inicia todos los componentes dentro del frame.
-            InitializeComponent();
-        }
-
-      
-        private void btncancelar_Click(object sender, EventArgs e)
-        {
-            ///this.dispose sirve para realizar la accion de cerrar frame al presionar el boton cancelar.
-            this.Dispose();
-        }
-
-        private void btniniciar_Click(object sender, EventArgs e)
-        {
-           
-            
-             }
-
-        private void txtusuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-           
-
             ///validacion de campos
             ///valida si uno o ambos campos del login estan vacios.
             if (txtusuario.Text.Equals("") || txtcontra.Text.Equals(""))
@@ -104,14 +69,17 @@ namespace ClimateReports
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
                         if (cap.Equals("Admin"))
                         {
-                            Reporte_Detallado RD = new Reporte_Detallado();
-                            RD.Show();
+                            Form2 menu = new Form2();
+                            menu.Show();
+
+                            Interfaz_Admin IA = new Interfaz_Admin();
+                            IA.Show();
                             this.Hide();
                         }
                         else if (cap.Equals("General"))
                         {
-                            Reporte_General RG = new Reporte_General();
-                            RG.Show();
+                            Form2 menu = new Form2();
+                            menu.Show();
                             this.Hide();
                         }
                     }
@@ -141,9 +109,65 @@ namespace ClimateReports
             }
         }
 
+        /// <summary>
+        /// conn = declaracion de variable para obtener conexion a la base de datos 
+        /// </summary>
+        MySqlConnection conn = ConexionBD.ObtenerConexion();
+
+        public Form1()
+        {
+            ///metodo que inicia todos los componentes dentro del frame.
+            InitializeComponent();
+        }
+
+      
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            ///this.dispose sirve para realizar la accion de cerrar frame al presionar el boton cancelar.
+            this.Dispose();
+        }
+
+        private void btniniciar_Click(object sender, EventArgs e)
+        {
+           
+            
+             }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ///manda a llamar metodo para iniciar sesion
+            iniciar_sesion();
+           
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+        /// <summary>
+        /// accion que se realizara si se presiona la tecla enter en el campo de contraseña
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtcontra_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            ///si la tecla enter es presionada entonces se realizara la siguiente accion
+            if (e.KeyCode == Keys.Enter)
+            {
+                ///manda a llamar el metodo de iniciar sesion
+                iniciar_sesion();
+            }
         }
     }
 }

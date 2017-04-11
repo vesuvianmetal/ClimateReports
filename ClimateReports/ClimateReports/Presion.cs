@@ -38,15 +38,18 @@ namespace ClimateReports
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            ///con.open() sirve para abrir la conexion a la base de datos.
-            conn.Open();
+            /*
+              ///con.open() sirve para abrir la conexion a la base de datos.
+              conn.Open();
 
-            ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-            string query_inicio = "select pre_presion from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS ='" + txtcontra.Text + "'";
+              ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
+              string query_inicio = "select pre_presion from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS ='" + txtcontra.Text + "'";
 
-            ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
-            ///para asi poder convertirlo en un comando a realizar.
-            MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+              ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
+              ///para asi poder convertirlo en un comando a realizar.
+              MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+
+      */
         }
     }
 }

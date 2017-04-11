@@ -29,18 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.combousuario = new System.Windows.Forms.ComboBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnagregar = new System.Windows.Forms.Button();
+            this.txtam = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtap = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -67,68 +76,121 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.combousuario);
+            this.groupBox1.Controls.Add(this.txtcontraseña);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txttelefono);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.btnagregar);
+            this.groupBox1.Controls.Add(this.txtam);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtap);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtusuario);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 37);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 227);
+            this.groupBox1.Size = new System.Drawing.Size(200, 499);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar Usuario";
             // 
-            // label1
+            // combousuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
+            this.combousuario.FormattingEnabled = true;
+            this.combousuario.Items.AddRange(new object[] {
+            "Escoga Tipo De Usuario",
+            "Admin",
+            "General"});
+            this.combousuario.Location = new System.Drawing.Point(6, 354);
+            this.combousuario.Name = "combousuario";
+            this.combousuario.Size = new System.Drawing.Size(185, 24);
+            this.combousuario.TabIndex = 26;
             // 
-            // textBox1
+            // txtcontraseña
             // 
-            this.textBox1.Location = new System.Drawing.Point(9, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtcontraseña.Location = new System.Drawing.Point(3, 408);
+            this.txtcontraseña.MaxLength = 20;
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(188, 22);
+            this.txtcontraseña.TabIndex = 23;
+            this.txtcontraseña.UseSystemPasswordChar = true;
             // 
-            // label2
+            // label15
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre:";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 388);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 17);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "Contraseña:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // textBox2
+            // txtemail
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 22);
-            this.textBox2.TabIndex = 3;
+            this.txtemail.Location = new System.Drawing.Point(6, 298);
+            this.txtemail.MaxLength = 20;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(188, 22);
+            this.txtemail.TabIndex = 11;
             // 
-            // textBox3
+            // label14
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 138);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(188, 22);
-            this.textBox3.TabIndex = 1;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 333);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(115, 17);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Tipo De Usuario:";
             // 
-            // label3
+            // label13
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Apellido Paterno:";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 278);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(129, 17);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Correo Electronico:";
+            // 
+            // txttelefono
+            // 
+            this.txttelefono.Location = new System.Drawing.Point(6, 242);
+            this.txttelefono.MaxLength = 20;
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(188, 22);
+            this.txttelefono.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 222);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 17);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Telefono:";
+            // 
+            // btnagregar
+            // 
+            this.btnagregar.Location = new System.Drawing.Point(4, 436);
+            this.btnagregar.Name = "btnagregar";
+            this.btnagregar.Size = new System.Drawing.Size(187, 49);
+            this.btnagregar.TabIndex = 7;
+            this.btnagregar.Text = "Agregar";
+            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
+            // 
+            // txtam
+            // 
+            this.txtam.Location = new System.Drawing.Point(6, 187);
+            this.txtam.MaxLength = 20;
+            this.txtam.Name = "txtam";
+            this.txtam.Size = new System.Drawing.Size(188, 22);
+            this.txtam.TabIndex = 6;
             // 
             // label4
             // 
@@ -139,55 +201,102 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Apellido Materno:";
             // 
-            // textBox4
+            // txtap
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(188, 22);
-            this.textBox4.TabIndex = 6;
+            this.txtap.Location = new System.Drawing.Point(6, 138);
+            this.txtap.MaxLength = 20;
+            this.txtap.Name = "txtap";
+            this.txtap.Size = new System.Drawing.Size(188, 22);
+            this.txtap.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Apellido Paterno:";
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(6, 89);
+            this.txtnombre.MaxLength = 20;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(188, 22);
+            this.txtnombre.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nombre:";
+            // 
+            // txtusuario
+            // 
+            this.txtusuario.Location = new System.Drawing.Point(9, 39);
+            this.txtusuario.MaxLength = 20;
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(185, 22);
+            this.txtusuario.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Usuario:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(245, 47);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(667, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(835, 217);
             this.dataGridView1.TabIndex = 2;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 293);
+            this.groupBox2.Controls.Add(this.btnlimpiar);
+            this.groupBox2.Controls.Add(this.btneliminar);
+            this.groupBox2.Location = new System.Drawing.Point(12, 559);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 137);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones";
             // 
-            // button1
+            // btnlimpiar
             // 
-            this.button1.Location = new System.Drawing.Point(7, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Location = new System.Drawing.Point(6, 77);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(187, 49);
+            this.btnlimpiar.TabIndex = 1;
+            this.btnlimpiar.Text = "Limpiar Campos";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btneliminar
             // 
-            this.button2.Location = new System.Drawing.Point(6, 77);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Limpiar Campos";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btneliminar.Location = new System.Drawing.Point(7, 22);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(187, 49);
+            this.btneliminar.TabIndex = 0;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(245, 315);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(141, 22);
             this.textBox5.TabIndex = 4;
             // 
@@ -195,6 +304,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(245, 370);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(141, 22);
             this.textBox6.TabIndex = 5;
             // 
@@ -202,6 +312,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(245, 422);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(141, 22);
             this.textBox7.TabIndex = 6;
             // 
@@ -209,6 +320,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(245, 471);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(141, 22);
             this.textBox8.TabIndex = 7;
             // 
@@ -261,6 +373,7 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(452, 315);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(141, 22);
             this.textBox10.TabIndex = 14;
             // 
@@ -277,6 +390,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(452, 370);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(141, 22);
             this.textBox9.TabIndex = 16;
             // 
@@ -293,6 +407,7 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(452, 422);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(141, 22);
             this.textBox11.TabIndex = 18;
             // 
@@ -305,7 +420,7 @@
             this.acercaDeToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(944, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1105, 28);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -331,7 +446,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 528);
+            this.ClientSize = new System.Drawing.Size(1105, 712);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox9);
@@ -367,18 +482,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtam;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtap;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
@@ -397,5 +512,14 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem1;
+        private System.Windows.Forms.Button btnagregar;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtcontraseña;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox combousuario;
     }
 }

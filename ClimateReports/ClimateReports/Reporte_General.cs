@@ -55,7 +55,7 @@ namespace ClimateReports
 
         private void Reporte_General_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+         //   Application.Exit();
         }
 
         private void btnimprimir_Click(object sender, EventArgs e)
@@ -74,6 +74,11 @@ namespace ClimateReports
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
