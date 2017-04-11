@@ -91,5 +91,24 @@ namespace ClimateReports
         {
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                //gets a collection that contains all the rows
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                //populate the textbox from specific value of the coordinates of column and row.
+                txtdelid.Text = row.Cells[0].Value.ToString();
+                txtdelusuario.Text = row.Cells[1].Value.ToString();
+                txtdelnombre.Text = row.Cells[2].Value.ToString();
+                txtdelpat.Text = row.Cells[3].Value.ToString();
+                txtdelmat.Text = row.Cells[4].Value.ToString();
+               // txtdeltelefono.Text = row.Cells[5].Value.ToString();
+                txtdelemail.Text = row.Cells[6].Value.ToString();
+                txtdelcontra.Text = row.Cells[8].Value.ToString();
+               // txtdelcontra.Text = row.Cells[5].Value.ToString();
+            }
+        }
     }
 }

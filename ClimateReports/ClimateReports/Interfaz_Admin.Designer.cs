@@ -50,24 +50,26 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtdelnombre = new System.Windows.Forms.TextBox();
+            this.txtdelpat = new System.Windows.Forms.TextBox();
+            this.txtdelmat = new System.Windows.Forms.TextBox();
+            this.txtdelusuario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtdelcontra = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtconfcon = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtdelemail = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtdelid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -262,6 +264,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(835, 217);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox2
             // 
@@ -292,42 +295,42 @@
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtdelnombre
             // 
-            this.textBox5.Location = new System.Drawing.Point(245, 315);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(141, 22);
-            this.textBox5.TabIndex = 4;
+            this.txtdelnombre.Location = new System.Drawing.Point(245, 413);
+            this.txtdelnombre.Name = "txtdelnombre";
+            this.txtdelnombre.ReadOnly = true;
+            this.txtdelnombre.Size = new System.Drawing.Size(141, 22);
+            this.txtdelnombre.TabIndex = 4;
             // 
-            // textBox6
+            // txtdelpat
             // 
-            this.textBox6.Location = new System.Drawing.Point(245, 370);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(141, 22);
-            this.textBox6.TabIndex = 5;
+            this.txtdelpat.Location = new System.Drawing.Point(245, 468);
+            this.txtdelpat.Name = "txtdelpat";
+            this.txtdelpat.ReadOnly = true;
+            this.txtdelpat.Size = new System.Drawing.Size(141, 22);
+            this.txtdelpat.TabIndex = 5;
             // 
-            // textBox7
+            // txtdelmat
             // 
-            this.textBox7.Location = new System.Drawing.Point(245, 422);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(141, 22);
-            this.textBox7.TabIndex = 6;
+            this.txtdelmat.Location = new System.Drawing.Point(245, 520);
+            this.txtdelmat.Name = "txtdelmat";
+            this.txtdelmat.ReadOnly = true;
+            this.txtdelmat.Size = new System.Drawing.Size(141, 22);
+            this.txtdelmat.TabIndex = 6;
             // 
-            // textBox8
+            // txtdelusuario
             // 
-            this.textBox8.Location = new System.Drawing.Point(245, 471);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(141, 22);
-            this.textBox8.TabIndex = 7;
+            this.txtdelusuario.Location = new System.Drawing.Point(245, 569);
+            this.txtdelusuario.Name = "txtdelusuario";
+            this.txtdelusuario.ReadOnly = true;
+            this.txtdelusuario.Size = new System.Drawing.Size(141, 22);
+            this.txtdelusuario.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(242, 293);
+            this.label5.Location = new System.Drawing.Point(242, 391);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 17);
             this.label5.TabIndex = 8;
@@ -336,7 +339,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(245, 344);
+            this.label6.Location = new System.Drawing.Point(245, 442);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 17);
             this.label6.TabIndex = 9;
@@ -345,7 +348,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(242, 402);
+            this.label7.Location = new System.Drawing.Point(242, 500);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 17);
             this.label7.TabIndex = 10;
@@ -354,7 +357,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(245, 451);
+            this.label8.Location = new System.Drawing.Point(245, 549);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 17);
             this.label8.TabIndex = 11;
@@ -363,53 +366,52 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(449, 293);
+            this.label9.Location = new System.Drawing.Point(449, 391);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 17);
             this.label9.TabIndex = 12;
             this.label9.Text = "Contraseña";
             // 
-            // textBox10
+            // txtdelcontra
             // 
-            this.textBox10.Location = new System.Drawing.Point(452, 315);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(141, 22);
-            this.textBox10.TabIndex = 14;
+            this.txtdelcontra.Location = new System.Drawing.Point(452, 413);
+            this.txtdelcontra.Name = "txtdelcontra";
+            this.txtdelcontra.ReadOnly = true;
+            this.txtdelcontra.Size = new System.Drawing.Size(141, 22);
+            this.txtdelcontra.TabIndex = 14;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(449, 347);
+            this.label10.Location = new System.Drawing.Point(449, 445);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(150, 17);
             this.label10.TabIndex = 15;
             this.label10.Text = "Confirmar Contraseña:";
             // 
-            // textBox9
+            // txtconfcon
             // 
-            this.textBox9.Location = new System.Drawing.Point(452, 370);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(141, 22);
-            this.textBox9.TabIndex = 16;
+            this.txtconfcon.Location = new System.Drawing.Point(452, 468);
+            this.txtconfcon.Name = "txtconfcon";
+            this.txtconfcon.Size = new System.Drawing.Size(141, 22);
+            this.txtconfcon.TabIndex = 16;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(452, 402);
+            this.label11.Location = new System.Drawing.Point(452, 500);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(129, 17);
             this.label11.TabIndex = 17;
             this.label11.Text = "Correo Electronico:";
             // 
-            // textBox11
+            // txtdelemail
             // 
-            this.textBox11.Location = new System.Drawing.Point(452, 422);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(141, 22);
-            this.textBox11.TabIndex = 18;
+            this.txtdelemail.Location = new System.Drawing.Point(452, 520);
+            this.txtdelemail.Name = "txtdelemail";
+            this.txtdelemail.ReadOnly = true;
+            this.txtdelemail.Size = new System.Drawing.Size(141, 22);
+            this.txtdelemail.TabIndex = 18;
             // 
             // menuStrip1
             // 
@@ -442,25 +444,44 @@
             this.acercaDeToolStripMenuItem1.Size = new System.Drawing.Size(89, 24);
             this.acercaDeToolStripMenuItem1.Text = "Acerca De";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(244, 335);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(25, 17);
+            this.label16.TabIndex = 21;
+            this.label16.Text = "ID:";
+            // 
+            // txtdelid
+            // 
+            this.txtdelid.Location = new System.Drawing.Point(247, 357);
+            this.txtdelid.Name = "txtdelid";
+            this.txtdelid.ReadOnly = true;
+            this.txtdelid.Size = new System.Drawing.Size(141, 22);
+            this.txtdelid.TabIndex = 20;
+            // 
             // Interfaz_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1105, 712);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtdelid);
+            this.Controls.Add(this.txtdelemail);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtconfcon);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtdelcontra);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtdelusuario);
+            this.Controls.Add(this.txtdelmat);
+            this.Controls.Add(this.txtdelpat);
+            this.Controls.Add(this.txtdelnombre);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
@@ -494,20 +515,20 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.Button btneliminar;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtdelnombre;
+        private System.Windows.Forms.TextBox txtdelpat;
+        private System.Windows.Forms.TextBox txtdelmat;
+        private System.Windows.Forms.TextBox txtdelusuario;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtdelcontra;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtconfcon;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtdelemail;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
@@ -521,5 +542,7 @@
         private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox combousuario;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtdelid;
     }
 }
