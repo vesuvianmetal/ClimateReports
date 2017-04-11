@@ -14,9 +14,29 @@ namespace ClimateReports
     {
         MySqlConnection conn = ConexionBD.ObtenerConexion();
 
+
+        void limpiarcampos()
+        {
+            txtam.Clear();
+            txtap.Clear();
+            txtconfcon.Clear();
+            txtcontraseña.Clear();
+            txtdelcontra.Clear();
+            txtdelemail.Clear();
+            txtdelid.Clear();
+            txtdelmat.Clear();
+            txtdelnombre.Clear();
+            txtdelpat.Clear();
+            txtdeltelefono.Clear();
+            txtdelusuario.Clear();
+            txtemail.Clear();
+            txtnombre.Clear();
+            txttelefono.Clear();
+            txtusuario.Clear();
+        }
         void agregarusuario()
         {
-            string query_agregar = "insert into usuario (usu_usuario,usu_nombre,usu_apellido_p,usu_apellido_m,usu_telefono,usu_email,usu_tipo_usu,usu_pass) values ( '" + txtusuario.Text + "','" + txtnombre.Text + "','" + txtap.Text + "','" + txtam.Text + "','"+txttelefono.Text+"','"+txtemail.Text+"','"+combousuario.SelectedItem+"','"+txtcontraseña.Text+"');";
+            string query_agregar = "insert into usuario (usu_usuario,usu_nombre,usu_apellido_p,usu_apellido_m,usu_telefono,usu_email,usu_tipo_usu,usu_pass) values ( '" + txtusuario.Text + "' , '" + txtnombre.Text + "' , '" + txtap.Text + "' , '" + txtam.Text + "' , '"+txttelefono.Text+"' , '"+txtemail.Text+"' , '" +combousuario.SelectedItem+"' , SHA1('"+txtcontraseña.Text+"') )";
             MySqlCommand cmd_queryagregar = new MySqlCommand(query_agregar, conn);
             MySqlDataReader leer;
             try
@@ -34,6 +54,7 @@ namespace ClimateReports
                 else
                 {
                     leer = cmd_queryagregar.ExecuteReader();
+                    MessageBox.Show("Usuario Agregado");
                 }
             }
             catch (Exception ex)
@@ -41,6 +62,7 @@ namespace ClimateReports
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
+            limpiarcampos();
 
         }   
     
@@ -85,6 +107,8 @@ namespace ClimateReports
         {
             //manda a llamar el metodo de agregar usuario
             agregarusuario();
+            limpiarcampos();
+            filltabla();
         }
 
         private void label15_Click(object sender, EventArgs e)
@@ -104,11 +128,24 @@ namespace ClimateReports
                 txtdelnombre.Text = row.Cells[2].Value.ToString();
                 txtdelpat.Text = row.Cells[3].Value.ToString();
                 txtdelmat.Text = row.Cells[4].Value.ToString();
-               // txtdeltelefono.Text = row.Cells[5].Value.ToString();
+               txtdeltelefono.Text = row.Cells[5].Value.ToString();
                 txtdelemail.Text = row.Cells[6].Value.ToString();
                 txtdelcontra.Text = row.Cells[8].Value.ToString();
                // txtdelcontra.Text = row.Cells[5].Value.ToString();
             }
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarcampos();
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            string query_borrar = "delete from usuario where usu_id = '"+txtdelid.Text+"'";
+
+
+            limpiarcampos();
         }
     }
 }

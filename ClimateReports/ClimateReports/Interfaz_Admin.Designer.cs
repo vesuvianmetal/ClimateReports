@@ -70,6 +70,8 @@
             this.acercaDeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label16 = new System.Windows.Forms.Label();
             this.txtdelid = new System.Windows.Forms.TextBox();
+            this.txtdeltelefono = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -104,6 +106,7 @@
             // 
             // combousuario
             // 
+            this.combousuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combousuario.FormattingEnabled = true;
             this.combousuario.Items.AddRange(new object[] {
             "Escoga Tipo De Usuario",
@@ -112,7 +115,7 @@
             this.combousuario.Location = new System.Drawing.Point(6, 354);
             this.combousuario.Name = "combousuario";
             this.combousuario.Size = new System.Drawing.Size(185, 24);
-            this.combousuario.TabIndex = 26;
+            this.combousuario.TabIndex = 7;
             // 
             // txtcontraseña
             // 
@@ -120,7 +123,7 @@
             this.txtcontraseña.MaxLength = 20;
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(188, 22);
-            this.txtcontraseña.TabIndex = 23;
+            this.txtcontraseña.TabIndex = 8;
             this.txtcontraseña.UseSystemPasswordChar = true;
             // 
             // label15
@@ -139,7 +142,7 @@
             this.txtemail.MaxLength = 20;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(188, 22);
-            this.txtemail.TabIndex = 11;
+            this.txtemail.TabIndex = 6;
             // 
             // label14
             // 
@@ -165,7 +168,7 @@
             this.txttelefono.MaxLength = 20;
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(188, 22);
-            this.txttelefono.TabIndex = 9;
+            this.txttelefono.TabIndex = 5;
             // 
             // label12
             // 
@@ -181,7 +184,7 @@
             this.btnagregar.Location = new System.Drawing.Point(4, 436);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(187, 49);
-            this.btnagregar.TabIndex = 7;
+            this.btnagregar.TabIndex = 9;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
@@ -192,7 +195,7 @@
             this.txtam.MaxLength = 20;
             this.txtam.Name = "txtam";
             this.txtam.Size = new System.Drawing.Size(188, 22);
-            this.txtam.TabIndex = 6;
+            this.txtam.TabIndex = 4;
             // 
             // label4
             // 
@@ -209,7 +212,7 @@
             this.txtap.MaxLength = 20;
             this.txtap.Name = "txtap";
             this.txtap.Size = new System.Drawing.Size(188, 22);
-            this.txtap.TabIndex = 1;
+            this.txtap.TabIndex = 3;
             // 
             // label3
             // 
@@ -226,7 +229,7 @@
             this.txtnombre.MaxLength = 20;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(188, 22);
-            this.txtnombre.TabIndex = 3;
+            this.txtnombre.TabIndex = 2;
             // 
             // label2
             // 
@@ -285,6 +288,7 @@
             this.btnlimpiar.TabIndex = 1;
             this.btnlimpiar.Text = "Limpiar Campos";
             this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // btneliminar
             // 
@@ -294,6 +298,7 @@
             this.btneliminar.TabIndex = 0;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // txtdelnombre
             // 
@@ -321,7 +326,7 @@
             // 
             // txtdelusuario
             // 
-            this.txtdelusuario.Location = new System.Drawing.Point(245, 569);
+            this.txtdelusuario.Location = new System.Drawing.Point(245, 360);
             this.txtdelusuario.Name = "txtdelusuario";
             this.txtdelusuario.ReadOnly = true;
             this.txtdelusuario.Size = new System.Drawing.Size(141, 22);
@@ -357,7 +362,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(245, 549);
+            this.label8.Location = new System.Drawing.Point(245, 340);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(61, 17);
             this.label8.TabIndex = 11;
@@ -447,7 +452,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(244, 335);
+            this.label16.Location = new System.Drawing.Point(245, 293);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(25, 17);
             this.label16.TabIndex = 21;
@@ -455,17 +460,35 @@
             // 
             // txtdelid
             // 
-            this.txtdelid.Location = new System.Drawing.Point(247, 357);
+            this.txtdelid.Location = new System.Drawing.Point(248, 315);
             this.txtdelid.Name = "txtdelid";
             this.txtdelid.ReadOnly = true;
             this.txtdelid.Size = new System.Drawing.Size(141, 22);
             this.txtdelid.TabIndex = 20;
+            // 
+            // txtdeltelefono
+            // 
+            this.txtdeltelefono.Location = new System.Drawing.Point(452, 335);
+            this.txtdeltelefono.Name = "txtdeltelefono";
+            this.txtdeltelefono.Size = new System.Drawing.Size(141, 22);
+            this.txtdeltelefono.TabIndex = 22;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(452, 303);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 17);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "Telefono";
             // 
             // Interfaz_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1105, 712);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtdeltelefono);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtdelid);
             this.Controls.Add(this.txtdelemail);
@@ -544,5 +567,7 @@
         private System.Windows.Forms.ComboBox combousuario;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtdelid;
+        private System.Windows.Forms.TextBox txtdeltelefono;
+        private System.Windows.Forms.Label label17;
     }
 }
