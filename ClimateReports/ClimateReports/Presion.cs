@@ -22,9 +22,44 @@ namespace ClimateReports
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
-        MySqlConnection conn = ConexionBD.ObtenerConexion();
+        /// 
+
+        void llenargrafica()
+        {
 
 
+            MySqlConnection conn = ConexionBD.ObtenerConexion();
+
+            string query_grafica = "select * from presion";
+
+            MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
+            MySqlDataReader leergrafica;
+            try
+            {
+                conn.Open();
+
+                leergrafica = cmd_query_grafica.ExecuteReader();
+
+                chart1.Series["Presion"].Points.Clear();
+
+                while (leergrafica.Read())
+                {
+
+
+
+                    this.chart1.Series["Presion"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
+
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+        }
 
         public Presion()
         {
@@ -38,18 +73,12 @@ namespace ClimateReports
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            /*
-              ///con.open() sirve para abrir la conexion a la base de datos.
-              conn.Open();
+            llenargrafica();
+        }
 
-              ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-              string query_inicio = "select pre_presion from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS ='" + txtcontra.Text + "'";
-
-              ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
-              ///para asi poder convertirlo en un comando a realizar.
-              MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
-
-      */
+        private void Presion_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
         }
     }
 }

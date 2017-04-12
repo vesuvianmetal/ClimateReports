@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.btnenviar = new System.Windows.Forms.Button();
             this.radiokilo = new System.Windows.Forms.RadioButton();
             this.radiomilla = new System.Windows.Forms.RadioButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartvientos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,17 +121,18 @@
             // 
             // chartvientos
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartvientos.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartvientos.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chartvientos.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartvientos.Legends.Add(legend3);
             this.chartvientos.Location = new System.Drawing.Point(12, 266);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartvientos.Name = "chartvientos";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartvientos.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Viento";
+            this.chartvientos.Series.Add(series3);
             this.chartvientos.Size = new System.Drawing.Size(637, 300);
             this.chartvientos.TabIndex = 8;
             this.chartvientos.Text = "chart1";
@@ -188,6 +191,10 @@
             this.radiomilla.Text = "ML/H";
             this.radiomilla.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Viento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -211,6 +218,7 @@
             this.Name = "Viento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viento";
+            this.Load += new System.EventHandler(this.Viento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartvientos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -233,5 +241,6 @@
         private System.Windows.Forms.Button btnenviar;
         private System.Windows.Forms.RadioButton radiokilo;
         private System.Windows.Forms.RadioButton radiomilla;
+        private System.Windows.Forms.Timer timer1;
     }
 }

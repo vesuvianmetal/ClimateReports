@@ -23,6 +23,40 @@ namespace ClimateReports
         MySqlConnection conn = ConexionBD.ObtenerConexion();
 
 
+        void llenargrafica()
+        {
+
+
+            string query_grafica = "select * from viento";
+
+            MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
+            MySqlDataReader leergrafica;
+            try
+            {
+                conn.Open();
+
+                leergrafica = cmd_query_grafica.ExecuteReader();
+
+                chartvientos.Series["Viento"].Points.Clear();
+
+                while (leergrafica.Read())
+                {
+
+
+
+                    this.chartvientos.Series["Viento"].Points.AddXY(leergrafica.GetString("vie_nombre_sensor"), leergrafica.GetFloat("vie_dato"));
+
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+        }
 
         public Viento()
         {
@@ -32,6 +66,16 @@ namespace ClimateReports
         private void btnimprimir_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Viento_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            llenargrafica();
         }
     }
 }
