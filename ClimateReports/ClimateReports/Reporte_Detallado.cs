@@ -63,7 +63,7 @@ namespace ClimateReports
         public Reporte_Detallado()
         {
             InitializeComponent();
-            llenargrafica();
+           // llenargrafica();
         }
 
         private void tempraturaToolStripMenuItem_Click(object sender, EventArgs e)
