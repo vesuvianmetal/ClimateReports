@@ -131,5 +131,29 @@ namespace ClimateReports
            
             llenargrafica();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Temperatura IT = new Temperatura();
+            IT.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Viento VIE = new Viento();
+            VIE.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Presion PRE = new Presion();
+            PRE.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Humedad IH = new Humedad();
+            IH.Show();
+        }
     }
 }

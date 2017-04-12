@@ -109,7 +109,6 @@
             this.combousuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combousuario.FormattingEnabled = true;
             this.combousuario.Items.AddRange(new object[] {
-            "Escoga Tipo De Usuario",
             "Administrador",
             "General"});
             this.combousuario.Location = new System.Drawing.Point(6, 354);
@@ -120,7 +119,7 @@
             // txtcontraseña
             // 
             this.txtcontraseña.Location = new System.Drawing.Point(3, 408);
-            this.txtcontraseña.MaxLength = 20;
+            this.txtcontraseña.MaxLength = 45;
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(188, 22);
             this.txtcontraseña.TabIndex = 8;
@@ -139,7 +138,7 @@
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(6, 298);
-            this.txtemail.MaxLength = 20;
+            this.txtemail.MaxLength = 45;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(188, 22);
             this.txtemail.TabIndex = 6;
@@ -165,7 +164,7 @@
             // txttelefono
             // 
             this.txttelefono.Location = new System.Drawing.Point(6, 242);
-            this.txttelefono.MaxLength = 20;
+            this.txttelefono.MaxLength = 13;
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(188, 22);
             this.txttelefono.TabIndex = 5;
@@ -437,6 +436,7 @@
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
             this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
