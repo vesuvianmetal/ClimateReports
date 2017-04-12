@@ -175,6 +175,8 @@ namespace ClimateReports
         public Interfaz_Admin()
         {
             InitializeComponent();
+
+            //llena la tabla desde que se inicia la ventana
             filltabla();
         }
 
@@ -217,6 +219,8 @@ namespace ClimateReports
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
+
+            //manda a llamar el metodo de limpiar campos
             limpiarcampos();
         }
 
@@ -225,6 +229,8 @@ namespace ClimateReports
 
             //manda a llamar el metodo para borrar un usuario
             borrarusuario();
+
+            //manda a llamar el metodo para llenar la tabla
             filltabla();
 
             //manda a llama el metodo para borrar los campos
@@ -233,9 +239,8 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Form1 F1 = new Form1();
-            F1.Show();
+            
+           
         }
     }
 }

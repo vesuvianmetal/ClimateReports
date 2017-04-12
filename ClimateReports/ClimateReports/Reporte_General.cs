@@ -50,6 +50,8 @@ namespace ClimateReports
         public Reporte_General()
         {
             InitializeComponent();
+
+            //manda a llamar el metodo para llenar tabla desde en inicio
             filltabla();
         }
 
@@ -85,9 +87,11 @@ namespace ClimateReports
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //gets a collection that contains all the rows
+           
+            //obtiene la coleccion que contiene todas las filas
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-            //populate the textbox from specific value of the coordinates of column and row.
+            
+            ///asigna los valores de los registros a los textbox.
             txthumedad.Text = row.Cells[0].Value.ToString();
             txtpresion.Text = row.Cells[1].Value.ToString();
             txttemp.Text = row.Cells[2].Value.ToString();

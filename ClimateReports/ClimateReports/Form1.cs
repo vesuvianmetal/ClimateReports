@@ -88,7 +88,7 @@ namespace ClimateReports
                     else if (leer_exe.Read() == false)
                     {
                         ///mensaje de error que se mostrara
-                        MessageBox.Show("Inicio Fallido, Usuario Y Contraseña O La Conexion");
+                        MessageBox.Show("Inicio Fallido, Usuario y/o Contraseña Incorrecta, Otro Motivo Puede Ser La Conexion");
 
                     }
 
@@ -168,6 +168,19 @@ namespace ClimateReports
                 ///manda a llamar el metodo de iniciar sesion
                 iniciar_sesion();
             }
+        }
+
+
+        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+           
+        }
+        //evento que sucedera cuando se presione el link label de ayuda
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/");
         }
     }
 }

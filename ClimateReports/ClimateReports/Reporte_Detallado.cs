@@ -23,25 +23,40 @@ namespace ClimateReports
         /// </summary>
         MySqlConnection conn = ConexionBD.ObtenerConexion();
       
+
+        //metodo para llenar la grafica
         void llenargrafica()
         {
-           
+         
+            //consulta que se quiere hacer la base de datos  
             string query_grafica = "select * from humedad,presion,temperatura,viento;";
 
+
+            //declaracion del comando que se le hara a mysql junto con la consulta y la variable de conexion
             MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
+
+            //declaracion de varaible que servira para ejecutar el comando a realizar a mysql
             MySqlDataReader leergrafica;
+
             try
             {
+                //abre la conexion a la base de datos
                 conn.Open();
 
+                //se le asigna valor de ejecucion a la variable leergrafica
                 leergrafica = cmd_query_grafica.ExecuteReader();
+
+                ///antes de graficar se le borran todos los puntos a la grafica ya que al actualizar la grafica se tiene que re grafica todo de neuvo
                 chart1.Series["Humedad"].Points.Clear();
                 chart1.Series["Temperatura"].Points.Clear();
                 chart1.Series["Presión"].Points.Clear();
                 chart1.Series["Viento"].Points.Clear();
+
+                //si la lectura de los datos es correcta de procede a graficar
                 while (leergrafica.Read())
                 {
-                    
+                    ///se le declaran los valores que serviran para X y Y dentro de la grafica junto con los datos dentro de la base
+                    ///de datos
                    
                     this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
                     this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
@@ -51,10 +66,15 @@ namespace ClimateReports
 
 
 
-            } catch (Exception ex)
+            }
+            //atrapa cualquier error
+            catch (Exception ex)
             {
+                //muestra los errores atrapados y los muestra en una ventana
                 MessageBox.Show(ex.Message);
             }
+
+            //cierra la conexion a la base de datos
             conn.Close();
 
             
@@ -63,11 +83,13 @@ namespace ClimateReports
         public Reporte_Detallado()
         {
             InitializeComponent();
-           // llenargrafica();
+           
         }
 
+        //funcion que pasara cuando se presione el menustrip con el nombre de temperatura
         private void tempraturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //muestra la ventana de temperatura
             Temperatura T = new Temperatura();
             T.Show();
             
@@ -78,20 +100,32 @@ namespace ClimateReports
            
         }
 
+        //funcion que pasara cuando se presione el menustrip con el nombre de viento
+
         private void vientoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //muestra la ventana de viento
             Viento v = new Viento();
             v.Show();
         }
 
+        //funcion que pasara cuando se presione el menustrip con el nombre de humedad
+
         private void humedadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            //muestra la ventana de humedad
             Humedad H = new Humedad();
             H.Show();
         }
 
+
+        //funcion que pasara cuando se presione el menustrip con el nombre de presion
+
         private void presionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            //muestra la ventana de presion
             Presion P = new Presion();
             P.Show();
         }
@@ -123,35 +157,45 @@ namespace ClimateReports
 
         private void Reporte_Detallado_Load(object sender, EventArgs e)
         {
+
+            //activa el timer
             timer1.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+           //manda a llamar el metodo de graficar cada 10 segundos
             llenargrafica();
         }
 
+        
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            //abre la ventana de temperatura
             Temperatura IT = new Temperatura();
             IT.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            //abre la ventana de viento
             Viento VIE = new Viento();
             VIE.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //abre la ventana de presion
             Presion PRE = new Presion();
             PRE.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            //abre la ventana de humedad
             Humedad IH = new Humedad();
             IH.Show();
         }
