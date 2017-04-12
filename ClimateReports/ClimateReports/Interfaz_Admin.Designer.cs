@@ -110,7 +110,7 @@
             this.combousuario.FormattingEnabled = true;
             this.combousuario.Items.AddRange(new object[] {
             "Escoga Tipo De Usuario",
-            "Admin",
+            "Administrador",
             "General"});
             this.combousuario.Location = new System.Drawing.Point(6, 354);
             this.combousuario.Name = "combousuario";
@@ -400,6 +400,7 @@
             this.txtconfcon.Name = "txtconfcon";
             this.txtconfcon.Size = new System.Drawing.Size(141, 22);
             this.txtconfcon.TabIndex = 16;
+            this.txtconfcon.UseSystemPasswordChar = true;
             // 
             // label11
             // 
@@ -470,6 +471,7 @@
             // 
             this.txtdeltelefono.Location = new System.Drawing.Point(452, 335);
             this.txtdeltelefono.Name = "txtdeltelefono";
+            this.txtdeltelefono.ReadOnly = true;
             this.txtdeltelefono.Size = new System.Drawing.Size(141, 22);
             this.txtdeltelefono.TabIndex = 22;
             // 

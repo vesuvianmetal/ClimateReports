@@ -67,7 +67,7 @@ namespace ClimateReports
 
                         ///si existe el usuario, verifica con la variable cap que tipo de usuario es
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
-                        if (cap.Equals("Admin"))
+                        if (cap.Equals("Administrador"))
                         {
                             Form2 menu = new Form2();
                             menu.Show();

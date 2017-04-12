@@ -67,30 +67,6 @@ namespace ClimateReports
         }   
 
 
-
-
-
-
-     /*void helper_borrar()
-        {
-           
-           
-
-            try
-            {
-
-               
-
-
-            } catch (Exception ex)
-
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        */
-
-
         void borrarusuario()
         {
             string buscarconfirmacion = "select  * from usuario where usu_id='" + txtdelid.Text + "' and usu_pass = SHA1('"+txtconfcon.Text+"')";

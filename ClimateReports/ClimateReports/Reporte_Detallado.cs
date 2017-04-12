@@ -39,7 +39,7 @@ namespace ClimateReports
 
         private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+           
         }
 
         private void vientoToolStripMenuItem_Click(object sender, EventArgs e)
