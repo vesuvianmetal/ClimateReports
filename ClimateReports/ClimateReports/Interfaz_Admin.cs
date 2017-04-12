@@ -65,11 +65,76 @@ namespace ClimateReports
             limpiarcampos();
 
         }   
-    
 
 
-       
-            void filltabla()
+
+
+
+
+     /*void helper_borrar()
+        {
+           
+           
+
+            try
+            {
+
+               
+
+
+            } catch (Exception ex)
+
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        */
+
+
+        void borrarusuario()
+        {
+            string buscarconfirmacion = "select  * from usuario where usu_id='" + txtdelid.Text + "' and usu_pass = SHA1('"+txtconfcon.Text+"')";
+            MySqlCommand cmd_buscarconfirmacion = new MySqlCommand(buscarconfirmacion,conn);
+            MySqlDataReader leerconfirmacion;
+
+
+
+            string query_borrar = "delete from usuario where usu_id = '" + txtdelid.Text + "'";
+            MySqlCommand cmd_query_borrar = new MySqlCommand(query_borrar,conn);
+            MySqlDataReader leerqueryborrar;
+            try
+            {
+                conn.Open();
+
+                leerconfirmacion = cmd_buscarconfirmacion.ExecuteReader();
+               
+
+                if (leerconfirmacion.Read())
+                {
+                    leerconfirmacion.Close();
+                    leerqueryborrar = cmd_query_borrar.ExecuteReader();
+                    
+
+                    
+
+                }
+                
+
+
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
+            conn.Close();
+            filltabla();
+        }
+
+
+
+        void filltabla()
             {
                 // Se abre la conexion
                 conn.Open();
@@ -131,7 +196,7 @@ namespace ClimateReports
                txtdeltelefono.Text = row.Cells[5].Value.ToString();
                 txtdelemail.Text = row.Cells[6].Value.ToString();
                 txtdelcontra.Text = row.Cells[8].Value.ToString();
-               // txtdelcontra.Text = row.Cells[5].Value.ToString();
+               
             }
         }
 
@@ -142,7 +207,7 @@ namespace ClimateReports
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            string query_borrar = "delete from usuario where usu_id = '"+txtdelid.Text+"'";
+            borrarusuario();
 
 
             limpiarcampos();
