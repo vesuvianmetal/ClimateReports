@@ -22,7 +22,7 @@ namespace ClimateReports
             conn.Open();
 
 
-            String querytablageneral = "select humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato from humedad,presion,temperatura,viento";
+            String querytablageneral = " select humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato,viento.vie_tiempo from humedad,presion,temperatura,viento;";
 
             // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
             DataTable dtDatos = new DataTable();
