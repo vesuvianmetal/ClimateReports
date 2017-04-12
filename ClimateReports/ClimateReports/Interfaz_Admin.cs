@@ -89,9 +89,8 @@ namespace ClimateReports
                 {
                     leerconfirmacion.Close();
                     leerqueryborrar = cmd_query_borrar.ExecuteReader();
-                    
 
-                    
+                    MessageBox.Show("Usuario Eliminado Correctamente");                    
 
                 }
                 

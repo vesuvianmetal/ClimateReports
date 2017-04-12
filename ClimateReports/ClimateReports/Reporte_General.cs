@@ -22,7 +22,7 @@ namespace ClimateReports
             conn.Open();
 
 
-            String querytablageneral = "select * from viento";
+            String querytablageneral = "select humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato from humedad,presion,temperatura,viento";
 
             // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
             DataTable dtDatos = new DataTable();
@@ -81,6 +81,18 @@ namespace ClimateReports
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //gets a collection that contains all the rows
+            DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            //populate the textbox from specific value of the coordinates of column and row.
+            txthumedad.Text = row.Cells[0].Value.ToString();
+            txtpresion.Text = row.Cells[1].Value.ToString();
+            txttemp.Text = row.Cells[2].Value.ToString();
+            txtviento.Text = row.Cells[3].Value.ToString();
+           
         }
     }
 }

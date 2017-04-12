@@ -40,10 +40,10 @@
             this.soporteTecnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.climateReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txttemp = new System.Windows.Forms.TextBox();
+            this.txtpresion = new System.Windows.Forms.TextBox();
+            this.txtviento = new System.Windows.Forms.TextBox();
+            this.txthumedad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -168,45 +168,45 @@
             this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.climateReportsToolStripMenuItem.Text = "Climate Reports";
             // 
-            // textBox1
+            // txttemp
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(187, 389);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 35);
-            this.textBox1.TabIndex = 43;
+            this.txttemp.Enabled = false;
+            this.txttemp.Location = new System.Drawing.Point(634, 386);
+            this.txttemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txttemp.Multiline = true;
+            this.txttemp.Name = "txttemp";
+            this.txttemp.Size = new System.Drawing.Size(120, 35);
+            this.txttemp.TabIndex = 43;
             // 
-            // textBox2
+            // txtpresion
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(604, 389);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 35);
-            this.textBox2.TabIndex = 42;
+            this.txtpresion.Enabled = false;
+            this.txtpresion.Location = new System.Drawing.Point(381, 389);
+            this.txtpresion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtpresion.Multiline = true;
+            this.txtpresion.Name = "txtpresion";
+            this.txtpresion.Size = new System.Drawing.Size(120, 35);
+            this.txtpresion.TabIndex = 42;
             // 
-            // textBox3
+            // txtviento
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(392, 389);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 35);
-            this.textBox3.TabIndex = 41;
+            this.txtviento.Enabled = false;
+            this.txtviento.Location = new System.Drawing.Point(854, 386);
+            this.txtviento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtviento.Multiline = true;
+            this.txtviento.Name = "txtviento";
+            this.txtviento.Size = new System.Drawing.Size(120, 35);
+            this.txtviento.TabIndex = 41;
             // 
-            // textBox4
+            // txthumedad
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(856, 389);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 32);
-            this.textBox4.TabIndex = 40;
+            this.txthumedad.Enabled = false;
+            this.txthumedad.Location = new System.Drawing.Point(173, 389);
+            this.txthumedad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txthumedad.Multiline = true;
+            this.txthumedad.Name = "txthumedad";
+            this.txthumedad.Size = new System.Drawing.Size(120, 32);
+            this.txthumedad.TabIndex = 40;
             // 
             // label2
             // 
@@ -214,7 +214,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 393);
+            this.label2.Location = new System.Drawing.Point(507, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 20);
             this.label2.TabIndex = 39;
@@ -226,7 +226,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(524, 393);
+            this.label8.Location = new System.Drawing.Point(296, 393);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 20);
             this.label8.TabIndex = 38;
@@ -238,7 +238,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(316, 393);
+            this.label9.Location = new System.Drawing.Point(780, 393);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 20);
             this.label9.TabIndex = 37;
@@ -250,7 +250,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(731, 393);
+            this.label10.Location = new System.Drawing.Point(48, 393);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 20);
             this.label10.TabIndex = 36;
@@ -260,10 +260,11 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(47, 116);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(927, 217);
             this.dataGridView1.TabIndex = 44;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button1
             // 
@@ -273,7 +274,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ClimateReports.Properties.Resources.carta_1;
             this.button1.Location = new System.Drawing.Point(291, 566);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 43);
             this.button1.TabIndex = 46;
@@ -287,7 +288,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
             this.button5.Location = new System.Drawing.Point(59, 566);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(47, 50);
             this.button5.TabIndex = 45;
@@ -297,7 +298,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(113, 571);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 39);
             this.button2.TabIndex = 47;
@@ -310,7 +311,7 @@
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(352, 566);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(161, 38);
             this.button3.TabIndex = 48;
@@ -329,10 +330,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txttemp);
+            this.Controls.Add(this.txtpresion);
+            this.Controls.Add(this.txtviento);
+            this.Controls.Add(this.txthumedad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -368,10 +369,10 @@
         private System.Windows.Forms.ToolStripMenuItem soporteTecnicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem climateReportsToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txttemp;
+        private System.Windows.Forms.TextBox txtpresion;
+        private System.Windows.Forms.TextBox txtviento;
+        private System.Windows.Forms.TextBox txthumedad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
