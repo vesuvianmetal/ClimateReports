@@ -26,7 +26,7 @@ namespace ClimateReports
             
             
                 //se hace la consulta a las tablas dentro de la base de datos
-                string query_grafica = "select * from humedad,presion,temperatura,viento;";
+                string query_grafica = "select distinct hum_nombre_sensor,hum_dato,temp_nombre_sensor,temp_dato,pre_nombre_sensor,pre_dato,vie_nombre_sensor,vie_dato from viento,presion,temperatura,humedad where hum_id=pre_id and temp_id=vie_id and hum_id=temp_id and pre_id=vie_id ;";
 
                 // se declara el comando que se le hara a mysql con la consulta que se hizo anteriormente
                 MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
@@ -149,6 +149,11 @@ namespace ClimateReports
         private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com");
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,14 +15,18 @@ namespace ClimateReports
 {
     public partial class Reporte_General : Form
     {
-
-        void filltabla()
+        /// <summary>
+        /// conn = declaracion de variable para obtener conexion a la base de datos 
+        /// </summary>
+        MySqlConnection conn = ConexionBD.ObtenerConexion();
+        private void filltabla()
         {
-            // Se abre la conexion
             conn.Open();
+            // Se abre la conexion
 
 
-            String querytablageneral = " select humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato,viento.vie_tiempo from humedad,presion,temperatura,viento;";
+
+            String querytablageneral = " select distinct humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato from humedad,presion,temperatura,viento;";
 
             // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
             DataTable dtDatos = new DataTable();
@@ -40,10 +44,7 @@ namespace ClimateReports
             conn.Close();
         }
 
-        /// <summary>
-        /// conn = declaracion de variable para obtener conexion a la base de datos 
-        /// </summary>
-        MySqlConnection conn = ConexionBD.ObtenerConexion();
+        
 
 
 
@@ -98,5 +99,81 @@ namespace ClimateReports
             txtviento.Text = row.Cells[3].Value.ToString();
            
         }
+
+        private void txthumedad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void obtener_humedad_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+             conn.Open();
+                string Query = "select hum_dato from humedad where hum_id=(select Max(hum_id) from humedad) ;";
+                MySqlCommand MyCommand1 = new MySqlCommand(Query, conn);
+                txthumedad.Text = MyCommand1.ExecuteScalar().ToString();
+              conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void obtener_presion_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+               conn.Open();
+                string Query = "select pre_dato from presion where pre_id=(select Max(pre_id) from presion) ;";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+                txtpresion.Text = MyCommand2.ExecuteScalar().ToString();
+               conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void obtener_temp_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+               conn.Open();
+                string Query = "select temp_dato from temperatura where temp_id=(select Max(temp_id) from temperatura) ; ";
+                MySqlCommand MyCommand3 = new MySqlCommand(Query, conn);
+                txttemp.Text = MyCommand3.ExecuteScalar().ToString();
+               conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void obtener_viento_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+               conn.Open();
+                string Query = "select vie_dato from viento where vie_id=(select Max(vie_id) from viento) ;";
+                MySqlCommand MyCommand4 = new MySqlCommand(Query, conn);
+                txtviento.Text = MyCommand4.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
+            
+
 }

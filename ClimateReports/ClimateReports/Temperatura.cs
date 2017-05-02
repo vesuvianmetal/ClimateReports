@@ -31,7 +31,7 @@ namespace ClimateReports
         {
 
             //consulta que se le hara a la base de datos
-            string query_grafica = "select * from temperatura";
+            string query_grafica = "select temp_dato,temp_nombre_sensor from temperatura";
 
             //declaracion de comando que se hara a mysql junto con consulta y la variable de conexion
             MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
@@ -93,7 +93,7 @@ namespace ClimateReports
         {
 
             //activa el timer
-            timer1.Enabled = true;
+            llenar_grafica.Enabled = true;
         }
 
         private void btnenviar_Click(object sender, EventArgs e)
@@ -110,6 +110,67 @@ namespace ClimateReports
         {
             ///cada que el timer haga tick (en este caso cada 10 segundos) se grafica denuevo
             llenargrafica();
+        }
+
+        private void txtmax_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void llenar_tmax_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select MAX(TEMP_DATO) from temperatura;";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query,conn);
+                respuestatmax.Text = MyCommand2.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void llenar_tmin_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select MIN(TEMP_DATO) from temperatura;";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+                respuestatmin.Text = MyCommand2.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void calcular_tmedia_Tick(object sender, EventArgs e)
+        {
+            string tmax, tmin, tmedia;
+            float tempmax, tempmin, tempmedia;
+
+            tmax = respuestatmax.Text.ToString();
+            tmin = respuestatmin.Text.ToString();
+            tempmax = float.Parse(tmax);
+            tempmin = float.Parse(tmin);
+            tempmedia = (tempmax + tempmin) / 2;
+            tmedia = tempmedia.ToString();
+            respuestatmedia.Text = tmedia;
+            
+        }
+
+        private void radiofar_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

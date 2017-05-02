@@ -32,7 +32,7 @@ namespace ClimateReports
 
             
             //consulta que se desea realizar a la base de datos
-            string query_grafica = "select * from presion";
+            string query_grafica = "select pre_dato,pre_nombre_sensor from presion";
 
             //se declara el comando que se hara a la base de datos junto con la consulta y la variable de conxion
             MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);

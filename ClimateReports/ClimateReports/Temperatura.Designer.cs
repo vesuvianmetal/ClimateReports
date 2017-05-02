@@ -36,9 +36,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtmax = new System.Windows.Forms.TextBox();
-            this.txtmin = new System.Windows.Forms.TextBox();
-            this.txtter = new System.Windows.Forms.TextBox();
+            this.respuestatmax = new System.Windows.Forms.TextBox();
+            this.respuestatmin = new System.Windows.Forms.TextBox();
+            this.respuestatmedia = new System.Windows.Forms.TextBox();
             this.radiocel = new System.Windows.Forms.RadioButton();
             this.radiofar = new System.Windows.Forms.RadioButton();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -58,7 +58,12 @@
             this.soporteTecnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.climateReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.llenar_grafica = new System.Windows.Forms.Timer(this.components);
+            this.llenar_tmax = new System.Windows.Forms.Timer(this.components);
+            this.llenar_tmin = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.calcular_tmedia = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,9 +74,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(48, 66);
+            this.label1.Location = new System.Drawing.Point(36, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 33);
+            this.label1.Size = new System.Drawing.Size(193, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "[ Temperatura ]";
             // 
@@ -81,9 +87,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 423);
+            this.label2.Location = new System.Drawing.Point(50, 344);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 17);
+            this.label2.Size = new System.Drawing.Size(128, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Temperatura Maxima:";
             // 
@@ -93,9 +100,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(360, 421);
+            this.label3.Location = new System.Drawing.Point(270, 342);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 17);
+            this.label3.Size = new System.Drawing.Size(125, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Temperatura Minima:";
             // 
@@ -105,47 +113,50 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(660, 422);
+            this.label5.Location = new System.Drawing.Point(276, 410);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 17);
+            this.label5.Size = new System.Drawing.Size(119, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Sensacion Termica:";
             // 
-            // txtmax
+            // respuestatmax
             // 
-            this.txtmax.Location = new System.Drawing.Point(253, 421);
-            this.txtmax.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmax.Name = "txtmax";
-            this.txtmax.Size = new System.Drawing.Size(100, 22);
-            this.txtmax.TabIndex = 7;
+            this.respuestatmax.Location = new System.Drawing.Point(190, 342);
+            this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
+            this.respuestatmax.Name = "respuestatmax";
+            this.respuestatmax.Size = new System.Drawing.Size(76, 20);
+            this.respuestatmax.TabIndex = 7;
+            this.respuestatmax.TextChanged += new System.EventHandler(this.txtmax_TextChanged);
             // 
-            // txtmin
+            // respuestatmin
             // 
-            this.txtmin.Location = new System.Drawing.Point(540, 420);
-            this.txtmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmin.Name = "txtmin";
-            this.txtmin.Size = new System.Drawing.Size(100, 22);
-            this.txtmin.TabIndex = 8;
+            this.respuestatmin.Location = new System.Drawing.Point(405, 341);
+            this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
+            this.respuestatmin.Name = "respuestatmin";
+            this.respuestatmin.Size = new System.Drawing.Size(76, 20);
+            this.respuestatmin.TabIndex = 8;
             // 
-            // txtter
+            // respuestatmedia
             // 
-            this.txtter.Location = new System.Drawing.Point(824, 421);
-            this.txtter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtter.Name = "txtter";
-            this.txtter.Size = new System.Drawing.Size(100, 22);
-            this.txtter.TabIndex = 10;
-            this.txtter.TextChanged += new System.EventHandler(this.txtter_TextChanged);
+            this.respuestatmedia.Location = new System.Drawing.Point(190, 407);
+            this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
+            this.respuestatmedia.Name = "respuestatmedia";
+            this.respuestatmedia.Size = new System.Drawing.Size(76, 20);
+            this.respuestatmedia.TabIndex = 10;
+            this.respuestatmedia.TextChanged += new System.EventHandler(this.txtter_TextChanged);
             // 
             // radiocel
             // 
             this.radiocel.AutoSize = true;
             this.radiocel.BackColor = System.Drawing.Color.Transparent;
+            this.radiocel.Checked = true;
             this.radiocel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiocel.ForeColor = System.Drawing.Color.White;
-            this.radiocel.Location = new System.Drawing.Point(213, 364);
-            this.radiocel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radiocel.Location = new System.Drawing.Point(160, 296);
+            this.radiocel.Margin = new System.Windows.Forms.Padding(2);
             this.radiocel.Name = "radiocel";
-            this.radiocel.Size = new System.Drawing.Size(81, 21);
+            this.radiocel.Size = new System.Drawing.Size(66, 17);
             this.radiocel.TabIndex = 12;
             this.radiocel.TabStop = true;
             this.radiocel.Text = "Celcius";
@@ -157,12 +168,11 @@
             this.radiofar.BackColor = System.Drawing.Color.Transparent;
             this.radiofar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiofar.ForeColor = System.Drawing.Color.White;
-            this.radiofar.Location = new System.Drawing.Point(59, 364);
-            this.radiofar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radiofar.Location = new System.Drawing.Point(44, 296);
+            this.radiofar.Margin = new System.Windows.Forms.Padding(2);
             this.radiofar.Name = "radiofar";
-            this.radiofar.Size = new System.Drawing.Size(98, 21);
+            this.radiofar.Size = new System.Drawing.Size(78, 17);
             this.radiofar.TabIndex = 13;
-            this.radiofar.TabStop = true;
             this.radiofar.Text = "Farenheit";
             this.radiofar.UseVisualStyleBackColor = false;
             // 
@@ -180,8 +190,7 @@
             legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(55, 134);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Location = new System.Drawing.Point(41, 109);
             this.chart1.Name = "chart1";
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
@@ -195,7 +204,7 @@
             series1.Name = "Temperatura";
             series1.ShadowColor = System.Drawing.Color.Transparent;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(891, 188);
+            this.chart1.Size = new System.Drawing.Size(668, 153);
             this.chart1.TabIndex = 34;
             this.chart1.Text = "chart1";
             // 
@@ -203,24 +212,25 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(348, 500);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(273, 473);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 38);
+            this.button3.Size = new System.Drawing.Size(121, 31);
             this.button3.TabIndex = 52;
             this.button3.Text = "Enviar a Correo";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(109, 498);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(94, 472);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 39);
+            this.button2.Size = new System.Drawing.Size(84, 32);
             this.button2.TabIndex = 51;
             this.button2.Text = "Imprimir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -229,10 +239,9 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ClimateReports.Properties.Resources.carta_1;
-            this.button1.Location = new System.Drawing.Point(287, 494);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(227, 468);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 43);
+            this.button1.Size = new System.Drawing.Size(40, 35);
             this.button1.TabIndex = 50;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -243,10 +252,9 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
-            this.button5.Location = new System.Drawing.Point(55, 494);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Location = new System.Drawing.Point(53, 468);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 50);
+            this.button5.Size = new System.Drawing.Size(35, 41);
             this.button5.TabIndex = 49;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -260,8 +268,8 @@
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1011, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(758, 24);
             this.menuStrip1.TabIndex = 53;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -273,25 +281,25 @@
             this.cerrarSesionToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // reporteDetalladoToolStripMenuItem
             // 
             this.reporteDetalladoToolStripMenuItem.Name = "reporteDetalladoToolStripMenuItem";
-            this.reporteDetalladoToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.reporteDetalladoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.reporteDetalladoToolStripMenuItem.Text = "Reporte Detallado";
             // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.inicioToolStripMenuItem.Text = "Inicio";
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             // 
             // ayudaToolStripMenuItem
@@ -304,31 +312,31 @@
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // reportarUnProblemaToolStripMenuItem
             // 
             this.reportarUnProblemaToolStripMenuItem.Name = "reportarUnProblemaToolStripMenuItem";
-            this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
+            this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.reportarUnProblemaToolStripMenuItem.Text = "Ver la Ayuda";
             // 
             // mesaDeAyudaToolStripMenuItem
             // 
             this.mesaDeAyudaToolStripMenuItem.Name = "mesaDeAyudaToolStripMenuItem";
-            this.mesaDeAyudaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
+            this.mesaDeAyudaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.mesaDeAyudaToolStripMenuItem.Text = "Notificar un Problema";
             // 
             // proporcionarUnaSugerenciaToolStripMenuItem
             // 
             this.proporcionarUnaSugerenciaToolStripMenuItem.Name = "proporcionarUnaSugerenciaToolStripMenuItem";
-            this.proporcionarUnaSugerenciaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
+            this.proporcionarUnaSugerenciaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.proporcionarUnaSugerenciaToolStripMenuItem.Text = "Proporcionar una Sugerencia";
             // 
             // soporteTecnicoToolStripMenuItem
             // 
             this.soporteTecnicoToolStripMenuItem.Name = "soporteTecnicoToolStripMenuItem";
-            this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
+            this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.soporteTecnicoToolStripMenuItem.Text = "Soporte Tecnico";
             // 
             // acercaDeToolStripMenuItem
@@ -338,28 +346,68 @@
             this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // climateReportsToolStripMenuItem
             // 
             this.climateReportsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.climateReportsToolStripMenuItem.Name = "climateReportsToolStripMenuItem";
-            this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.climateReportsToolStripMenuItem.Text = "Climate Reports";
             // 
-            // timer1
+            // llenar_grafica
             // 
-            this.timer1.Interval = 10000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.llenar_grafica.Interval = 10000;
+            this.llenar_grafica.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // llenar_tmax
+            // 
+            this.llenar_tmax.Enabled = true;
+            this.llenar_tmax.Interval = 10000;
+            this.llenar_tmax.Tick += new System.EventHandler(this.llenar_tmax_Tick);
+            // 
+            // llenar_tmin
+            // 
+            this.llenar_tmin.Enabled = true;
+            this.llenar_tmin.Interval = 10000;
+            this.llenar_tmin.Tick += new System.EventHandler(this.llenar_tmin_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(405, 406);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(58, 409);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 13);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "Temperatura Media:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // calcular_tmedia
+            // 
+            this.calcular_tmedia.Enabled = true;
+            this.calcular_tmedia.Interval = 11000;
+            this.calcular_tmedia.Tick += new System.EventHandler(this.calcular_tmedia_Tick);
             // 
             // Temperatura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::ClimateReports.Properties.Resources.fondopardemas;
-            this.ClientSize = new System.Drawing.Size(1011, 591);
+            this.ClientSize = new System.Drawing.Size(758, 529);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -368,14 +416,15 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.radiofar);
             this.Controls.Add(this.radiocel);
-            this.Controls.Add(this.txtter);
-            this.Controls.Add(this.txtmin);
-            this.Controls.Add(this.txtmax);
+            this.Controls.Add(this.respuestatmedia);
+            this.Controls.Add(this.respuestatmin);
+            this.Controls.Add(this.respuestatmax);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Temperatura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temperatura";
@@ -394,9 +443,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtmax;
-        private System.Windows.Forms.TextBox txtmin;
-        private System.Windows.Forms.TextBox txtter;
+        private System.Windows.Forms.TextBox respuestatmax;
+        private System.Windows.Forms.TextBox respuestatmin;
+        private System.Windows.Forms.TextBox respuestatmedia;
         private System.Windows.Forms.RadioButton radiocel;
         private System.Windows.Forms.RadioButton radiofar;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
@@ -416,6 +465,11 @@
         private System.Windows.Forms.ToolStripMenuItem reporteDetalladoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer llenar_grafica;
+        private System.Windows.Forms.Timer llenar_tmax;
+        private System.Windows.Forms.Timer llenar_tmin;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer calcular_tmedia;
     }
 }

@@ -27,7 +27,7 @@ namespace ClimateReports
         void llenargrafica()
         {
             //consulta a la tabla de humedad
-            string query_grafica = "select * from humedad";
+            string query_grafica = "select hum_dato,hum_nombre_sensor from humedad";
 
             //se declara el comando que se le hara a mysql junto con la consulta y la variable de conexion
             MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);

@@ -29,7 +29,7 @@ namespace ClimateReports
         {
          
             //consulta que se quiere hacer la base de datos  
-            string query_grafica = "select * from humedad,presion,temperatura,viento;";
+            string query_grafica = "select distinct hum_nombre_sensor,hum_dato,temp_nombre_sensor,temp_dato,pre_nombre_sensor,pre_dato,vie_nombre_sensor,vie_dato from viento,presion,temperatura,humedad where hum_id=pre_id and temp_id=vie_id and hum_id=temp_id and pre_id=vie_id ;";
 
 
             //declaracion del comando que se le hara a mysql junto con la consulta y la variable de conexion
@@ -159,7 +159,7 @@ namespace ClimateReports
         {
 
             //activa el timer
-            timer1.Enabled = true;
+            llenar_grafica.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -198,6 +198,70 @@ namespace ClimateReports
             //abre la ventana de humedad
             Humedad IH = new Humedad();
             IH.Show();
+        }
+
+        private void llenar_humedad_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select hum_dato from humedad where hum_id=(select Max(hum_id) from humedad) ;";
+                MySqlCommand MyCommand1 = new MySqlCommand(Query, conn);
+                txtporhumedad.Text = MyCommand1.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void llenar_temp_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select temp_dato from temperatura where temp_id=(select Max(temp_id) from temperatura) ; ";
+                MySqlCommand MyCommand3 = new MySqlCommand(Query, conn);
+                txttemp.Text = MyCommand3.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void llenar_presion_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select pre_dato from presion where pre_id=(select Max(pre_id) from presion) ;";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+                txtpresion.Text = MyCommand2.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void llenar_viento_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select vie_dato from viento where vie_id=(select Max(vie_id) from viento) ;";
+                MySqlCommand MyCommand4 = new MySqlCommand(Query, conn);
+                txtviento.Text = MyCommand4.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
