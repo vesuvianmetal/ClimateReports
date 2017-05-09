@@ -125,6 +125,7 @@
             this.respuestatmax.Location = new System.Drawing.Point(190, 342);
             this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmax.Name = "respuestatmax";
+            this.respuestatmax.ReadOnly = true;
             this.respuestatmax.Size = new System.Drawing.Size(76, 20);
             this.respuestatmax.TabIndex = 7;
             this.respuestatmax.TextChanged += new System.EventHandler(this.txtmax_TextChanged);
@@ -134,6 +135,7 @@
             this.respuestatmin.Location = new System.Drawing.Point(405, 341);
             this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmin.Name = "respuestatmin";
+            this.respuestatmin.ReadOnly = true;
             this.respuestatmin.Size = new System.Drawing.Size(76, 20);
             this.respuestatmin.TabIndex = 8;
             // 
@@ -142,6 +144,7 @@
             this.respuestatmedia.Location = new System.Drawing.Point(190, 407);
             this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmedia.Name = "respuestatmedia";
+            this.respuestatmedia.ReadOnly = true;
             this.respuestatmedia.Size = new System.Drawing.Size(76, 20);
             this.respuestatmedia.TabIndex = 10;
             this.respuestatmedia.TextChanged += new System.EventHandler(this.txtter_TextChanged);
@@ -207,6 +210,7 @@
             this.chart1.Size = new System.Drawing.Size(668, 153);
             this.chart1.TabIndex = 34;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // button3
             // 
@@ -377,6 +381,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(405, 406);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 54;
             // 
