@@ -35,9 +35,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtcontra = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.txtcontra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,9 +48,8 @@
             this.txtusuario.Location = new System.Drawing.Point(84, 69);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtusuario.MaxLength = 20;
-            this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(255, 50);
+            this.txtusuario.Size = new System.Drawing.Size(255, 45);
             this.txtusuario.TabIndex = 4;
             this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
@@ -139,18 +138,17 @@
             this.panel1.Size = new System.Drawing.Size(360, 366);
             this.panel1.TabIndex = 14;
             // 
-            // txtcontra
+            // linkLabel2
             // 
-            this.txtcontra.AcceptsTab = true;
-            this.txtcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontra.Location = new System.Drawing.Point(79, 183);
-            this.txtcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtcontra.MaxLength = 45;
-            this.txtcontra.Name = "txtcontra";
-            this.txtcontra.Size = new System.Drawing.Size(255, 45);
-            this.txtcontra.TabIndex = 5;
-            this.txtcontra.UseSystemPasswordChar = true;
-            this.txtcontra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcontra_KeyDown);
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(25, 334);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(48, 17);
+            this.linkLabel2.TabIndex = 17;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Auyda";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -164,17 +162,19 @@
             this.linkLabel1.Text = "Recuperar Contraseña";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // linkLabel2
+            // txtcontra
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(25, 334);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(48, 17);
-            this.linkLabel2.TabIndex = 17;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Auyda";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.txtcontra.AcceptsTab = true;
+            this.txtcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontra.Location = new System.Drawing.Point(79, 183);
+            this.txtcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcontra.MaxLength = 45;
+            this.txtcontra.Name = "txtcontra";
+            this.txtcontra.Size = new System.Drawing.Size(255, 45);
+            this.txtcontra.TabIndex = 5;
+            this.txtcontra.UseSystemPasswordChar = true;
+            this.txtcontra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcontra_KeyDown);
+            this.txtcontra.Leave += new System.EventHandler(this.txtcontra_Leave);
             // 
             // Form1
             // 

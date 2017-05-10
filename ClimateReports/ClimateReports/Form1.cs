@@ -26,7 +26,12 @@ namespace ClimateReports
                 ///muestra ventana con error si se presenta la validacion.
                 MessageBox.Show("Usuario O Contraseña Invalida, Porfavor Intente Denuevo");
             }
+            else if (txtcontra.Text.Contains(" ") || txtusuario.Text.Contains(" "))
+            {
 
+
+                MessageBox.Show("Los Campos No Aceptan Espacios");
+            }
             ///si los campos no presentan error de que esten vacios se procede a correr este codigo
             else
             {
@@ -168,7 +173,17 @@ namespace ClimateReports
                 ///manda a llamar el metodo de iniciar sesion
                 iniciar_sesion();
             }
-        }
+
+            
+
+          /*  else if (e.KeyCode == Keys.Space)
+            {
+                e.Handled = false;
+
+            }
+            base.OnKeyDown(e);
+    */    
+    }
 
 
         
@@ -181,6 +196,15 @@ namespace ClimateReports
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com/");
+        }
+
+        private void txtcontra_Leave(object sender, EventArgs e)
+        {
+            if (this.Text.Contains(" "))
+            {
+                MessageBox.Show("En Este Campo No Se Aceptan Espacios");
+                this.Focus();
+            }
         }
     }
 }

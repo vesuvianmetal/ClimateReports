@@ -59,6 +59,10 @@ namespace ClimateReports
                 {
                     MessageBox.Show("Debe Seleccion Un Tipo De Usuario");
                 }
+
+                else if (txtcontraseña.Text.Contains(" ")) {
+                    MessageBox.Show("No Se Aceptan Espacion En El Campo De Contraseña");
+                }
                 else
                 {
                     leer = cmd_queryagregar.ExecuteReader();
@@ -210,7 +214,7 @@ namespace ClimateReports
                 txtdelnombre.Text = row.Cells[2].Value.ToString();
                 txtdelpat.Text = row.Cells[3].Value.ToString();
                 txtdelmat.Text = row.Cells[4].Value.ToString();
-               txtdeltelefono.Text = row.Cells[5].Value.ToString();
+                txtdeltelefono.Text = row.Cells[5].Value.ToString();
                 txtdelemail.Text = row.Cells[6].Value.ToString();
                 txtdelcontra.Text = row.Cells[8].Value.ToString();
                
