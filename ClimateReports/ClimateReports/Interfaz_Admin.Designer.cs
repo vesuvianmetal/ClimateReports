@@ -58,8 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtdelcontra = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtconfcon = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -105,6 +103,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar Usuario";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // combousuario
             // 
@@ -388,29 +387,10 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Usuario:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(449, 391);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 17);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Contraseña";
-            // 
-            // txtdelcontra
-            // 
-            this.txtdelcontra.Location = new System.Drawing.Point(452, 414);
-            this.txtdelcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtdelcontra.Name = "txtdelcontra";
-            this.txtdelcontra.ReadOnly = true;
-            this.txtdelcontra.Size = new System.Drawing.Size(141, 22);
-            this.txtdelcontra.TabIndex = 14;
-            this.txtdelcontra.TextChanged += new System.EventHandler(this.txtdelcontra_TextChanged);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(449, 446);
+            this.label10.Location = new System.Drawing.Point(449, 371);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(150, 17);
             this.label10.TabIndex = 15;
@@ -418,7 +398,7 @@
             // 
             // txtconfcon
             // 
-            this.txtconfcon.Location = new System.Drawing.Point(452, 468);
+            this.txtconfcon.Location = new System.Drawing.Point(452, 393);
             this.txtconfcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtconfcon.Name = "txtconfcon";
             this.txtconfcon.Size = new System.Drawing.Size(141, 22);
@@ -428,7 +408,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(452, 500);
+            this.label11.Location = new System.Drawing.Point(452, 425);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(129, 17);
             this.label11.TabIndex = 17;
@@ -436,7 +416,7 @@
             // 
             // txtdelemail
             // 
-            this.txtdelemail.Location = new System.Drawing.Point(452, 519);
+            this.txtdelemail.Location = new System.Drawing.Point(452, 444);
             this.txtdelemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtdelemail.Name = "txtdelemail";
             this.txtdelemail.ReadOnly = true;
@@ -525,8 +505,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtconfcon);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtdelcontra);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -578,8 +556,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtdelcontra;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtconfcon;
         private System.Windows.Forms.Label label11;

@@ -26,7 +26,7 @@ namespace ClimateReports
             txtap.Clear();
             txtconfcon.Clear();
             txtcontraseña.Clear();
-            txtdelcontra.Clear();
+            //txtdelcontra.Clear();
             txtdelemail.Clear();
             txtdelid.Clear();
             txtdelmat.Clear();
@@ -216,7 +216,7 @@ namespace ClimateReports
                 txtdelmat.Text = row.Cells[4].Value.ToString();
                 txtdeltelefono.Text = row.Cells[5].Value.ToString();
                 txtdelemail.Text = row.Cells[6].Value.ToString();
-                txtdelcontra.Text = row.Cells[8].Value.ToString();
+                //txtdelcontra.Text = row.Cells[8].Value.ToString();
                
             }
         }
@@ -253,6 +253,11 @@ namespace ClimateReports
         }
 
         private void txtdelcontra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
