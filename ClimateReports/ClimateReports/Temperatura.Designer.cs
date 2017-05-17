@@ -122,6 +122,7 @@
             // 
             // respuestatmax
             // 
+            this.respuestatmax.Enabled = false;
             this.respuestatmax.Location = new System.Drawing.Point(190, 342);
             this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmax.Name = "respuestatmax";
@@ -132,6 +133,7 @@
             // 
             // respuestatmin
             // 
+            this.respuestatmin.Enabled = false;
             this.respuestatmin.Location = new System.Drawing.Point(405, 341);
             this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmin.Name = "respuestatmin";
@@ -141,6 +143,7 @@
             // 
             // respuestatmedia
             // 
+            this.respuestatmedia.Enabled = false;
             this.respuestatmedia.Location = new System.Drawing.Point(190, 407);
             this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmedia.Name = "respuestatmedia";
@@ -379,6 +382,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(405, 406);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -428,6 +432,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Enabled = false;
             this.ForeColor = System.Drawing.Color.Transparent;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Temperatura";

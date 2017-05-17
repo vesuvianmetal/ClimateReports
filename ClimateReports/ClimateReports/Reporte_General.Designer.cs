@@ -79,7 +79,7 @@
             // txtcomentario
             // 
             this.txtcomentario.Location = new System.Drawing.Point(130, 380);
-            this.txtcomentario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcomentario.Margin = new System.Windows.Forms.Padding(2);
             this.txtcomentario.Multiline = true;
             this.txtcomentario.Name = "txtcomentario";
             this.txtcomentario.Size = new System.Drawing.Size(255, 58);
@@ -179,9 +179,10 @@
             // 
             this.txttemp.Enabled = false;
             this.txttemp.Location = new System.Drawing.Point(476, 314);
-            this.txttemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttemp.Margin = new System.Windows.Forms.Padding(2);
             this.txttemp.Multiline = true;
             this.txttemp.Name = "txttemp";
+            this.txttemp.ReadOnly = true;
             this.txttemp.Size = new System.Drawing.Size(91, 29);
             this.txttemp.TabIndex = 43;
             // 
@@ -189,9 +190,10 @@
             // 
             this.txtpresion.Enabled = false;
             this.txtpresion.Location = new System.Drawing.Point(286, 316);
-            this.txtpresion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpresion.Margin = new System.Windows.Forms.Padding(2);
             this.txtpresion.Multiline = true;
             this.txtpresion.Name = "txtpresion";
+            this.txtpresion.ReadOnly = true;
             this.txtpresion.Size = new System.Drawing.Size(91, 29);
             this.txtpresion.TabIndex = 42;
             // 
@@ -199,9 +201,10 @@
             // 
             this.txtviento.Enabled = false;
             this.txtviento.Location = new System.Drawing.Point(640, 314);
-            this.txtviento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtviento.Margin = new System.Windows.Forms.Padding(2);
             this.txtviento.Multiline = true;
             this.txtviento.Name = "txtviento";
+            this.txtviento.ReadOnly = true;
             this.txtviento.Size = new System.Drawing.Size(91, 29);
             this.txtviento.TabIndex = 41;
             // 
@@ -209,9 +212,10 @@
             // 
             this.txthumedad.Enabled = false;
             this.txthumedad.Location = new System.Drawing.Point(130, 316);
-            this.txthumedad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txthumedad.Margin = new System.Windows.Forms.Padding(2);
             this.txthumedad.Multiline = true;
             this.txthumedad.Name = "txthumedad";
+            this.txthumedad.ReadOnly = true;
             this.txthumedad.Size = new System.Drawing.Size(91, 27);
             this.txthumedad.TabIndex = 40;
             this.txthumedad.TextChanged += new System.EventHandler(this.txthumedad_TextChanged);
@@ -373,7 +377,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcomentario);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reporte_General";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte General";
