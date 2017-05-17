@@ -162,8 +162,9 @@
             // 
             // txttemp
             // 
+            this.txttemp.Enabled = false;
             this.txttemp.Location = new System.Drawing.Point(140, 480);
-            this.txttemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txttemp.Margin = new System.Windows.Forms.Padding(2);
             this.txttemp.Multiline = true;
             this.txttemp.Name = "txttemp";
             this.txttemp.Size = new System.Drawing.Size(91, 29);
@@ -171,8 +172,9 @@
             // 
             // txtpresion
             // 
+            this.txtpresion.Enabled = false;
             this.txtpresion.Location = new System.Drawing.Point(454, 480);
-            this.txtpresion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpresion.Margin = new System.Windows.Forms.Padding(2);
             this.txtpresion.Multiline = true;
             this.txtpresion.Name = "txtpresion";
             this.txtpresion.Size = new System.Drawing.Size(91, 29);
@@ -180,8 +182,9 @@
             // 
             // txtviento
             // 
+            this.txtviento.Enabled = false;
             this.txtviento.Location = new System.Drawing.Point(295, 480);
-            this.txtviento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtviento.Margin = new System.Windows.Forms.Padding(2);
             this.txtviento.Multiline = true;
             this.txtviento.Name = "txtviento";
             this.txtviento.Size = new System.Drawing.Size(91, 29);
@@ -190,8 +193,9 @@
             // 
             // txtporhumedad
             // 
+            this.txtporhumedad.Enabled = false;
             this.txtporhumedad.Location = new System.Drawing.Point(643, 480);
-            this.txtporhumedad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtporhumedad.Margin = new System.Windows.Forms.Padding(2);
             this.txtporhumedad.Multiline = true;
             this.txtporhumedad.Name = "txtporhumedad";
             this.txtporhumedad.Size = new System.Drawing.Size(91, 27);
@@ -461,7 +465,7 @@
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reporte_Detallado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Detallado";
