@@ -244,7 +244,9 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Form1 cerrarsession = new Form1();
+            cerrarsession.Show();
+            this.Hide();
            
         }
 

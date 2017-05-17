@@ -97,7 +97,7 @@ namespace ClimateReports
 
         private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
         {
-           
+            
         }
 
         //funcion que pasara cuando se presione el menustrip con el nombre de viento
@@ -262,6 +262,13 @@ namespace ClimateReports
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 cerrarsesion = new Form1();
+            cerrarsesion.Show();
+            this.Hide();
         }
     }
 }
