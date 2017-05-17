@@ -26,7 +26,7 @@ namespace ClimateReports
 
 
 
-            String querytablageneral = " select distinct humedad.hum_dato,presion.pre_dato,temperatura.temp_dato,viento.vie_dato from humedad,presion,temperatura,viento;";
+            String querytablageneral = " select distinct humedad.hum_dato  as Humedad,presion.pre_dato as Presion,temperatura.temp_dato as Temperatura,viento.vie_dato as Viento, viento.vie_tiempo as Fecha from humedad,presion,temperatura,viento;";
 
             // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
             DataTable dtDatos = new DataTable();

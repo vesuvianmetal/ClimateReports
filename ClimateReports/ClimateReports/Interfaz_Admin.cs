@@ -156,6 +156,7 @@ namespace ClimateReports
 
 
                 String querytablausuario = "select * from usuario";
+            // select 
 
                 // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
                 DataTable dtDatos = new DataTable();
