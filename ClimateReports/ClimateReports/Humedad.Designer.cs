@@ -93,6 +93,7 @@
             this.chart1.Size = new System.Drawing.Size(731, 190);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "charthumedad";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // timer1
             // 

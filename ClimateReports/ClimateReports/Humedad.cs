@@ -93,5 +93,10 @@ namespace ClimateReports
             //activa el timer
             timer1.Enabled = true;
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

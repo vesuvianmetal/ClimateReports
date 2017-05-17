@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.respuestatmax = new System.Windows.Forms.TextBox();
             this.radiocel = new System.Windows.Forms.RadioButton();
@@ -55,7 +55,7 @@
             this.calcular_tmedia = new System.Windows.Forms.Timer(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.respuestatmin = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.respuestatmedia = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +85,7 @@
             // 
             this.respuestatmax.Enabled = false;
             this.respuestatmax.Location = new System.Drawing.Point(411, 173);
-            this.respuestatmax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmax.Multiline = true;
             this.respuestatmax.Name = "respuestatmax";
             this.respuestatmax.ReadOnly = true;
@@ -101,7 +101,7 @@
             this.radiocel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiocel.ForeColor = System.Drawing.Color.White;
             this.radiocel.Location = new System.Drawing.Point(378, 136);
-            this.radiocel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiocel.Margin = new System.Windows.Forms.Padding(2);
             this.radiocel.Name = "radiocel";
             this.radiocel.Size = new System.Drawing.Size(75, 22);
             this.radiocel.TabIndex = 12;
@@ -116,7 +116,7 @@
             this.radiofar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiofar.ForeColor = System.Drawing.Color.White;
             this.radiofar.Location = new System.Drawing.Point(263, 136);
-            this.radiofar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiofar.Margin = new System.Windows.Forms.Padding(2);
             this.radiofar.Name = "radiofar";
             this.radiofar.Size = new System.Drawing.Size(87, 22);
             this.radiofar.TabIndex = 13;
@@ -131,26 +131,26 @@
             this.chart1.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
             this.chart1.BorderSkin.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
             this.chart1.BorderSkin.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            chartArea1.Name = "ChartArea1";
-            chartArea1.ShadowColor = System.Drawing.Color.Transparent;
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            chartArea2.ShadowColor = System.Drawing.Color.Transparent;
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(14, 308);
             this.chart1.Name = "chart1";
-            series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Red;
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.LabelBackColor = System.Drawing.Color.White;
-            series1.LabelForeColor = System.Drawing.Color.White;
-            series1.Legend = "Legend1";
-            series1.Name = "Temperatura";
-            series1.ShadowColor = System.Drawing.Color.Transparent;
-            this.chart1.Series.Add(series1);
+            series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
+            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Color = System.Drawing.Color.Red;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.LabelBackColor = System.Drawing.Color.White;
+            series2.LabelForeColor = System.Drawing.Color.White;
+            series2.Legend = "Legend1";
+            series2.Name = "Temperatura";
+            series2.ShadowColor = System.Drawing.Color.Transparent;
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(747, 200);
             this.chart1.TabIndex = 34;
             this.chart1.Text = "chart1";
@@ -304,16 +304,16 @@
             this.label2.TabIndex = 57;
             this.label2.Text = "Temperatura Minima";
             // 
-            // textBox1
+            // respuestatmin
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(411, 219);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(93, 29);
-            this.textBox1.TabIndex = 58;
+            this.respuestatmin.Enabled = false;
+            this.respuestatmin.Location = new System.Drawing.Point(411, 219);
+            this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
+            this.respuestatmin.Multiline = true;
+            this.respuestatmin.Name = "respuestatmin";
+            this.respuestatmin.ReadOnly = true;
+            this.respuestatmin.Size = new System.Drawing.Size(93, 29);
+            this.respuestatmin.TabIndex = 58;
             // 
             // label3
             // 
@@ -404,16 +404,16 @@
             this.label7.TabIndex = 65;
             this.label7.Text = "Temperatura Media";
             // 
-            // textBox3
+            // respuestatmedia
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(671, 219);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(93, 29);
-            this.textBox3.TabIndex = 66;
+            this.respuestatmedia.Enabled = false;
+            this.respuestatmedia.Location = new System.Drawing.Point(671, 219);
+            this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
+            this.respuestatmedia.Multiline = true;
+            this.respuestatmedia.Name = "respuestatmedia";
+            this.respuestatmedia.ReadOnly = true;
+            this.respuestatmedia.Size = new System.Drawing.Size(93, 29);
+            this.respuestatmedia.TabIndex = 66;
             // 
             // Temperatura
             // 
@@ -421,7 +421,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(773, 529);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.respuestatmedia);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -429,7 +429,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.respuestatmin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.menuStrip1);
@@ -438,9 +438,8 @@
             this.Controls.Add(this.radiocel);
             this.Controls.Add(this.respuestatmax);
             this.Controls.Add(this.label1);
-            this.Enabled = false;
             this.ForeColor = System.Drawing.Color.Transparent;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Temperatura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temperatura";
@@ -478,7 +477,7 @@
         private System.Windows.Forms.Timer calcular_tmedia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox respuestatmin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
@@ -486,6 +485,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox respuestatmedia;
     }
 }
