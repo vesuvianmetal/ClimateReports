@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
+//hola
 
 namespace ClimateReports
 {
