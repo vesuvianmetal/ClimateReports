@@ -43,7 +43,7 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusuario.BackColor = System.Drawing.Color.White;
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(84, 69);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
