@@ -27,7 +27,7 @@ namespace ClimateReports
                 ///muestra ventana con error si se presenta la validacion.
                 MessageBox.Show("Usuario O Contraseña Invalida, Porfavor Intente Denuevo");
             }
-            else if (txtcontra.Text.Contains(" ") || txtusuario.Text.Contains(" "))
+            else if (txtcontra.Text.TrimEnd().Contains(" ") || txtusuario.Text.TrimEnd().Contains(" "))
             {
 
 
