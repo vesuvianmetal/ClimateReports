@@ -270,5 +270,21 @@ namespace ClimateReports
             cerrarsesion.Show();
             this.Hide();
         }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            his.Dispose();
+
+            //abre el login
+            Form2 F2 = new Form2();
+            F2.Show();
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 cerrarsesion = new Form1();
+            cerrarsesion.Show();
+            this.Hide();
+        }
     }
 }

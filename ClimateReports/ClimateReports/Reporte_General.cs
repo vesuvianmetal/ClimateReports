@@ -180,6 +180,24 @@ namespace ClimateReports
             cerrarsession.Show();
             this.Hide();
         }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
+            //abre el login
+            Form2 F2 = new Form2();
+            F2.Show();
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
+            //abre el login
+            Form1 F1 = new Form1();
+            F1.Show();
+        }
     }
             
 
