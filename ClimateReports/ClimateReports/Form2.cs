@@ -92,6 +92,7 @@ namespace ClimateReports
             //cuando se presione el boton abrira la ventana que se selecciono
             Reporte_Detallado RP = new Reporte_Detallado();
             RP.Show();
+            this.Dispose();
 
         }
 
