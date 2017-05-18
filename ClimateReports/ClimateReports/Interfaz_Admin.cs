@@ -155,8 +155,8 @@ namespace ClimateReports
                 conn.Open();
 
 
-                String querytablausuario = "select * from usuario";
-            // select 
+                String querytablausuario = "select distinct usu_id as ID , usu_usuario as Usuario, usu_nombre as Nombre,usu_apellido_p as ApellidoPaterno, usu_apellido_m as ApellidoMaterno, usu_telefono as Telefono, usu_email as Correo, Usu_tipo_usu as TipoUsuario, usu_pass as Password from usuario";
+            // select usu_id as ID , usu_usuario as Usuario, usu_nombre as Nombre,usu_apellido_p as Apellido Paterno, usu_apellido_m as Apellido Materno, usu_telefono as Telefono, usu_email as Correo, Usu_tipo_usu as Tipo Usuario, usu_pass as Contraseña
 
                 // Se crea un DataTable que almacenará los datos desde donde se cargaran los datos al DataGridView
                 DataTable dtDatos = new DataTable();
