@@ -126,6 +126,7 @@ namespace ClimateReports
             //cuando se presione el boton abrira la ventana que se selecciono
             Reporte_General RG = new Reporte_General();
             RG.Show();
+            this.Dispose();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

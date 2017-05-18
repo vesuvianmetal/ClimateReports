@@ -284,7 +284,7 @@ namespace ClimateReports
         {
             Form1 cerrarsesion = new Form1();
             cerrarsesion.Show();
-            this.Hide();
+            this.Dispose();
         }
     }
 }
