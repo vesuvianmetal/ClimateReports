@@ -273,7 +273,7 @@ namespace ClimateReports
 
         private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            his.Dispose();
+            this.Dispose();
 
             //abre el login
             Form2 F2 = new Form2();
