@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.respuestatmax = new System.Windows.Forms.TextBox();
             this.radiocel = new System.Windows.Forms.RadioButton();
@@ -58,14 +58,24 @@
             this.respuestatmin = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.respuestatmedia = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -74,7 +84,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 54);
+            this.label1.Location = new System.Drawing.Point(7, 43);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 29);
@@ -84,7 +94,7 @@
             // respuestatmax
             // 
             this.respuestatmax.Enabled = false;
-            this.respuestatmax.Location = new System.Drawing.Point(411, 173);
+            this.respuestatmax.Location = new System.Drawing.Point(164, 52);
             this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmax.Multiline = true;
             this.respuestatmax.Name = "respuestatmax";
@@ -100,7 +110,7 @@
             this.radiocel.Checked = true;
             this.radiocel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiocel.ForeColor = System.Drawing.Color.White;
-            this.radiocel.Location = new System.Drawing.Point(378, 136);
+            this.radiocel.Location = new System.Drawing.Point(131, 15);
             this.radiocel.Margin = new System.Windows.Forms.Padding(2);
             this.radiocel.Name = "radiocel";
             this.radiocel.Size = new System.Drawing.Size(75, 22);
@@ -115,7 +125,7 @@
             this.radiofar.BackColor = System.Drawing.Color.Transparent;
             this.radiofar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiofar.ForeColor = System.Drawing.Color.White;
-            this.radiofar.Location = new System.Drawing.Point(263, 136);
+            this.radiofar.Location = new System.Drawing.Point(16, 15);
             this.radiofar.Margin = new System.Windows.Forms.Padding(2);
             this.radiofar.Name = "radiofar";
             this.radiofar.Size = new System.Drawing.Size(87, 22);
@@ -131,27 +141,27 @@
             this.chart1.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
             this.chart1.BorderSkin.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
             this.chart1.BorderSkin.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            chartArea2.Name = "ChartArea1";
-            chartArea2.ShadowColor = System.Drawing.Color.Transparent;
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(14, 308);
+            chartArea3.Name = "ChartArea1";
+            chartArea3.ShadowColor = System.Drawing.Color.Transparent;
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(204, 267);
             this.chart1.Name = "chart1";
-            series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.Red;
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.LabelBackColor = System.Drawing.Color.White;
-            series2.LabelForeColor = System.Drawing.Color.White;
-            series2.Legend = "Legend1";
-            series2.Name = "Temperatura";
-            series2.ShadowColor = System.Drawing.Color.Transparent;
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(747, 200);
+            series3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
+            series3.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Color = System.Drawing.Color.Red;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.LabelBackColor = System.Drawing.Color.White;
+            series3.LabelForeColor = System.Drawing.Color.White;
+            series3.Legend = "Legend1";
+            series3.Name = "Temperatura";
+            series3.ShadowColor = System.Drawing.Color.Transparent;
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(535, 190);
             this.chart1.TabIndex = 34;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -167,7 +177,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(773, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
             this.menuStrip1.TabIndex = 53;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -284,7 +294,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(259, 177);
+            this.label6.Location = new System.Drawing.Point(12, 56);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 18);
@@ -297,7 +307,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(260, 224);
+            this.label2.Location = new System.Drawing.Point(13, 103);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 18);
@@ -307,7 +317,7 @@
             // respuestatmin
             // 
             this.respuestatmin.Enabled = false;
-            this.respuestatmin.Location = new System.Drawing.Point(411, 219);
+            this.respuestatmin.Location = new System.Drawing.Point(164, 98);
             this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmin.Multiline = true;
             this.respuestatmin.Name = "respuestatmin";
@@ -321,7 +331,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(531, 177);
+            this.label3.Location = new System.Drawing.Point(273, 56);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 18);
@@ -331,7 +341,7 @@
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(671, 173);
+            this.textBox2.Location = new System.Drawing.Point(424, 52);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -339,65 +349,13 @@
             this.textBox2.Size = new System.Drawing.Size(93, 29);
             this.textBox2.TabIndex = 60;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(96, 226);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 16);
-            this.label4.TabIndex = 64;
-            this.label4.Text = "Enviar por Correo";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::ClimateReports.Properties.Resources.carta1;
-            this.button1.Location = new System.Drawing.Point(14, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 64);
-            this.button1.TabIndex = 63;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(96, 136);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
-            this.label5.TabIndex = 62;
-            this.label5.Text = "Imprimir Reporte";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::ClimateReports.Properties.Resources.impresora;
-            this.button5.Location = new System.Drawing.Point(14, 115);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 64);
-            this.button5.TabIndex = 61;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(531, 218);
+            this.label7.Location = new System.Drawing.Point(273, 97);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 18);
@@ -407,7 +365,7 @@
             // respuestatmedia
             // 
             this.respuestatmedia.Enabled = false;
-            this.respuestatmedia.Location = new System.Drawing.Point(671, 219);
+            this.respuestatmedia.Location = new System.Drawing.Point(424, 92);
             this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmedia.Multiline = true;
             this.respuestatmedia.Name = "respuestatmedia";
@@ -415,28 +373,140 @@
             this.respuestatmedia.Size = new System.Drawing.Size(93, 29);
             this.respuestatmedia.TabIndex = 66;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.respuestatmedia);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.respuestatmin);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.radiofar);
+            this.panel1.Controls.Add(this.radiocel);
+            this.panel1.Controls.Add(this.respuestatmax);
+            this.panel1.Location = new System.Drawing.Point(204, 98);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(535, 145);
+            this.panel1.TabIndex = 67;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(12, 176);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(182, 43);
+            this.panel3.TabIndex = 79;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
+            this.button5.Location = new System.Drawing.Point(3, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(50, 36);
+            this.button5.TabIndex = 65;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(58, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 16);
+            this.label4.TabIndex = 66;
+            this.label4.Text = "Imprimir Reporte";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Location = new System.Drawing.Point(12, 247);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(182, 43);
+            this.panel4.TabIndex = 78;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::ClimateReports.Properties.Resources.carta_1;
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(51, 37);
+            this.button3.TabIndex = 67;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(59, 13);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 16);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "Enviar por Correo";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Location = new System.Drawing.Point(12, 98);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(182, 43);
+            this.panel2.TabIndex = 77;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(59, 13);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 16);
+            this.label5.TabIndex = 74;
+            this.label5.Text = "Generar Reporte";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::ClimateReports.Properties.Resources.clipboard_1;
+            this.button2.Location = new System.Drawing.Point(4, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(47, 39);
+            this.button2.TabIndex = 73;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Temperatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(773, 529);
-            this.Controls.Add(this.respuestatmedia);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.respuestatmin);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(753, 469);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.radiofar);
-            this.Controls.Add(this.radiocel);
-            this.Controls.Add(this.respuestatmax);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -447,6 +517,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,11 +558,17 @@
         private System.Windows.Forms.TextBox respuestatmin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox respuestatmedia;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
     }
 }
