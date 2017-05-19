@@ -133,6 +133,16 @@ namespace ClimateReports.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clipboard_1 {
+            get {
+                object obj = ResourceManager.GetObject("clipboard-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap documentos_1 {
             get {
                 object obj = ResourceManager.GetObject("documentos-1", resourceCulture);
@@ -356,6 +366,16 @@ namespace ClimateReports.Properties {
         internal static System.Drawing.Bitmap presion {
             get {
                 object obj = ResourceManager.GetObject("presion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap review {
+            get {
+                object obj = ResourceManager.GetObject("review", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

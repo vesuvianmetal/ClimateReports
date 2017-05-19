@@ -148,17 +148,14 @@
   <data name="presion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="impresora-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\impresora-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="termometro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\termometro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="documentos-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\documentos-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="impresora-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\impresora-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-de-inicio-de-sesion-con-flecha-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-de-inicio-de-sesion-con-flecha-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,17 +193,23 @@
   <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="documentos-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documentos-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fondopardemas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondopardemas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="documentos-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\documentos-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondologinnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondologinnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gota-de-agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gota-de-agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondologinnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondologinnn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="carta-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carta-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,7 +220,10 @@
   <data name="molino-de-viento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\molino-de-viento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clipboard-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clipboard-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="review" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\review.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
