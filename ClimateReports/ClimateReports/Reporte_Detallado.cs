@@ -97,7 +97,10 @@ namespace ClimateReports
 
         private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            this.Hide();
+
+            Form2 F2 = new Form2();
+            F2.ShowDialog();
         }
 
         //funcion que pasara cuando se presione el menustrip con el nombre de viento
@@ -173,13 +176,14 @@ namespace ClimateReports
         private void button1_Click(object sender, EventArgs e)
         {
             //abre la ventana de temperatura
+            this.Hide();
             Temperatura IT = new Temperatura();
-            IT.Show();
+            IT.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             //abre la ventana de viento
             Viento VIE = new Viento();
             VIE.Show();
@@ -187,6 +191,7 @@ namespace ClimateReports
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             //abre la ventana de presion
             Presion PRE = new Presion();
             PRE.Show();
@@ -194,7 +199,7 @@ namespace ClimateReports
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             //abre la ventana de humedad
             Humedad IH = new Humedad();
             IH.Show();
@@ -273,7 +278,7 @@ namespace ClimateReports
 
         private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
 
             //abre el login
             Form2 F2 = new Form2();
@@ -282,9 +287,10 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form1 cerrarsesion = new Form1();
-            cerrarsesion.Show();
-            this.Dispose();
+            cerrarsesion.ShowDialog();
+            
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

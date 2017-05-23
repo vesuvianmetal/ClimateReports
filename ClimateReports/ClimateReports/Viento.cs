@@ -92,5 +92,12 @@ namespace ClimateReports
             ///cada que el timer haga tick (en este caso es cada 10 segundos) se grafica denuevo
             llenargrafica();
         }
+
+        private void Viento_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            Reporte_Detallado RP = new Reporte_Detallado();
+            RP.ShowDialog();
+        }
     }
 }

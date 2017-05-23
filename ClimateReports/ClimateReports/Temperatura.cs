@@ -189,5 +189,17 @@ namespace ClimateReports
         {
 
         }
+
+        private void Temperatura_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void Temperatura_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            Reporte_Detallado RP = new Reporte_Detallado();
+            RP.ShowDialog();
+        }
     }
 }

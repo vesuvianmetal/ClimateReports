@@ -98,5 +98,12 @@ namespace ClimateReports
         {
 
         }
+
+        private void Humedad_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            Reporte_Detallado RP = new Reporte_Detallado();
+            RP.ShowDialog();
+        }
     }
 }
