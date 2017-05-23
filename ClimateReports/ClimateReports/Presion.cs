@@ -97,7 +97,7 @@ namespace ClimateReports
         {
 
             //se activa el timer
-            timer1.Enabled = true;
+            llenar_grafica.Enabled = true;
         }
 
         private void btnenviar_Click(object sender, EventArgs e)
@@ -110,6 +110,22 @@ namespace ClimateReports
             this.Dispose();
             Reporte_Detallado RP = new Reporte_Detallado();
             RP.ShowDialog();
+        }
+
+        private void llenar_presion_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select MAX(pre_DATO) from presion;";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+                respuesta_pre.Text = MyCommand2.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -91,7 +91,7 @@ namespace ClimateReports
         private void Humedad_Load(object sender, EventArgs e)
         {
             //activa el timer
-            timer1.Enabled = true;
+            llenar_grafica.Enabled = true;
         }
 
         private void chart1_Click(object sender, EventArgs e)
@@ -104,6 +104,51 @@ namespace ClimateReports
             this.Dispose();
             Reporte_Detallado RP = new Reporte_Detallado();
             RP.ShowDialog();
+        }
+
+        private void llenar_humedad_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string Query = "select hum_dato from humedad where hum_id=(select Max(hum_id) from humedad);";
+                MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+                hume_abs.Text = MyCommand2.ExecuteScalar().ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calcular_relativa_Tick(object sender, EventArgs e)
+        {
+            string hmax, hfin, hrela;
+            float hum_max, hum_fin, hum_rela;
+
+            conn.Open();
+            string Query = "select MAX(hum_dato) from humedad;";
+            MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
+            hmax = MyCommand2.ExecuteScalar().ToString();
+            conn.Close();
+
+            hfin = hume_abs.Text.ToString();
+            hum_max = float.Parse(hmax);
+            hum_fin = float.Parse(hfin);
+            hum_rela = (hum_fin / hum_max);
+            hrela = hum_rela.ToString();
+            hume_rel.Text = hrela;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

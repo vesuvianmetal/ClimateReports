@@ -223,6 +223,11 @@ namespace ClimateReports
         {
 
         }
+
+        private void txttemp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
             
 
