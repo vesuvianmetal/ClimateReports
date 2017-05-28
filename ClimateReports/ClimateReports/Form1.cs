@@ -126,7 +126,7 @@ namespace ClimateReports
             InitializeComponent();
         }
 
-      
+
         private void btncancelar_Click(object sender, EventArgs e)
         {
             ///this.dispose sirve para realizar la accion de cerrar frame al presionar el boton cancelar.
@@ -135,9 +135,9 @@ namespace ClimateReports
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-           
-            
-             }
+
+
+        }
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {
@@ -153,7 +153,7 @@ namespace ClimateReports
         {
             ///manda a llamar metodo para iniciar sesion
             iniciar_sesion();
-           
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -175,23 +175,24 @@ namespace ClimateReports
                 iniciar_sesion();
             }
 
-            
-
-          /*  else if (e.KeyCode == Keys.Space)
-            {
-                e.Handled = false;
-
-            }
-            base.OnKeyDown(e);
-    */    
-    }
 
 
-        
+            /*  else if (e.KeyCode == Keys.Space)
+              {
+                  e.Handled = false;
+
+              }
+              base.OnKeyDown(e);
+      */
+        }
+
+
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
-           
+            Form3 RP = new Form3();
+            RP.Visible = true;
+
         }
         //evento que sucedera cuando se presione el link label de ayuda
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -214,6 +215,6 @@ namespace ClimateReports
         }
     }
 }
-    
-    
+
+
 
