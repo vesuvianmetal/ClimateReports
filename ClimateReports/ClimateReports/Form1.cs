@@ -165,7 +165,7 @@ namespace ClimateReports
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Dispose();
+            
 
         }
         /// <summary>
