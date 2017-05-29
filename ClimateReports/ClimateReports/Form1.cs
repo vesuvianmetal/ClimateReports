@@ -38,18 +38,25 @@ namespace ClimateReports
             {
                 ///con.open() sirve para abrir la conexion a la base de datos.
                 conn.Open();
+                
+                
 
                 ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-                string query_inicio = "select * from usuario where USU_TIPO_USU = '" + txtusuario.Text + "' AND USU_PASS = SHA1('" + txtcontra.Text + "')";
+                string query_inicio = "select * from usuario where USU_NOMBRE = '" + txtusuario.Text + "' AND USU_PASS = SHA1('" + txtcontra.Text + "')" ;
+                
 
                 ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
                 ///para asi poder convertirlo en un comando a realizar.
                 MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+               
+               
 
                 ///string cap es la declaracion de variable que servira para capturar un valor dentro
                 ///de la base de datos.
                 string cap;
+                string prueba;
 
+                prueba = comboBox1.SelectedItem.ToString();
 
 
                 MySqlDataReader leer_exe;
@@ -69,11 +76,11 @@ namespace ClimateReports
 
                         ///se le indica a la variable cap que valor de la columna va a obtener, el (8) significa el numero
                         ///de columna que va a obtener
-                        cap = leer_exe.GetString("USU_TIPO_USU");
+                        cap = leer_exe.GetString("USU_Nombre");
 
                         ///si existe el usuario, verifica con la variable cap que tipo de usuario es
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
-                        if (cap.Equals("Administrador"))
+                        if (prueba.Equals("Administrador"))
                         {
                             Form2_admin menu = new Form2_admin();
                             menu.Show();
@@ -82,7 +89,7 @@ namespace ClimateReports
                             //IA.Show();
                             this.Hide();
                         }
-                        else if (cap.Equals("General"))
+                        else if (prueba.Equals("General"))
                         {
                             Form2 menu = new Form2();
                             menu.Show();
@@ -216,10 +223,24 @@ namespace ClimateReports
                 this.Focus();
             }
         }
+    
+
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            
+           
+         
+
+            
+
+
         }
     }
 }

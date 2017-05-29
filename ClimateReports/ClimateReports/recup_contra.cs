@@ -62,8 +62,8 @@ namespace ClimateReports
 
              conn.Open();
 
-            MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
-            string query_inicio = "Select USU_Usuario, USU_ "
+          //  MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+            //    string query_inicio = "Select USU_Usuario, USU_ ";
 
 
 
