@@ -144,7 +144,12 @@ namespace ClimateReports
 
         private void button2_Click(object sender, EventArgs e)
         {
-           Interfaz_Admin IA = new Interfaz_Admin();
+         
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Interfaz_Admin IA = new Interfaz_Admin();
             IA.Show();
             this.Hide();
         }
