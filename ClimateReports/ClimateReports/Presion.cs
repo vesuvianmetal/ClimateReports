@@ -127,5 +127,26 @@ namespace ClimateReports
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void reporteDetalladoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Reporte_Detallado rp = new Reporte_Detallado();
+            rp.Show();
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
     }
 }
