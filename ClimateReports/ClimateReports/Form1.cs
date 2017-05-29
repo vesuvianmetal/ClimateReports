@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
-//hola
+
 
 namespace ClimateReports
 {
@@ -152,7 +152,13 @@ namespace ClimateReports
         private void button3_Click_1(object sender, EventArgs e)
         {
             ///manda a llamar metodo para iniciar sesion
-            iniciar_sesion();
+            try { iniciar_sesion();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
            
         }
 
