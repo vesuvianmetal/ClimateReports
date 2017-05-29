@@ -40,7 +40,7 @@ namespace ClimateReports
                 conn.Open();
 
                 ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-                string query_inicio = "select * from usuario where USU_Usuario = '" + txtusuario.Text + "' AND USU_PASS = SHA1('" + txtcontra.Text + "')";
+                string query_inicio = "select * from usuario where USU_TIPO_USU = '" + txtusuario.Text + "' AND USU_PASS = SHA1('" + txtcontra.Text + "')";
 
                 ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
                 ///para asi poder convertirlo en un comando a realizar.
