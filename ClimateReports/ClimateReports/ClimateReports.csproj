@@ -87,12 +87,6 @@
     <Compile Include="Humedad.Designer.cs">
       <DependentUpon>Humedad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Humedad_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Humedad_admin.Designer.cs">
-      <DependentUpon>Humedad_admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaz_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,12 +99,6 @@
     <Compile Include="Presion.Designer.cs">
       <DependentUpon>Presion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presion_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presion_admin.Designer.cs">
-      <DependentUpon>Presion_admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reporte_Detallado.cs">
@@ -119,23 +107,11 @@
     <Compile Include="Reporte_Detallado.Designer.cs">
       <DependentUpon>Reporte_Detallado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reporte_Detallado_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reporte_Detallado_admin.Designer.cs">
-      <DependentUpon>Reporte_Detallado_admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reporte_General.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporte_General.Designer.cs">
       <DependentUpon>Reporte_General.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reporte_General_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reporte_General_admin.Designer.cs">
-      <DependentUpon>Reporte_General_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Temperatura.cs">
       <SubType>Form</SubType>
@@ -143,23 +119,11 @@
     <Compile Include="Temperatura.Designer.cs">
       <DependentUpon>Temperatura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Temperatura_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Temperatura_admin.Designer.cs">
-      <DependentUpon>Temperatura_admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Viento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Viento.Designer.cs">
       <DependentUpon>Viento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Viento_Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Viento_Admin.Designer.cs">
-      <DependentUpon>Viento_Admin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -176,17 +140,11 @@
     <EmbeddedResource Include="Humedad.resx">
       <DependentUpon>Humedad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Humedad_admin.resx">
-      <DependentUpon>Humedad_admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz_Admin.resx">
       <DependentUpon>Interfaz_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presion.resx">
       <DependentUpon>Presion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presion_admin.resx">
-      <DependentUpon>Presion_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -201,26 +159,14 @@
     <EmbeddedResource Include="Reporte_Detallado.resx">
       <DependentUpon>Reporte_Detallado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reporte_Detallado_admin.resx">
-      <DependentUpon>Reporte_Detallado_admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reporte_General.resx">
       <DependentUpon>Reporte_General.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reporte_General_admin.resx">
-      <DependentUpon>Reporte_General_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Temperatura.resx">
       <DependentUpon>Temperatura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Temperatura_admin.resx">
-      <DependentUpon>Temperatura_admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Viento.resx">
       <DependentUpon>Viento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Viento_Admin.resx">
-      <DependentUpon>Viento_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -95,7 +95,7 @@ namespace ClimateReports
         {
 
             //cuando se presione el boton abrira la ventana que se selecciono
-            Reporte_Detallado_admin RP = new Reporte_Detallado_admin();
+            Reporte_Detallado RP = new Reporte_Detallado();
             this.Visible = false;
             RP.Visible = true;
             // RP.Show();
@@ -109,7 +109,7 @@ namespace ClimateReports
         private void button1_Click(object sender, EventArgs e)
         {
             //cuando se presione el boton abrira la ventana que se selecciono
-            Reporte_General_admin RG = new Reporte_General_admin();
+            Reporte_General RG = new Reporte_General();
             RG.Show();
             this.Dispose();
         }
