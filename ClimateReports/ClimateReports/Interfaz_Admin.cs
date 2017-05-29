@@ -22,6 +22,7 @@ namespace ClimateReports
         //metodo para limpiar los campos
         void limpiarcampos()
         {
+            
             txtam.Clear();
             txtap.Clear();
             txtconfcon.Clear();

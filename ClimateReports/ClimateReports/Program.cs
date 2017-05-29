@@ -16,7 +16,7 @@ namespace ClimateReports
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2_admin());
+            Application.Run(new Form1());
         }
     }
 }
