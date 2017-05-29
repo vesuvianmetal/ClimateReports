@@ -277,5 +277,10 @@ namespace ClimateReports
             f2a.Show();
             this.Dispose();
         }
+
+        private void combousuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

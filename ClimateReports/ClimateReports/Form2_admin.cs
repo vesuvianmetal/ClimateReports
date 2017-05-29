@@ -44,21 +44,14 @@ namespace ClimateReports
 
                 ///antes de graficar se le borran los puntos a la grafica ya que cuando se actualiza se vuelve a realizar la misma operacion
                 ///de graficacion
-                chart1.Series["Humedad"].Points.Clear();
-                chart1.Series["Temperatura"].Points.Clear();
-                chart1.Series["Presión"].Points.Clear();
-                chart1.Series["Viento"].Points.Clear();
-
+           
                 //si la lectura de los datos de la bd es correcta entonces comenzara a graficar
                 while (leergrafica.Read())
                 {
 
                     //con estos valores se les asigna los datos a cada una de las lineas de dispercion desde la base de datos segun sus valores
                     //y las tablas
-                    this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
-                    this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
-                    this.chart1.Series["Presión"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
-                    this.chart1.Series["Viento"].Points.AddXY(leergrafica.GetString("vie_nombre_sensor"), leergrafica.GetFloat("vie_dato"));
+               
                 }
 
 
@@ -139,12 +132,17 @@ namespace ClimateReports
         {
 
             //activa el timer que tiene un intervalo de 10 segundos
-            timer1.Enabled = true;
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           Interfaz_Admin IA = new Interfaz_Admin();
+         
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Interfaz_Admin IA = new Interfaz_Admin();
             IA.Show();
             this.Hide();
         }

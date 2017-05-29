@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ClimateReports
 {
-    public partial class Form3 : Form
+    public partial class recup_contra : Form
     {
         MySqlConnection conn = ConexionBD.ObtenerConexion();
         //Estas variables seran las que guarden los datos que 
@@ -25,7 +25,10 @@ namespace ClimateReports
         private MailMessage mail;
         private Attachment Data;
 
-        public Form3()
+
+
+
+        public recup_contra()
         {
             InitializeComponent();
             ConexionBD.ObtenerConexion();
@@ -33,15 +36,44 @@ namespace ClimateReports
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+           string  usu = usuario.Text;
+           string email = correo.Text;
+
+           
+
           try
             {
+
+             conn.Open();
+
+          //  MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
+            //    string query_inicio = "Select USU_Usuario, USU_ ";
+
+
+
                 //Revisa si es diferente de vacio, de serlo hace lo que tiene dentro
                 //el if.
-                if (!(textBox1.Text.Trim() == ""))
+                if (!(correo.Text.Trim() == ""))
                 {
-                    To = textBox1.Text;
+                    To = correo.Text;
                     //Subject = textBox3.Text;
-                    Body = textBox2.Text;
+                    Body = usuario.Text;
 
                     mail = new MailMessage();
                     mail.To.Add(new MailAddress(this.To));
@@ -70,6 +102,19 @@ namespace ClimateReports
             {
                 MessageBox.Show("Algo salio mal");
             }
+
+
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recup_contra_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

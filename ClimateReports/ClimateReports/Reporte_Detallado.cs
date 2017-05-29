@@ -273,12 +273,12 @@ namespace ClimateReports
         {
             Form1 cerrarsesion = new Form1();
             cerrarsesion.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
 
             //abre el login
             Form2 F2 = new Form2();
@@ -309,6 +309,11 @@ namespace ClimateReports
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
