@@ -75,11 +75,11 @@ namespace ClimateReports
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
                         if (cap.Equals("Administrador"))
                         {
-                            Form2 menu = new Form2();
+                            Form2_admin menu = new Form2_admin();
                             menu.Show();
 
-                            Interfaz_Admin IA = new Interfaz_Admin();
-                            IA.Show();
+                           // Interfaz_Admin IA = new Interfaz_Admin();
+                            //IA.Show();
                             this.Hide();
                         }
                         else if (cap.Equals("General"))
@@ -152,7 +152,14 @@ namespace ClimateReports
         private void button3_Click_1(object sender, EventArgs e)
         {
             ///manda a llamar metodo para iniciar sesion
-            iniciar_sesion();
+            try
+            {
+                iniciar_sesion();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
 
         }
 
