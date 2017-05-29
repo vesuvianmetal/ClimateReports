@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ClimateReports
 {
-    public partial class Form3 : Form
+    public partial class recup_contra : Form
     {
         MySqlConnection conn = ConexionBD.ObtenerConexion();
         //Estas variables seran las que guarden los datos que 
@@ -25,7 +25,7 @@ namespace ClimateReports
         private MailMessage mail;
         private Attachment Data;
 
-        public Form3()
+        public recup_contra()
         {
             InitializeComponent();
             ConexionBD.ObtenerConexion();

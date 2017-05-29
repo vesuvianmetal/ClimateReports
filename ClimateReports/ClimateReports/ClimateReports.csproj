@@ -75,11 +75,11 @@
     <Compile Include="Form2_admin.Designer.cs">
       <DependentUpon>Form2_admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="recup_contra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="recup_contra.Designer.cs">
+      <DependentUpon>recup_contra.cs</DependentUpon>
     </Compile>
     <Compile Include="Humedad.cs">
       <SubType>Form</SubType>
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="Form2_admin.resx">
       <DependentUpon>Form2_admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="recup_contra.resx">
+      <DependentUpon>recup_contra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Humedad.resx">
       <DependentUpon>Humedad.cs</DependentUpon>

@@ -198,7 +198,7 @@ namespace ClimateReports
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form3 RP = new Form3();
+            recup_contra RP = new recup_contra();
             RP.Visible = true;
 
         }
