@@ -54,9 +54,12 @@ namespace ClimateReports
 
         private void Reporte_General_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            
+           
+
             Form2_admin f2a = new Form2_admin();
             f2a.Show();
+            this.Dispose();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
