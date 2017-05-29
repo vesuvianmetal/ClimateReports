@@ -8,17 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
 
-
-
 namespace ClimateReports
 {
-    public partial class Presion : Form
+    public partial class Presion_admin : Form
     {
-
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
@@ -30,7 +26,7 @@ namespace ClimateReports
         {
 
 
-            
+
             //consulta que se desea realizar a la base de datos
             string query_grafica = "select pre_dato,pre_nombre_sensor from presion";
 
@@ -72,44 +68,33 @@ namespace ClimateReports
                 MessageBox.Show(ex.Message);
             }
 
-           //cierra la conexion a la base de datos
+            //cierra la conexion a la base de datos
             conn.Close();
         }
 
-        public Presion()
+        public Presion_admin()
         {
             InitializeComponent();
         }
 
-        private void btnimprimir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void llenar_grafica_Tick(object sender, EventArgs e)
         {
 
             //cuando el timer hace tick(en este caso es de 10 segundos) se actualizara la grafica 
             llenargrafica();
         }
 
-        private void Presion_Load(object sender, EventArgs e)
+        private void Presion_admin_Load(object sender, EventArgs e)
         {
-
             //se activa el timer
             llenar_grafica.Enabled = true;
         }
 
-        private void btnenviar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Presion_FormClosed(object sender, FormClosedEventArgs e)
+        private void Presion_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            Reporte_Detallado RP = new Reporte_Detallado();
-            RP.Show();
+            Reporte_Detallado_admin RPa = new Reporte_Detallado_admin();
+            RPa.Show();
         }
 
         private void llenar_presion_Tick(object sender, EventArgs e)

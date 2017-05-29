@@ -8,14 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
 
-
 namespace ClimateReports
 {
-    public partial class Humedad : Form
+    public partial class Humedad_admin : Form
     {
 
         /// <summary>
@@ -71,39 +69,28 @@ namespace ClimateReports
             conn.Close();
 
         }
-
-        public Humedad()
+        public Humedad_admin()
         {
             InitializeComponent();
         }
 
-        private void btnimprimir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void llenar_grafica_Tick(object sender, EventArgs e)
         {
             //cada que el timer haga un tick (en este caso es de 10 segundos) se realizara la funcion de llenar grafica
             llenargrafica();
         }
 
-        private void Humedad_Load(object sender, EventArgs e)
+        private void Humedad_admin_Load(object sender, EventArgs e)
         {
             //activa el timer
             llenar_grafica.Enabled = true;
         }
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Humedad_FormClosed(object sender, FormClosedEventArgs e)
+        private void Humedad_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            Reporte_Detallado RP = new Reporte_Detallado();
-            RP.Show();
+            Reporte_Detallado_admin RPa = new Reporte_Detallado_admin();
+            RPa.Show();
         }
 
         private void llenar_humedad_Tick(object sender, EventArgs e)
@@ -120,11 +107,6 @@ namespace ClimateReports
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void calcular_relativa_Tick(object sender, EventArgs e)
@@ -144,11 +126,6 @@ namespace ClimateReports
             hum_rela = (hum_fin / hum_max);
             hrela = hum_rela.ToString();
             hume_rel.Text = hrela;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

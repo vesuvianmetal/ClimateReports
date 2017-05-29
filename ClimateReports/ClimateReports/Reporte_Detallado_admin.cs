@@ -8,26 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
 
 namespace ClimateReports
 {
-    public partial class Reporte_Detallado : Form
+    public partial class Reporte_Detallado_admin : Form
     {
-
-
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
         MySqlConnection conn = ConexionBD.ObtenerConexion();
-      
+
 
         //metodo para llenar la grafica
         void llenargrafica()
         {
-         
+
             //consulta que se quiere hacer la base de datos  
             string query_grafica = "select distinct hum_nombre_sensor,hum_dato,temp_nombre_sensor,temp_dato,pre_nombre_sensor,pre_dato,vie_nombre_sensor,vie_dato from viento,presion,temperatura,humedad where hum_id=pre_id and temp_id=vie_id and hum_id=temp_id and pre_id=vie_id ;";
 
@@ -57,7 +54,7 @@ namespace ClimateReports
                 {
                     ///se le declaran los valores que serviran para X y Y dentro de la grafica junto con los datos dentro de la base
                     ///de datos
-                   
+
                     this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
                     this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
                     this.chart1.Series["Presión"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
@@ -77,25 +74,15 @@ namespace ClimateReports
             //cierra la conexion a la base de datos
             conn.Close();
 
-            
+
         }
 
-        public Reporte_Detallado()
+        public Reporte_Detallado_admin()
         {
             InitializeComponent();
-           
         }
 
-        //funcion que pasara cuando se presione el menustrip con el nombre de temperatura
-        private void tempraturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //muestra la ventana de temperatura
-            Temperatura T = new Temperatura();
-            T.Show();
-            
-        }
-
-        private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
+        private void Reporte_Detallado_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
 
@@ -103,76 +90,18 @@ namespace ClimateReports
             F2.Show();
         }
 
-        //funcion que pasara cuando se presione el menustrip con el nombre de viento
-
-        private void vientoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Reporte_Detallado_admin_Load(object sender, EventArgs e)
         {
-            //muestra la ventana de viento
-            Viento v = new Viento();
-            v.Show();
-        }
-
-        //funcion que pasara cuando se presione el menustrip con el nombre de humedad
-
-        private void humedadToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            //muestra la ventana de humedad
-            Humedad H = new Humedad();
-            H.Show();
-        }
-
-
-        //funcion que pasara cuando se presione el menustrip con el nombre de presion
-
-        private void presionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            //muestra la ventana de presion
-            Presion P = new Presion();
-            P.Show();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtviento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Reporte_Detallado_Load(object sender, EventArgs e)
-        {
-
             //activa el timer
             llenar_grafica.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           //manda a llamar el metodo de graficar cada 10 segundos
+            //manda a llamar el metodo de graficar cada 10 segundos
             llenargrafica();
         }
 
-        
-        
         private void button1_Click(object sender, EventArgs e)
         {
             //abre la ventana de temperatura
@@ -269,7 +198,7 @@ namespace ClimateReports
             }
         }
 
-        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 cerrarsesion = new Form1();
             cerrarsesion.Show();
@@ -281,36 +210,8 @@ namespace ClimateReports
             this.Hide();
 
             //abre el login
-            Form2 F2 = new Form2();
-            F2.Show();
-        }
-
-        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            //Form1 cerrarsesion = new Form1();
-            //cerrarsesion.ShowDialog();
-            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txttemp_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
+            Form2_admin F2a = new Form2_admin();
+            F2a.Show();
         }
     }
 }

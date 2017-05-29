@@ -13,8 +13,9 @@ using MySql.Data.MySqlClient;
 
 namespace ClimateReports
 {
-    public partial class Reporte_General : Form
+    public partial class Reporte_General_admin : Form
     {
+
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
@@ -32,7 +33,7 @@ namespace ClimateReports
             DataTable dtDatos = new DataTable();
 
             // Se crea un MySqlAdapter para obtener los datos de la base
-            MySqlDataAdapter mdaDatos = new MySqlDataAdapter(querytablageneral,conn);
+            MySqlDataAdapter mdaDatos = new MySqlDataAdapter(querytablageneral, conn);
 
             // Con la información del adaptador se rellena el DataTable
             mdaDatos.Fill(dtDatos);
@@ -44,78 +45,42 @@ namespace ClimateReports
             conn.Close();
         }
 
-        
-
-
-
-        public Reporte_General()
+        public Reporte_General_admin()
         {
             InitializeComponent();
-
             //manda a llamar el metodo para llenar tabla desde en inicio
             filltabla();
         }
 
-        private void Reporte_General_FormClosed(object sender, FormClosedEventArgs e)
+        private void Reporte_General_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
-        }
-
-        private void btnimprimir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            Form2_admin f2a = new Form2_admin();
+            f2a.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
             //obtiene la coleccion que contiene todas las filas
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
-            
+
             ///asigna los valores de los registros a los textbox.
             txthumedad.Text = row.Cells[0].Value.ToString();
             txtpresion.Text = row.Cells[1].Value.ToString();
             txttemp.Text = row.Cells[2].Value.ToString();
             txtviento.Text = row.Cells[3].Value.ToString();
-           
-        }
-
-        private void txthumedad_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void obtener_humedad_Tick(object sender, EventArgs e)
         {
             try
             {
-             conn.Open();
+                conn.Open();
                 string Query = "select hum_dato from humedad where hum_id=(select Max(hum_id) from humedad) ;";
                 MySqlCommand MyCommand1 = new MySqlCommand(Query, conn);
                 txthumedad.Text = MyCommand1.ExecuteScalar().ToString();
-              conn.Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -127,11 +92,11 @@ namespace ClimateReports
         {
             try
             {
-               conn.Open();
+                conn.Open();
                 string Query = "select pre_dato from presion where pre_id=(select Max(pre_id) from presion) ;";
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
                 txtpresion.Text = MyCommand2.ExecuteScalar().ToString();
-               conn.Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -143,11 +108,11 @@ namespace ClimateReports
         {
             try
             {
-               conn.Open();
+                conn.Open();
                 string Query = "select temp_dato from temperatura where temp_id=(select Max(temp_id) from temperatura) ; ";
                 MySqlCommand MyCommand3 = new MySqlCommand(Query, conn);
                 txttemp.Text = MyCommand3.ExecuteScalar().ToString();
-               conn.Close();
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -159,7 +124,7 @@ namespace ClimateReports
         {
             try
             {
-               conn.Open();
+                conn.Open();
                 string Query = "select vie_dato from viento where vie_id=(select Max(vie_id) from viento) ;";
                 MySqlCommand MyCommand4 = new MySqlCommand(Query, conn);
                 txtviento.Text = MyCommand4.ExecuteScalar().ToString();
@@ -171,12 +136,7 @@ namespace ClimateReports
             }
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 cerrarsession = new Form1();
             cerrarsession.Show();
@@ -188,49 +148,8 @@ namespace ClimateReports
             this.Dispose();
 
             //abre el login
-            Form2 F2 = new Form2();
-            F2.Show();
-        }
-
-        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           // this.Dispose();
-
-            //abre el login
-            //Form1 F1 = new Form1();
-            //F1.Show();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Reporte_General_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtpresion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txttemp_TextChanged(object sender, EventArgs e)
-        {
-
+            Form2_admin F2a= new Form2_admin();
+            F2a.Show();
         }
     }
-            
-
 }

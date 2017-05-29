@@ -7,16 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 ///Using Msql.Data.MysqlClient sirve para importar las librerias para estableces la conexion a mysql
 using MySql.Data.MySqlClient;
 
 namespace ClimateReports
 {
-    public partial class Viento : Form
+    public partial class Viento_Admin : Form
     {
-
-
         /// <summary>
         /// conn = declaracion de variable para obtener conexion a la base de datos 
         /// </summary>
@@ -71,17 +68,12 @@ namespace ClimateReports
             conn.Close();
         }
 
-        public Viento()
+        public Viento_Admin()
         {
             InitializeComponent();
         }
 
-        private void btnimprimir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Viento_Load(object sender, EventArgs e)
+        private void Viento_Admin_Load(object sender, EventArgs e)
         {
             //activa el timer
             timer1.Enabled = true;
@@ -93,11 +85,11 @@ namespace ClimateReports
             llenargrafica();
         }
 
-        private void Viento_FormClosed(object sender, FormClosedEventArgs e)
+        private void Viento_Admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Dispose();
-            Reporte_Detallado RP = new Reporte_Detallado();
-            RP.Show();
+            Reporte_Detallado_admin RPa = new Reporte_Detallado_admin();
+            RPa.Show();
         }
     }
 }
