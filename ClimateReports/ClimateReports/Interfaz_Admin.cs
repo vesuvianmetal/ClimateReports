@@ -245,7 +245,7 @@ namespace ClimateReports
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 cerrarsession = new Form1();
-            cerrarsession.ShowDialog();
+            cerrarsession.Show();
             this.Hide();
            
         }
@@ -263,6 +263,18 @@ namespace ClimateReports
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Interfaz_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Interfaz_Admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form2_admin f2a = new Form2_admin();
+            f2a.Show();
+            this.Dispose();
         }
     }
 }

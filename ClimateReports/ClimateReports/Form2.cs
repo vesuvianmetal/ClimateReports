@@ -163,5 +163,30 @@ namespace ClimateReports
         {
 
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void proporcionarUnaSugerenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void soporteTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

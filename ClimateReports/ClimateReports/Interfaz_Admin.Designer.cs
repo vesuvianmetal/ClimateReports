@@ -526,6 +526,8 @@
             this.Name = "Interfaz_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interfaz_Admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Interfaz_Admin_FormClosed);
+            this.Load += new System.EventHandler(this.Interfaz_Admin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
