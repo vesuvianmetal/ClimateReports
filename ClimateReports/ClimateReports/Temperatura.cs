@@ -182,7 +182,7 @@ namespace ClimateReports
         {
             Form1 cerrarsession = new Form1();
             cerrarsession.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -197,9 +197,21 @@ namespace ClimateReports
 
         private void Temperatura_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
+        }
+
+        private void reporteDetalladoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             this.Dispose();
-            Reporte_Detallado RP = new Reporte_Detallado();
-            RP.ShowDialog();
+            Reporte_Detallado rp = new Reporte_Detallado();
+            rp.Show();
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Form2 f2 = new Form2();
+            f2.Show();
         }
     }
 }
