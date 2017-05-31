@@ -500,6 +500,7 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
             this.Name = "Reporte_Detallado_admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte_Detallado_admin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reporte_Detallado_admin_FormClosed);
             this.Load += new System.EventHandler(this.Reporte_Detallado_admin_Load);

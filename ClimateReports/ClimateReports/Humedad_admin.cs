@@ -89,7 +89,7 @@ namespace ClimateReports
         private void Humedad_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Dispose();
-            Reporte_Detallado_admin RP = new Reporte_Detallado_admin();
+            Reporte_Detallado_admin RPa = new Reporte_Detallado_admin();
             RPa.Show();
         }
 
@@ -150,4 +150,4 @@ namespace ClimateReports
         }
     }
     }
-}
+
