@@ -54,9 +54,9 @@ namespace ClimateReports
                 ///string cap es la declaracion de variable que servira para capturar un valor dentro
                 ///de la base de datos.
                 string cap;
-                string prueba;
+                //string prueba;
 
-                prueba = comboBox1.SelectedItem.ToString();
+             //   prueba = comboBox1.SelectedItem.ToString();
 
 
                 MySqlDataReader leer_exe;
@@ -76,11 +76,11 @@ namespace ClimateReports
 
                         ///se le indica a la variable cap que valor de la columna va a obtener, el (8) significa el numero
                         ///de columna que va a obtener
-                        cap = leer_exe.GetString("USU_Nombre");
+                        cap = leer_exe.GetString("USU_Tipo_Usu");
 
                         ///si existe el usuario, verifica con la variable cap que tipo de usuario es
                         ///y dependiendo el usuario, le muestra la ventana a la que tiene permisos de acceder
-                        if (prueba.Equals("Administrador"))
+                        if (cap.Equals("Administrador"))
                         {
                             Form2_admin menu = new Form2_admin();
                             menu.Show();
@@ -89,7 +89,7 @@ namespace ClimateReports
                             //IA.Show();
                             this.Hide();
                         }
-                        else if (prueba.Equals("General"))
+                        else if (cap.Equals("General"))
                         {
                             Form2 menu = new Form2();
                             menu.Show();

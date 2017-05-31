@@ -45,6 +45,8 @@ namespace ClimateReports
             conn.Close();
         }
 
+
+
         public Reporte_General_admin()
         {
             InitializeComponent();
@@ -54,17 +56,13 @@ namespace ClimateReports
 
         private void Reporte_General_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
-           
-
-            Form2_admin f2a = new Form2_admin();
-            f2a.Show();
             this.Dispose();
+            Form2_admin f2admin = new Form2_admin();
+            f2admin.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
             //obtiene la coleccion que contiene todas las filas
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
@@ -143,7 +141,7 @@ namespace ClimateReports
         {
             Form1 cerrarsession = new Form1();
             cerrarsession.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -151,8 +149,8 @@ namespace ClimateReports
             this.Dispose();
 
             //abre el login
-            Form2_admin F2a= new Form2_admin();
-            F2a.Show();
+            Form2_admin Form2admin = new Form2_admin();
+            Form2admin.Show();
         }
     }
 }

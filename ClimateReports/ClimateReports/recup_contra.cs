@@ -23,7 +23,7 @@ namespace ClimateReports
         private string Body;
 
         private MailMessage mail;
-        private Attachment Data;
+       // private Attachment Data;
 
 
 

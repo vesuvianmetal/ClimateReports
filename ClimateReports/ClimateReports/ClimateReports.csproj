@@ -76,6 +76,18 @@
     <Compile Include="Form2_admin.Designer.cs">
       <DependentUpon>Form2_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Humedad_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Humedad_admin.Designer.cs">
+      <DependentUpon>Humedad_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presion_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presion_admin.Designer.cs">
+      <DependentUpon>Presion_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="recup_contra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,11 +120,23 @@
     <Compile Include="Reporte_Detallado.Designer.cs">
       <DependentUpon>Reporte_Detallado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_Detallado_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Detallado_admin.Designer.cs">
+      <DependentUpon>Reporte_Detallado_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reporte_General.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporte_General.Designer.cs">
       <DependentUpon>Reporte_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General_admin.Designer.cs">
+      <DependentUpon>Reporte_General_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Temperatura.cs">
       <SubType>Form</SubType>
@@ -120,11 +144,23 @@
     <Compile Include="Temperatura.Designer.cs">
       <DependentUpon>Temperatura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Temperatura_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temperatura_admin.Designer.cs">
+      <DependentUpon>Temperatura_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Viento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Viento.Designer.cs">
       <DependentUpon>Viento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viento_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viento_admin.Designer.cs">
+      <DependentUpon>Viento_admin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -134,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2_admin.resx">
       <DependentUpon>Form2_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Humedad_admin.resx">
+      <DependentUpon>Humedad_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presion_admin.resx">
+      <DependentUpon>Presion_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="recup_contra.resx">
       <DependentUpon>recup_contra.cs</DependentUpon>
@@ -160,14 +202,26 @@
     <EmbeddedResource Include="Reporte_Detallado.resx">
       <DependentUpon>Reporte_Detallado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Detallado_admin.resx">
+      <DependentUpon>Reporte_Detallado_admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reporte_General.resx">
       <DependentUpon>Reporte_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General_admin.resx">
+      <DependentUpon>Reporte_General_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Temperatura.resx">
       <DependentUpon>Temperatura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Temperatura_admin.resx">
+      <DependentUpon>Temperatura_admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Viento.resx">
       <DependentUpon>Viento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viento_admin.resx">
+      <DependentUpon>Viento_admin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
