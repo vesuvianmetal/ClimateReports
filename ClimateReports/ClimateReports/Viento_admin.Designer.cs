@@ -53,10 +53,12 @@
             // radiomilla
             // 
             this.radiomilla.AutoSize = true;
-            this.radiomilla.Location = new System.Drawing.Point(318, 158);
+            this.radiomilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiomilla.ForeColor = System.Drawing.Color.White;
+            this.radiomilla.Location = new System.Drawing.Point(476, 115);
             this.radiomilla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radiomilla.Name = "radiomilla";
-            this.radiomilla.Size = new System.Drawing.Size(62, 21);
+            this.radiomilla.Size = new System.Drawing.Size(107, 36);
             this.radiomilla.TabIndex = 27;
             this.radiomilla.TabStop = true;
             this.radiomilla.Text = "ML/H";
@@ -65,10 +67,12 @@
             // radiokilo
             // 
             this.radiokilo.AutoSize = true;
-            this.radiokilo.Location = new System.Drawing.Point(316, 111);
+            this.radiokilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiokilo.ForeColor = System.Drawing.Color.White;
+            this.radiokilo.Location = new System.Drawing.Point(475, 72);
             this.radiokilo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radiokilo.Name = "radiokilo";
-            this.radiokilo.Size = new System.Drawing.Size(63, 21);
+            this.radiokilo.Size = new System.Drawing.Size(110, 36);
             this.radiokilo.TabIndex = 26;
             this.radiokilo.TabStop = true;
             this.radiokilo.Text = "KM/H";
@@ -76,7 +80,7 @@
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(580, 154);
+            this.btnenviar.Location = new System.Drawing.Point(580, 217);
             this.btnenviar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(75, 27);
@@ -86,7 +90,7 @@
             // 
             // btnimprimir
             // 
-            this.btnimprimir.Location = new System.Drawing.Point(476, 154);
+            this.btnimprimir.Location = new System.Drawing.Point(476, 217);
             this.btnimprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnimprimir.Name = "btnimprimir";
             this.btnimprimir.Size = new System.Drawing.Size(75, 27);
@@ -131,7 +135,7 @@
             // 
             // txtmed
             // 
-            this.txtmed.Location = new System.Drawing.Point(167, 157);
+            this.txtmed.Location = new System.Drawing.Point(302, 167);
             this.txtmed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmed.Name = "txtmed";
             this.txtmed.Size = new System.Drawing.Size(100, 22);
@@ -139,7 +143,7 @@
             // 
             // txtmin
             // 
-            this.txtmin.Location = new System.Drawing.Point(167, 115);
+            this.txtmin.Location = new System.Drawing.Point(302, 125);
             this.txtmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmin.Name = "txtmin";
             this.txtmin.Size = new System.Drawing.Size(100, 22);
@@ -147,7 +151,7 @@
             // 
             // txtmax
             // 
-            this.txtmax.Location = new System.Drawing.Point(167, 64);
+            this.txtmax.Location = new System.Drawing.Point(302, 74);
             this.txtmax.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmax.Name = "txtmax";
             this.txtmax.Size = new System.Drawing.Size(100, 22);
@@ -156,27 +160,33 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(26, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 17);
+            this.label4.Size = new System.Drawing.Size(251, 32);
             this.label4.TabIndex = 17;
             this.label4.Text = "Velocidad Media:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 17);
+            this.label3.Size = new System.Drawing.Size(266, 32);
             this.label3.TabIndex = 16;
             this.label3.Text = "Velocidad Minima:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(23, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 17);
+            this.label2.Size = new System.Drawing.Size(273, 32);
             this.label2.TabIndex = 15;
             this.label2.Text = "Velocidad Maxima:";
             // 
@@ -184,6 +194,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(20, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 32);
@@ -199,6 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(675, 578);
             this.Controls.Add(this.radiomilla);
             this.Controls.Add(this.radiokilo);
@@ -216,7 +228,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Viento_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Viento_admin";
+            this.Text = "Viento Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Viento_admin_FormClosed);
             this.Load += new System.EventHandler(this.Viento_admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartvientos)).EndInit();

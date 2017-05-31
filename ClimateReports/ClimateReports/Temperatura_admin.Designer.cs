@@ -510,7 +510,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Temperatura_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Temperatura_admin";
+            this.Text = "Temperatura Administrador";
             this.Load += new System.EventHandler(this.Temperatura_admin_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

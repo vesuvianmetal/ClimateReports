@@ -431,7 +431,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Humedad_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Humedad_admin";
+            this.Text = "Humedad Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Humedad_admin_FormClosed);
             this.Load += new System.EventHandler(this.Humedad_admin_Load);
             this.panel2.ResumeLayout(false);

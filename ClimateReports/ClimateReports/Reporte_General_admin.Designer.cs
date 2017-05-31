@@ -504,7 +504,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Reporte_General_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte_General_admin";
+            this.Text = "Reporte General Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reporte_General_admin_FormClosed);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

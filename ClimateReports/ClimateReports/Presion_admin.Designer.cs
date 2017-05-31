@@ -387,7 +387,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Presion_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Presion_admin";
+            this.Text = "Presion Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Presion_admin_FormClosed);
             this.Load += new System.EventHandler(this.Presion_admin_Load);
             this.menuStrip1.ResumeLayout(false);
