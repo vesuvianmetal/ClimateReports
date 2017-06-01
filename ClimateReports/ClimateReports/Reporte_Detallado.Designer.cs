@@ -157,7 +157,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 16);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Presion:";
+            this.label5.Text = "Presión:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
@@ -220,7 +220,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(62, 20);
             this.label11.TabIndex = 32;
-            this.label11.Text = "Presion";
+            this.label11.Text = "Presión";
             // 
             // chart1
             // 

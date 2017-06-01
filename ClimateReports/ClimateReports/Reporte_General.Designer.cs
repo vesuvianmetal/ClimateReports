@@ -159,7 +159,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 38;
-            this.label8.Text = "Presion:";
+            this.label8.Text = "Presión:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9

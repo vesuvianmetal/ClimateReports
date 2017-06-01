@@ -81,7 +81,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "[ Presion ]";
+            this.label1.Text = "[ Presión ]";
             // 
             // label2
             // 
@@ -93,7 +93,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Presion Atmosferica:";
+            this.label2.Text = "Presión Atmosférica:";
             // 
             // respuesta_pre
             // 
