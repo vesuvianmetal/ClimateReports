@@ -66,9 +66,10 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 16);
+            this.label2.Size = new System.Drawing.Size(227, 16);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Ingresa  Usuario y Correro Electronico";
+            this.label2.Text = "Ingresa Usuario y Correo Electrónico";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // correo
             // 
@@ -106,9 +107,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(60, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
+            this.label4.Size = new System.Drawing.Size(119, 16);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Correro Electronico";
+            this.label4.Text = "Correo Electrónico";
             // 
             // label5
             // 
@@ -117,9 +118,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(3, 225);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 16);
+            this.label5.Size = new System.Drawing.Size(179, 16);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Confirmar Correro Electronico";
+            this.label5.Text = "Confirmar Correo Electrónico";
             // 
             // label6
             // 
