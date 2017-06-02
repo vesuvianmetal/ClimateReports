@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +39,11 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtcontra = new System.Windows.Forms.TextBox();
+            this.usuario = new System.Windows.Forms.ToolTip(this.components);
+            this.Contraseña = new System.Windows.Forms.ToolTip(this.components);
+            this.BotonL = new System.Windows.Forms.ToolTip(this.components);
+            this.RAyuda = new System.Windows.Forms.ToolTip(this.components);
+            this.Contra = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +57,7 @@
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(192, 37);
             this.txtusuario.TabIndex = 4;
+            this.usuario.SetToolTip(this.txtusuario, "Ingrese Nombre de Usuario.");
             this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
             // button1
@@ -100,6 +107,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(81, 36);
             this.button3.TabIndex = 12;
+            this.BotonL.SetToolTip(this.button3, "Enter");
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
@@ -118,8 +126,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Controls.Add(this.linkLabel1);
+            this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Controls.Add(this.txtcontra);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
@@ -127,10 +135,11 @@
             this.panel1.Controls.Add(this.txtusuario);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(51, 201);
+            this.panel1.Location = new System.Drawing.Point(47, 203);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 284);
+            this.panel1.Size = new System.Drawing.Size(337, 284);
             this.panel1.TabIndex = 14;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // linkLabel2
             // 
@@ -143,13 +152,14 @@
             this.linkLabel2.TabIndex = 17;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Ayuda";
+            this.RAyuda.SetToolTip(this.linkLabel2, "Mesa De Ayuda.");
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(9, 236);
+            this.linkLabel1.Location = new System.Drawing.Point(10, 227);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(114, 13);
@@ -168,6 +178,7 @@
             this.txtcontra.Name = "txtcontra";
             this.txtcontra.Size = new System.Drawing.Size(192, 37);
             this.txtcontra.TabIndex = 5;
+            this.Contraseña.SetToolTip(this.txtcontra, "Ingrese Su Contraseña.");
             this.txtcontra.UseSystemPasswordChar = true;
             this.txtcontra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcontra_KeyDown);
             this.txtcontra.Leave += new System.EventHandler(this.txtcontra_Leave);
@@ -177,13 +188,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ClimateReports.Properties.Resources.fondologinnn;
-            this.ClientSize = new System.Drawing.Size(455, 499);
+            this.ClientSize = new System.Drawing.Size(436, 499);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Contra.SetToolTip(this, "Recuperar Contraseña");
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -203,6 +215,11 @@
         private System.Windows.Forms.TextBox txtcontra;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.ToolTip usuario;
+        private System.Windows.Forms.ToolTip BotonL;
+        private System.Windows.Forms.ToolTip RAyuda;
+        private System.Windows.Forms.ToolTip Contraseña;
+        private System.Windows.Forms.ToolTip Contra;
     }
 }
 
