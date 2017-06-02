@@ -71,6 +71,10 @@ namespace ClimateReports
                 //el if.
                 if (!(correo.Text.Trim() == ""))
                 {
+
+                    string query_inicio = "select USU_Email , USU_PASS  from usuario where USU_nombre = "+ usu + " and USU_EMAIL= "+email+"";
+
+
                     To = correo.Text;
                     //Subject = textBox3.Text;
                     Body = usuario.Text;
