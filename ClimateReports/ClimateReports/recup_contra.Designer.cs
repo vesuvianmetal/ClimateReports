@@ -42,7 +42,7 @@
             // 
             // confirm
             // 
-            this.confirm.Location = new System.Drawing.Point(192, 224);
+            this.confirm.Location = new System.Drawing.Point(192, 210);
             this.confirm.Multiline = true;
             this.confirm.Name = "confirm";
             this.confirm.Size = new System.Drawing.Size(265, 25);
@@ -73,7 +73,7 @@
             // 
             // correo
             // 
-            this.correo.Location = new System.Drawing.Point(192, 172);
+            this.correo.Location = new System.Drawing.Point(192, 164);
             this.correo.Multiline = true;
             this.correo.Name = "correo";
             this.correo.Size = new System.Drawing.Size(265, 25);
@@ -105,7 +105,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(60, 172);
+            this.label4.Location = new System.Drawing.Point(64, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 16);
             this.label4.TabIndex = 17;
@@ -116,7 +116,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 225);
+            this.label5.Location = new System.Drawing.Point(7, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 16);
             this.label5.TabIndex = 18;
@@ -127,7 +127,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(283, 284);
+            this.label6.Location = new System.Drawing.Point(337, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 16);
             this.label6.TabIndex = 19;
@@ -141,7 +141,7 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.carta2;
-            this.button5.Location = new System.Drawing.Point(192, 254);
+            this.button5.Location = new System.Drawing.Point(246, 250);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 76);
