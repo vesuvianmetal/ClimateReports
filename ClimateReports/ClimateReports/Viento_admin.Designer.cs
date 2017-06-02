@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -199,18 +199,18 @@
             // 
             // chartvientos
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartvientos.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartvientos.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartvientos.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartvientos.Legends.Add(legend2);
             this.chartvientos.Location = new System.Drawing.Point(269, 274);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(2);
             this.chartvientos.Name = "chartvientos";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Viento";
-            this.chartvientos.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Viento";
+            this.chartvientos.Series.Add(series2);
             this.chartvientos.Size = new System.Drawing.Size(405, 173);
             this.chartvientos.TabIndex = 84;
             this.chartvientos.Text = "chart1";
@@ -352,7 +352,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(746, 24);
             this.menuStrip1.TabIndex = 90;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -444,7 +444,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(753, 469);
+            this.ClientSize = new System.Drawing.Size(746, 469);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
