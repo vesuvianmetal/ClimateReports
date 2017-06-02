@@ -510,6 +510,7 @@
             this.Font = new System.Drawing.Font("Symbol", 8.25F);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Reporte_Detallado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Detallado";

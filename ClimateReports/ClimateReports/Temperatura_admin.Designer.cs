@@ -204,7 +204,7 @@
             // 
             this.respuestatmedia.Enabled = false;
             this.respuestatmedia.Location = new System.Drawing.Point(424, 92);
-            this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.respuestatmedia.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmedia.Multiline = true;
             this.respuestatmedia.Name = "respuestatmedia";
             this.respuestatmedia.ReadOnly = true;
@@ -228,7 +228,7 @@
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(424, 52);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -252,7 +252,7 @@
             // 
             this.respuestatmin.Enabled = false;
             this.respuestatmin.Location = new System.Drawing.Point(164, 98);
-            this.respuestatmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.respuestatmin.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmin.Multiline = true;
             this.respuestatmin.Name = "respuestatmin";
             this.respuestatmin.ReadOnly = true;
@@ -292,7 +292,7 @@
             this.radiofar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiofar.ForeColor = System.Drawing.Color.White;
             this.radiofar.Location = new System.Drawing.Point(16, 15);
-            this.radiofar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiofar.Margin = new System.Windows.Forms.Padding(2);
             this.radiofar.Name = "radiofar";
             this.radiofar.Size = new System.Drawing.Size(87, 22);
             this.radiofar.TabIndex = 13;
@@ -307,7 +307,7 @@
             this.radiocel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiocel.ForeColor = System.Drawing.Color.White;
             this.radiocel.Location = new System.Drawing.Point(131, 15);
-            this.radiocel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiocel.Margin = new System.Windows.Forms.Padding(2);
             this.radiocel.Name = "radiocel";
             this.radiocel.Size = new System.Drawing.Size(75, 22);
             this.radiocel.TabIndex = 12;
@@ -319,7 +319,7 @@
             // 
             this.respuestatmax.Enabled = false;
             this.respuestatmax.Location = new System.Drawing.Point(164, 52);
-            this.respuestatmax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.respuestatmax.Margin = new System.Windows.Forms.Padding(2);
             this.respuestatmax.Multiline = true;
             this.respuestatmax.Name = "respuestatmax";
             this.respuestatmax.ReadOnly = true;
@@ -508,7 +508,8 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Temperatura_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temperatura Administrador";

@@ -165,6 +165,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.confirm);
+            this.MaximizeBox = false;
             this.Name = "recup_contra";
             this.Text = "Recuperar Contraseña";
             this.Load += new System.EventHandler(this.recup_contra_Load);

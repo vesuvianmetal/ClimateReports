@@ -187,7 +187,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(18, 15);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -224,7 +224,7 @@
             // 
             this.respuesta_pre.Enabled = false;
             this.respuesta_pre.Location = new System.Drawing.Point(155, 29);
-            this.respuesta_pre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.respuesta_pre.Margin = new System.Windows.Forms.Padding(2);
             this.respuesta_pre.Multiline = true;
             this.respuesta_pre.Name = "respuesta_pre";
             this.respuesta_pre.Size = new System.Drawing.Size(105, 29);
@@ -383,7 +383,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Presion_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Presion Administrador";

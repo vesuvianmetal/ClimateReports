@@ -46,7 +46,7 @@
             this.txtusuario.BackColor = System.Drawing.Color.White;
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.Location = new System.Drawing.Point(63, 48);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.MaxLength = 20;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(192, 37);
@@ -163,7 +163,7 @@
             this.txtcontra.AcceptsTab = true;
             this.txtcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontra.Location = new System.Drawing.Point(61, 144);
-            this.txtcontra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcontra.Margin = new System.Windows.Forms.Padding(2);
             this.txtcontra.MaxLength = 45;
             this.txtcontra.Name = "txtcontra";
             this.txtcontra.Size = new System.Drawing.Size(192, 37);
@@ -179,7 +179,8 @@
             this.BackgroundImage = global::ClimateReports.Properties.Resources.fondologinnn;
             this.ClientSize = new System.Drawing.Size(455, 499);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

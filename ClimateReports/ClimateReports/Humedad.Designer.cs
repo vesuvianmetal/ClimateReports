@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.llenar_grafica = new System.Windows.Forms.Timer(this.components);
@@ -92,18 +92,18 @@
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BorderlineColor = System.Drawing.Color.Gray;
             this.chart1.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(223, 268);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Humedad";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Humedad";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(490, 190);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "charthumedad";
@@ -245,7 +245,7 @@
             // 
             this.hume_rel.Enabled = false;
             this.hume_rel.Location = new System.Drawing.Point(166, 60);
-            this.hume_rel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hume_rel.Margin = new System.Windows.Forms.Padding(2);
             this.hume_rel.Multiline = true;
             this.hume_rel.Name = "hume_rel";
             this.hume_rel.ReadOnly = true;
@@ -283,7 +283,7 @@
             // 
             this.hume_abs.Enabled = false;
             this.hume_abs.Location = new System.Drawing.Point(166, 14);
-            this.hume_abs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hume_abs.Margin = new System.Windows.Forms.Padding(2);
             this.hume_abs.Multiline = true;
             this.hume_abs.Name = "hume_abs";
             this.hume_abs.ReadOnly = true;
@@ -448,7 +448,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Humedad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Humedad";
