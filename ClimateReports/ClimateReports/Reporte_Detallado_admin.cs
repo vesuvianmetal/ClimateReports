@@ -125,7 +125,7 @@ namespace ClimateReports
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             //abre la ventana de presion
             Presion PRE = new Presion();
             PRE.Show();
@@ -133,7 +133,7 @@ namespace ClimateReports
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             //abre la ventana de humedad
             Humedad IH = new Humedad();
             IH.Show();

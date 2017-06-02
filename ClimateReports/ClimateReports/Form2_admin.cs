@@ -115,7 +115,7 @@ namespace ClimateReports
 
         private void Form2_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Form1 Login = new Form1();
             Login.Show();
 
@@ -143,7 +143,7 @@ namespace ClimateReports
         {
             Interfaz_Admin IA = new Interfaz_Admin();
             IA.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void mesaDeAyudaToolStripMenuItem_Click(object sender, EventArgs e)

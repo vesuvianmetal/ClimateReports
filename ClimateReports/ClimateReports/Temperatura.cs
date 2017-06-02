@@ -197,7 +197,7 @@ namespace ClimateReports
 
         private void Temperatura_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Reporte_Detallado RD = new Reporte_Detallado();
             RD.Show();
         }

@@ -17,7 +17,7 @@ namespace ClimateReports
       
            ///Declaracion de la conexion hacia la base de datos utilizando la informacion de la base de datos
            ///incluyendo su nombre, el servidor en el que esta alojada, usuario y contraseña para poder acceder
-            MySqlConnection Conectar = new MySqlConnection("Server = localhost ; database = mydb ; Userid = root; password = proyecto");
+            MySqlConnection Conectar = new MySqlConnection("Server = localhost ; database = mydb ; Userid = root; password = 123456");
             return Conectar;
         }
     }

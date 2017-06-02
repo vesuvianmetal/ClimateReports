@@ -101,7 +101,7 @@ namespace ClimateReports
 
         private void Humedad_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Reporte_Detallado RP = new Reporte_Detallado();
             RP.Show();
         }
