@@ -55,11 +55,24 @@
             this.txtmax = new System.Windows.Forms.TextBox();
             this.txtmin = new System.Windows.Forms.TextBox();
             this.txtmed = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDetalladoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportarUnProblemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mesaDeAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proporcionarUnaSugerenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soporteTecnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.climateReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartvientos)).BeginInit();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -71,7 +84,7 @@
             // 
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(12, 170);
+            this.panel3.Location = new System.Drawing.Point(23, 190);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 43);
             this.panel3.TabIndex = 88;
@@ -106,7 +119,7 @@
             // 
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(12, 241);
+            this.panel4.Location = new System.Drawing.Point(23, 261);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(182, 43);
             this.panel4.TabIndex = 87;
@@ -141,7 +154,7 @@
             // 
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(12, 92);
+            this.panel2.Location = new System.Drawing.Point(23, 112);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(182, 43);
             this.panel2.TabIndex = 86;
@@ -177,7 +190,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 22);
+            this.label1.Location = new System.Drawing.Point(22, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 26);
@@ -190,7 +203,7 @@
             this.chartvientos.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartvientos.Legends.Add(legend1);
-            this.chartvientos.Location = new System.Drawing.Point(258, 254);
+            this.chartvientos.Location = new System.Drawing.Point(269, 274);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(2);
             this.chartvientos.Name = "chartvientos";
             series1.ChartArea = "ChartArea1";
@@ -215,7 +228,7 @@
             this.panel1.Controls.Add(this.txtmax);
             this.panel1.Controls.Add(this.txtmin);
             this.panel1.Controls.Add(this.txtmed);
-            this.panel1.Location = new System.Drawing.Point(204, 92);
+            this.panel1.Location = new System.Drawing.Point(215, 112);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 152);
             this.panel1.TabIndex = 89;
@@ -328,12 +341,111 @@
             this.txtmed.Size = new System.Drawing.Size(109, 20);
             this.txtmed.TabIndex = 34;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
+            this.menuStrip1.TabIndex = 90;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteDetalladoToolStripMenuItem,
+            this.inicioToolStripMenuItem,
+            this.cerrarSesionToolStripMenuItem});
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // reporteDetalladoToolStripMenuItem
+            // 
+            this.reporteDetalladoToolStripMenuItem.Name = "reporteDetalladoToolStripMenuItem";
+            this.reporteDetalladoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.reporteDetalladoToolStripMenuItem.Text = "Reporte Detallado";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            // 
+            // cerrarSesionToolStripMenuItem
+            // 
+            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportarUnProblemaToolStripMenuItem,
+            this.mesaDeAyudaToolStripMenuItem,
+            this.proporcionarUnaSugerenciaToolStripMenuItem,
+            this.soporteTecnicoToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // reportarUnProblemaToolStripMenuItem
+            // 
+            this.reportarUnProblemaToolStripMenuItem.Name = "reportarUnProblemaToolStripMenuItem";
+            this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.reportarUnProblemaToolStripMenuItem.Text = "Ver la Ayuda";
+            // 
+            // mesaDeAyudaToolStripMenuItem
+            // 
+            this.mesaDeAyudaToolStripMenuItem.Name = "mesaDeAyudaToolStripMenuItem";
+            this.mesaDeAyudaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.mesaDeAyudaToolStripMenuItem.Text = "Notificar un Problema";
+            // 
+            // proporcionarUnaSugerenciaToolStripMenuItem
+            // 
+            this.proporcionarUnaSugerenciaToolStripMenuItem.Name = "proporcionarUnaSugerenciaToolStripMenuItem";
+            this.proporcionarUnaSugerenciaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.proporcionarUnaSugerenciaToolStripMenuItem.Text = "Proporcionar una Sugerencia";
+            // 
+            // soporteTecnicoToolStripMenuItem
+            // 
+            this.soporteTecnicoToolStripMenuItem.Name = "soporteTecnicoToolStripMenuItem";
+            this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.soporteTecnicoToolStripMenuItem.Text = "Soporte Tecnico";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.climateReportsToolStripMenuItem});
+            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            // 
+            // climateReportsToolStripMenuItem
+            // 
+            this.climateReportsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.climateReportsToolStripMenuItem.Name = "climateReportsToolStripMenuItem";
+            this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.climateReportsToolStripMenuItem.Text = "Climate Reports";
+            // 
             // Viento_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(753, 469);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -355,6 +467,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartvientos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +498,17 @@
         private System.Windows.Forms.TextBox txtmax;
         private System.Windows.Forms.TextBox txtmin;
         private System.Windows.Forms.TextBox txtmed;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDetalladoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportarUnProblemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mesaDeAyudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proporcionarUnaSugerenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soporteTecnicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem climateReportsToolStripMenuItem;
     }
 }
