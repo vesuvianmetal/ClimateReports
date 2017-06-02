@@ -54,7 +54,7 @@ namespace ClimateReports
 
            string  usu = usuario.Text;
            string email = correo.Text;
-
+            string contra;
            
 
           try
@@ -75,15 +75,13 @@ namespace ClimateReports
                     string query_inicio = "select USU_Email , USU_PASS  from usuario where USU_nombre = "+ usu + " and USU_EMAIL= "+email+"";
                     MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
 
+                    
                     To = correo.Text;
-                    //Subject = textBox3.Text;
-                    Body = usuario.Text;
-
                     mail = new MailMessage();
                     mail.To.Add(new MailAddress(this.To));
                     mail.From = new MailAddress("SoftwareDevelopers13@gmail.com");
-                    //mail.Subject = Subject;
-                    mail.Body = Body;
+                    mail.Subject = "RECUPERACION DE CONTRASEÑA";
+                    mail.Body = " " + usu + "Usted ha solicitado una recuperacion de contraseña" ;
                     mail.IsBodyHtml = false;
 
                     /*if (!(archivoAdjTxt.Text.Trim() == ""))
@@ -104,7 +102,7 @@ namespace ClimateReports
             }
             catch
             {
-                MessageBox.Show("Algo salio mal");
+                MessageBox.Show("Mensaje no enviado Revise su conexion a internet");
             }
 
 
