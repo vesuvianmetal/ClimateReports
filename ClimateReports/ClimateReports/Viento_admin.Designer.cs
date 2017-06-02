@@ -71,7 +71,7 @@
             // 
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(27, 180);
+            this.panel3.Location = new System.Drawing.Point(12, 170);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 43);
             this.panel3.TabIndex = 88;
@@ -106,7 +106,7 @@
             // 
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(27, 251);
+            this.panel4.Location = new System.Drawing.Point(12, 241);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(182, 43);
             this.panel4.TabIndex = 87;
@@ -141,7 +141,7 @@
             // 
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(27, 102);
+            this.panel2.Location = new System.Drawing.Point(12, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(182, 43);
             this.panel2.TabIndex = 86;
@@ -177,7 +177,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 32);
+            this.label1.Location = new System.Drawing.Point(11, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 26);
@@ -190,7 +190,7 @@
             this.chartvientos.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartvientos.Legends.Add(legend1);
-            this.chartvientos.Location = new System.Drawing.Point(273, 264);
+            this.chartvientos.Location = new System.Drawing.Point(258, 254);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(2);
             this.chartvientos.Name = "chartvientos";
             series1.ChartArea = "ChartArea1";
@@ -215,7 +215,7 @@
             this.panel1.Controls.Add(this.txtmax);
             this.panel1.Controls.Add(this.txtmin);
             this.panel1.Controls.Add(this.txtmed);
-            this.panel1.Location = new System.Drawing.Point(219, 102);
+            this.panel1.Location = new System.Drawing.Point(204, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 152);
             this.panel1.TabIndex = 89;
@@ -340,7 +340,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chartvientos);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Viento_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viento Administrador";
