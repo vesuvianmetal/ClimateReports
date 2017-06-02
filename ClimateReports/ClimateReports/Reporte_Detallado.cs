@@ -99,7 +99,7 @@ namespace ClimateReports
         {
             this.Dispose();
 
-            Form2_admin F2 = new Form2_admin();
+            Form2 F2 = new Form2();
             F2.Show();
         }
 
