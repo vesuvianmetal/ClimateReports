@@ -163,5 +163,12 @@ namespace ClimateReports
             Form2_admin for2a = new Form2_admin();
             for2a.Show();
         }
+
+        private void Temperatura_admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form2_admin f2a = new Form2_admin();
+            f2a.Show();
+            this.Dispose();
+        }
     }
 }
