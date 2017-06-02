@@ -99,7 +99,7 @@ namespace ClimateReports
         {
             this.Hide();
 
-            Form2 F2 = new Form2();
+            Form2_admin F2 = new Form2_admin();
             F2.Show();
         }
 

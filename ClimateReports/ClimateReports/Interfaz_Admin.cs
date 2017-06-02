@@ -367,5 +367,18 @@ namespace ClimateReports
         {
 
         }
+
+        private void txttelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtdeltelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

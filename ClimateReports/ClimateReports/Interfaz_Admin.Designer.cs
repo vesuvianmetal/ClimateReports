@@ -98,9 +98,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(9, 30);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(150, 417);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -115,7 +115,7 @@
             "Administrador",
             "General"});
             this.combousuario.Location = new System.Drawing.Point(4, 288);
-            this.combousuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.combousuario.Margin = new System.Windows.Forms.Padding(2);
             this.combousuario.Name = "combousuario";
             this.combousuario.Size = new System.Drawing.Size(140, 21);
             this.combousuario.TabIndex = 7;
@@ -124,7 +124,7 @@
             // txtcontraseña
             // 
             this.txtcontraseña.Location = new System.Drawing.Point(2, 332);
-            this.txtcontraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcontraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtcontraseña.MaxLength = 45;
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(142, 20);
@@ -145,7 +145,7 @@
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(4, 242);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.MaxLength = 45;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(142, 20);
@@ -174,11 +174,12 @@
             // txttelefono
             // 
             this.txttelefono.Location = new System.Drawing.Point(4, 197);
-            this.txttelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txttelefono.MaxLength = 13;
+            this.txttelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txttelefono.MaxLength = 10;
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(142, 20);
             this.txttelefono.TabIndex = 5;
+            this.txttelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefono_KeyPress);
             // 
             // label12
             // 
@@ -195,7 +196,7 @@
             this.btnagregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregar.ForeColor = System.Drawing.Color.Black;
             this.btnagregar.Location = new System.Drawing.Point(5, 366);
-            this.btnagregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnagregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(140, 40);
             this.btnagregar.TabIndex = 9;
@@ -206,7 +207,7 @@
             // txtam
             // 
             this.txtam.Location = new System.Drawing.Point(4, 152);
-            this.txtam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtam.Margin = new System.Windows.Forms.Padding(2);
             this.txtam.MaxLength = 20;
             this.txtam.Name = "txtam";
             this.txtam.Size = new System.Drawing.Size(142, 20);
@@ -225,7 +226,7 @@
             // txtap
             // 
             this.txtap.Location = new System.Drawing.Point(4, 112);
-            this.txtap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtap.Margin = new System.Windows.Forms.Padding(2);
             this.txtap.MaxLength = 20;
             this.txtap.Name = "txtap";
             this.txtap.Size = new System.Drawing.Size(142, 20);
@@ -244,7 +245,7 @@
             // txtnombre
             // 
             this.txtnombre.Location = new System.Drawing.Point(4, 72);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombre.MaxLength = 20;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(142, 20);
@@ -263,7 +264,7 @@
             // txtusuario
             // 
             this.txtusuario.Location = new System.Drawing.Point(7, 32);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.MaxLength = 20;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(140, 20);
@@ -288,7 +289,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(184, 38);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -307,9 +308,9 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(542, 442);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(191, 124);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
@@ -319,7 +320,7 @@
             // 
             this.btnlimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnlimpiar.Location = new System.Drawing.Point(4, 77);
-            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(182, 40);
             this.btnlimpiar.TabIndex = 1;
@@ -331,7 +332,7 @@
             // 
             this.btneliminar.ForeColor = System.Drawing.Color.Black;
             this.btneliminar.Location = new System.Drawing.Point(4, 28);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(182, 40);
             this.btneliminar.TabIndex = 0;
@@ -342,7 +343,7 @@
             // txtdelnombre
             // 
             this.txtdelnombre.Location = new System.Drawing.Point(248, 396);
-            this.txtdelnombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelnombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelnombre.Multiline = true;
             this.txtdelnombre.Name = "txtdelnombre";
             this.txtdelnombre.ReadOnly = true;
@@ -352,7 +353,7 @@
             // txtdelpat
             // 
             this.txtdelpat.Location = new System.Drawing.Point(248, 468);
-            this.txtdelpat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelpat.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelpat.Multiline = true;
             this.txtdelpat.Name = "txtdelpat";
             this.txtdelpat.ReadOnly = true;
@@ -362,7 +363,7 @@
             // txtdelmat
             // 
             this.txtdelmat.Location = new System.Drawing.Point(248, 529);
-            this.txtdelmat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelmat.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelmat.Multiline = true;
             this.txtdelmat.Name = "txtdelmat";
             this.txtdelmat.ReadOnly = true;
@@ -372,7 +373,7 @@
             // txtdelusuario
             // 
             this.txtdelusuario.Location = new System.Drawing.Point(248, 334);
-            this.txtdelusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelusuario.Multiline = true;
             this.txtdelusuario.Name = "txtdelusuario";
             this.txtdelusuario.ReadOnly = true;
@@ -442,7 +443,7 @@
             // txtconfcon
             // 
             this.txtconfcon.Location = new System.Drawing.Point(539, 398);
-            this.txtconfcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtconfcon.Margin = new System.Windows.Forms.Padding(2);
             this.txtconfcon.Multiline = true;
             this.txtconfcon.Name = "txtconfcon";
             this.txtconfcon.Size = new System.Drawing.Size(192, 28);
@@ -464,7 +465,7 @@
             // txtdelemail
             // 
             this.txtdelemail.Location = new System.Drawing.Point(539, 335);
-            this.txtdelemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelemail.Multiline = true;
             this.txtdelemail.Name = "txtdelemail";
             this.txtdelemail.ReadOnly = true;
@@ -524,7 +525,7 @@
             // txtdelid
             // 
             this.txtdelid.Location = new System.Drawing.Point(247, 265);
-            this.txtdelid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdelid.Margin = new System.Windows.Forms.Padding(2);
             this.txtdelid.Multiline = true;
             this.txtdelid.Name = "txtdelid";
             this.txtdelid.ReadOnly = true;
@@ -534,12 +535,13 @@
             // txtdeltelefono
             // 
             this.txtdeltelefono.Location = new System.Drawing.Point(539, 267);
-            this.txtdeltelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdeltelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtdeltelefono.Multiline = true;
             this.txtdeltelefono.Name = "txtdeltelefono";
             this.txtdeltelefono.ReadOnly = true;
             this.txtdeltelefono.Size = new System.Drawing.Size(192, 28);
             this.txtdeltelefono.TabIndex = 22;
+            this.txtdeltelefono.TextChanged += new System.EventHandler(this.txtdeltelefono_TextChanged);
             // 
             // label17
             // 
@@ -593,7 +595,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Interfaz_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
