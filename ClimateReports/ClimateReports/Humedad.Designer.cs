@@ -54,7 +54,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.hume_abs = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -66,12 +65,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.llenar_humedad = new System.Windows.Forms.Timer(this.components);
             this.calcular_relativa = new System.Windows.Forms.Timer(this.components);
+            this.imprimir = new System.Windows.Forms.ToolTip(this.components);
+            this.Reporte = new System.Windows.Forms.ToolTip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Enviar = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -234,7 +237,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(58, 11);
+            this.label6.Location = new System.Drawing.Point(61, 13);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 16);
@@ -296,21 +299,12 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(59, 13);
+            this.label7.Location = new System.Drawing.Point(61, 11);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 16);
             this.label7.TabIndex = 74;
             this.label7.Text = "Generar Reporte";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(14, 119);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 43);
-            this.panel1.TabIndex = 75;
             // 
             // button2
             // 
@@ -319,17 +313,18 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ClimateReports.Properties.Resources.clipboard_1;
-            this.button2.Location = new System.Drawing.Point(4, 1);
+            this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 39);
             this.button2.TabIndex = 73;
+            this.Reporte.SetToolTip(this.button2, "Visualizar Reporte Generado.");
             this.button2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(14, 197);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(12, 120);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 43);
             this.panel3.TabIndex = 76;
@@ -341,17 +336,18 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
-            this.button5.Location = new System.Drawing.Point(3, 3);
+            this.button5.Location = new System.Drawing.Point(2, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(50, 36);
             this.button5.TabIndex = 65;
+            this.imprimir.SetToolTip(this.button5, "Imprimir Reporte Generado.");
             this.button5.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(14, 268);
+            this.panel4.Location = new System.Drawing.Point(12, 268);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(182, 43);
             this.panel4.TabIndex = 76;
@@ -363,10 +359,11 @@
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ClimateReports.Properties.Resources.carta_1;
-            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Location = new System.Drawing.Point(1, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(51, 37);
             this.button3.TabIndex = 67;
+            this.Enviar.SetToolTip(this.button3, "Enviar Reporte a Correo Electronico.");
             this.button3.UseVisualStyleBackColor = false;
             // 
             // label8
@@ -375,7 +372,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(59, 13);
+            this.label8.Location = new System.Drawing.Point(61, 10);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 16);
@@ -434,6 +431,15 @@
             this.calcular_relativa.Interval = 11000;
             this.calcular_relativa.Tick += new System.EventHandler(this.calcular_relativa_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Location = new System.Drawing.Point(12, 191);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(182, 43);
+            this.panel1.TabIndex = 77;
+            // 
             // Humedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,11 +449,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Humedad";
@@ -458,14 +464,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,7 +503,6 @@
         private System.Windows.Forms.TextBox hume_abs;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button3;
@@ -507,5 +512,9 @@
         private System.Windows.Forms.Timer calcular_relativa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolTip imprimir;
+        private System.Windows.Forms.ToolTip Reporte;
+        private System.Windows.Forms.ToolTip Enviar;
+        private System.Windows.Forms.Panel panel1;
     }
 }
