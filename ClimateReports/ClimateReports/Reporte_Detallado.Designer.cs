@@ -513,7 +513,7 @@
             this.MaximizeBox = false;
             this.Name = "Reporte_Detallado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "+";
+            this.Text = "Reporte Detallado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reporte_Detallado_FormClosed);
             this.Load += new System.EventHandler(this.Reporte_Detallado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
