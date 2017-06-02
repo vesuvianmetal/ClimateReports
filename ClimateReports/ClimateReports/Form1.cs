@@ -56,7 +56,7 @@ namespace ClimateReports
                 string cap;
                 //string prueba;
 
-             //   prueba = comboBox1.SelectedItem.ToString();
+     
 
 
                 MySqlDataReader leer_exe;
