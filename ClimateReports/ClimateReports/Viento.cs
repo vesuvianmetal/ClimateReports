@@ -99,5 +99,10 @@ namespace ClimateReports
             Reporte_Detallado RP = new Reporte_Detallado();
             RP.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
