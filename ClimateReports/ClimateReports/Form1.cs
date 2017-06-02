@@ -118,7 +118,7 @@ namespace ClimateReports
                         {
                             Form2 menu = new Form2();
                             menu.Show();
-                            this.Dispose();
+                            this.Hide();
                         }
                     }
 
