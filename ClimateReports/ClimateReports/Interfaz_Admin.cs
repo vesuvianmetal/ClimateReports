@@ -98,16 +98,24 @@ namespace ClimateReports
             }
 
             conn.Close();
+            try
+            {
+                double exp2 = 2.0;
+                Int64 numero1 = Int64.Parse(txtconfcon.Text);
+                Int64 val1 = numero1 * 2;
+                Int64 val2 = (int)Math.Pow(val1, exp2);
+                Int64 val3 = val2 / 4;
+                Int64 val4 = val3 * 8;
+                Int64 val5 = val4 - 12345;
+                var hexa = val5.ToString("X");
+                txtconfcon.Text = hexa.ToString();
+            }
+            catch(Exception ex)
 
-            double exp2 = 2.0;
-            Int64 numero1 = Int64.Parse(txtconfcon.Text);
-            Int64 val1 = numero1 * 2;
-            Int64 val2 = (int)Math.Pow(val1, exp2);
-            Int64 val3 = val2 / 4;
-            Int64 val4 = val3 * 8;
-            Int64 val5 = val4 - 12345;
-            var hexa = val5.ToString("X");
-            txtconfcon.Text = hexa.ToString();
+            {
+                MessageBox.Show("Ingresa el campo de confirmar contraseña para eliminar correctamente");
+            }
+
         }
 
         //metodo para agregar un usuario
@@ -172,7 +180,7 @@ namespace ClimateReports
             {
                 if (txtconfcon.Text.Equals(""))
                 {
-                    MessageBox.Show("Debe Confirmar La Contraseña Del Usuario A Eliminar");
+                    
                 }
                 else
                 {
