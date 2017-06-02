@@ -83,7 +83,7 @@
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(16, 224);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 53);
             this.panel3.TabIndex = 86;
@@ -96,7 +96,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
             this.button5.Location = new System.Drawing.Point(4, 4);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(67, 44);
             this.button5.TabIndex = 65;
@@ -119,7 +119,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Location = new System.Drawing.Point(16, 311);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(243, 53);
             this.panel4.TabIndex = 85;
@@ -132,7 +132,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ClimateReports.Properties.Resources.carta_1;
             this.button3.Location = new System.Drawing.Point(4, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(68, 46);
             this.button3.TabIndex = 67;
@@ -155,7 +155,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(16, 128);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 53);
             this.panel2.TabIndex = 84;
@@ -180,7 +180,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ClimateReports.Properties.Resources.clipboard_1;
             this.button2.Location = new System.Drawing.Point(5, 1);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 48);
             this.button2.TabIndex = 73;
@@ -199,7 +199,7 @@
             this.panel1.Controls.Add(this.radiocel);
             this.panel1.Controls.Add(this.respuestatmax);
             this.panel1.Location = new System.Drawing.Point(272, 128);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 178);
             this.panel1.TabIndex = 83;
@@ -442,7 +442,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(272, 336);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
@@ -474,7 +474,7 @@
             // 
             // llenar_grafica
             // 
-            this.llenar_grafica.Interval = 60000;
+            this.llenar_grafica.Interval = 1000;
             this.llenar_grafica.Tick += new System.EventHandler(this.llenar_grafica_Tick);
             // 
             // llenar_tmax

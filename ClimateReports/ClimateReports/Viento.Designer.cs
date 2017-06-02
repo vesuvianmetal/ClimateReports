@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartvientos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radiomilla = new System.Windows.Forms.RadioButton();
@@ -77,25 +77,25 @@
             // 
             // chartvientos
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartvientos.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartvientos.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chartvientos.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartvientos.Legends.Add(legend1);
             this.chartvientos.Location = new System.Drawing.Point(361, 334);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartvientos.Name = "chartvientos";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Viento";
-            this.chartvientos.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Viento";
+            this.chartvientos.Series.Add(series1);
             this.chartvientos.Size = new System.Drawing.Size(540, 213);
             this.chartvientos.TabIndex = 8;
             this.chartvientos.Text = "chart1";
             // 
             // timer1
             // 
-            this.timer1.Interval = 60000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // radiomilla
@@ -219,7 +219,7 @@
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(33, 230);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 53);
             this.panel3.TabIndex = 82;
@@ -232,7 +232,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = global::ClimateReports.Properties.Resources.impresora_1;
             this.button5.Location = new System.Drawing.Point(4, 4);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(67, 44);
             this.button5.TabIndex = 65;
@@ -255,7 +255,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Location = new System.Drawing.Point(33, 318);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(243, 53);
             this.panel4.TabIndex = 81;
@@ -268,7 +268,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ClimateReports.Properties.Resources.carta_1;
             this.button3.Location = new System.Drawing.Point(4, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(68, 46);
             this.button3.TabIndex = 67;
@@ -291,7 +291,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(33, 134);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 53);
             this.panel2.TabIndex = 80;
@@ -316,7 +316,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ClimateReports.Properties.Resources.clipboard_1;
             this.button2.Location = new System.Drawing.Point(5, 1);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 48);
             this.button2.TabIndex = 73;
@@ -336,7 +336,7 @@
             this.panel1.Controls.Add(this.txtmin);
             this.panel1.Controls.Add(this.txtmed);
             this.panel1.Location = new System.Drawing.Point(289, 134);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(676, 187);
             this.panel1.TabIndex = 83;

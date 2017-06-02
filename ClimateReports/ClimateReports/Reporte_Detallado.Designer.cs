@@ -291,7 +291,7 @@
             // 
             // llenar_grafica
             // 
-            this.llenar_grafica.Interval = 60000;
+            this.llenar_grafica.Interval = 1000;
             this.llenar_grafica.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // llenar_humedad
