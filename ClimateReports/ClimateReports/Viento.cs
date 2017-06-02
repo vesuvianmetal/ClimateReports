@@ -104,5 +104,15 @@ namespace ClimateReports
         {
 
         }
+
+        private void btnenviar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnimprimir_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

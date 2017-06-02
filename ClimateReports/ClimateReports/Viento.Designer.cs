@@ -29,15 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartvientos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radiomilla = new System.Windows.Forms.RadioButton();
             this.radiokilo = new System.Windows.Forms.RadioButton();
-            this.btnenviar = new System.Windows.Forms.Button();
-            this.btnimprimir = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.progressbeau = new System.Windows.Forms.ProgressBar();
             this.txtmed = new System.Windows.Forms.TextBox();
@@ -61,23 +59,24 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartvientos
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartvientos.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartvientos.Legends.Add(legend5);
-            this.chartvientos.Location = new System.Drawing.Point(248, 232);
+            chartArea8.Name = "ChartArea1";
+            this.chartvientos.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chartvientos.Legends.Add(legend8);
+            this.chartvientos.Location = new System.Drawing.Point(235, 267);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartvientos.Name = "chartvientos";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Viento";
-            this.chartvientos.Series.Add(series5);
-            this.chartvientos.Size = new System.Drawing.Size(436, 214);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.Name = "Viento";
+            this.chartvientos.Series.Add(series8);
+            this.chartvientos.Size = new System.Drawing.Size(405, 173);
             this.chartvientos.TabIndex = 8;
             this.chartvientos.Text = "chart1";
             // 
@@ -91,7 +90,7 @@
             this.radiomilla.AutoSize = true;
             this.radiomilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiomilla.ForeColor = System.Drawing.Color.White;
-            this.radiomilla.Location = new System.Drawing.Point(586, 91);
+            this.radiomilla.Location = new System.Drawing.Point(406, 21);
             this.radiomilla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiomilla.Name = "radiomilla";
             this.radiomilla.Size = new System.Drawing.Size(62, 22);
@@ -105,7 +104,7 @@
             this.radiokilo.AutoSize = true;
             this.radiokilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radiokilo.ForeColor = System.Drawing.Color.White;
-            this.radiokilo.Location = new System.Drawing.Point(585, 56);
+            this.radiokilo.Location = new System.Drawing.Point(406, 47);
             this.radiokilo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radiokilo.Name = "radiokilo";
             this.radiokilo.Size = new System.Drawing.Size(64, 22);
@@ -114,32 +113,12 @@
             this.radiokilo.Text = "KM/H";
             this.radiokilo.UseVisualStyleBackColor = true;
             // 
-            // btnenviar
-            // 
-            this.btnenviar.Location = new System.Drawing.Point(764, 176);
-            this.btnenviar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnenviar.Name = "btnenviar";
-            this.btnenviar.Size = new System.Drawing.Size(56, 22);
-            this.btnenviar.TabIndex = 38;
-            this.btnenviar.Text = "Enviar";
-            this.btnenviar.UseVisualStyleBackColor = true;
-            // 
-            // btnimprimir
-            // 
-            this.btnimprimir.Location = new System.Drawing.Point(586, 174);
-            this.btnimprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnimprimir.Name = "btnimprimir";
-            this.btnimprimir.Size = new System.Drawing.Size(56, 22);
-            this.btnimprimir.TabIndex = 37;
-            this.btnimprimir.Text = "Imprimir";
-            this.btnimprimir.UseVisualStyleBackColor = true;
-            // 
             // label
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.Color.White;
-            this.label.Location = new System.Drawing.Point(248, 160);
+            this.label.Location = new System.Drawing.Point(299, 87);
             this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(113, 18);
@@ -148,7 +127,7 @@
             // 
             // progressbeau
             // 
-            this.progressbeau.Location = new System.Drawing.Point(251, 189);
+            this.progressbeau.Location = new System.Drawing.Point(302, 113);
             this.progressbeau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressbeau.Name = "progressbeau";
             this.progressbeau.Size = new System.Drawing.Size(178, 19);
@@ -156,26 +135,26 @@
             // 
             // txtmed
             // 
-            this.txtmed.Location = new System.Drawing.Point(455, 133);
+            this.txtmed.Location = new System.Drawing.Point(151, 112);
             this.txtmed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmed.Name = "txtmed";
-            this.txtmed.Size = new System.Drawing.Size(76, 20);
+            this.txtmed.Size = new System.Drawing.Size(109, 20);
             this.txtmed.TabIndex = 34;
             // 
             // txtmin
             // 
-            this.txtmin.Location = new System.Drawing.Point(455, 99);
+            this.txtmin.Location = new System.Drawing.Point(151, 67);
             this.txtmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmin.Name = "txtmin";
-            this.txtmin.Size = new System.Drawing.Size(76, 20);
+            this.txtmin.Size = new System.Drawing.Size(109, 20);
             this.txtmin.TabIndex = 33;
             // 
             // txtmax
             // 
-            this.txtmax.Location = new System.Drawing.Point(455, 57);
+            this.txtmax.Location = new System.Drawing.Point(151, 24);
             this.txtmax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmax.Name = "txtmax";
-            this.txtmax.Size = new System.Drawing.Size(76, 20);
+            this.txtmax.Size = new System.Drawing.Size(109, 20);
             this.txtmax.TabIndex = 32;
             // 
             // label4
@@ -183,7 +162,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(248, 125);
+            this.label4.Location = new System.Drawing.Point(7, 111);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 18);
@@ -195,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(246, 91);
+            this.label3.Location = new System.Drawing.Point(7, 69);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 18);
@@ -207,7 +186,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(246, 49);
+            this.label2.Location = new System.Drawing.Point(7, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 18);
@@ -335,9 +314,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(229, 43);
+            this.panel1.Controls.Add(this.progressbeau);
+            this.panel1.Controls.Add(this.radiomilla);
+            this.panel1.Controls.Add(this.label);
+            this.panel1.Controls.Add(this.radiokilo);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtmax);
+            this.panel1.Controls.Add(this.txtmin);
+            this.panel1.Controls.Add(this.txtmed);
+            this.panel1.Location = new System.Drawing.Point(204, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(507, 152);
             this.panel1.TabIndex = 83;
             // 
             // Viento
@@ -349,18 +338,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.radiomilla);
-            this.Controls.Add(this.radiokilo);
-            this.Controls.Add(this.btnenviar);
-            this.Controls.Add(this.btnimprimir);
-            this.Controls.Add(this.label);
-            this.Controls.Add(this.progressbeau);
-            this.Controls.Add(this.txtmed);
-            this.Controls.Add(this.txtmin);
-            this.Controls.Add(this.txtmax);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chartvientos);
             this.Controls.Add(this.panel1);
@@ -377,6 +354,8 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,8 +366,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RadioButton radiomilla;
         private System.Windows.Forms.RadioButton radiokilo;
-        private System.Windows.Forms.Button btnenviar;
-        private System.Windows.Forms.Button btnimprimir;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.ProgressBar progressbeau;
         private System.Windows.Forms.TextBox txtmed;
