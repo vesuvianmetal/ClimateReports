@@ -215,7 +215,7 @@ namespace ClimateReports
             this.Dispose();
 
             //abre el login
-            Form2 F2admin = new Form2();
+            Form2_admin F2admin = new Form2_admin();
             F2admin.Show();
         }
     }
