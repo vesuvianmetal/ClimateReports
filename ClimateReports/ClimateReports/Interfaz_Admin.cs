@@ -42,10 +42,79 @@ namespace ClimateReports
         }
 
 
+        void encriptar()
+        {
+            try
+            {
+                double exp = 2.0;
+                Int64 pal1 = int.Parse(txtcontraseña.Text);
+                Int64 val1 = pal1 * 2;
+                Int64 val2 = (int)Math.Pow(val1, exp);
+                Int64 val3 = val2 / 4;
+                Int64 val4 = val3 * 8;
+                Int64 val5 = val4 - 12345;
+
+                var hexa = val5.ToString("X");
+                txtcontraseña.Text = hexa.ToString();
+                txtconfcon.Text = hexa.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        void desencriptar()
+        {
+            Int64 numero1 = Int64.Parse(txtcontraseña.Text, System.Globalization.NumberStyles.HexNumber);
+            Int64 numero2 = numero1 + 12345;
+            Int64 numero3 = numero2 / 8;
+            Int64 numero4 = numero3 * 4;
+            Int64 numero5 = (int)Math.Sqrt(numero4);
+            Int64 numero6 = numero5 / 2;
+            txtcontraseña.Text = numero6.ToString();
+        }
+        void condesen()
+        {
+            string vara = "";
+            string contra = "select usu_pass from usuario where usu_id = '" + txtdelid.Text + "'";
+            MySqlCommand cmd_query = new MySqlCommand(contra, conn);
+            MySqlDataReader leerx;
+            try
+            {
+                conn.Open();
+                leerx = cmd_query.ExecuteReader();
+
+                if (leerx.Read())
+                {
+                    vara = leerx[0].ToString();
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            conn.Close();
+
+            double exp2 = 2.0;
+            Int64 numero1 = Int64.Parse(txtconfcon.Text);
+            Int64 val1 = numero1 * 2;
+            Int64 val2 = (int)Math.Pow(val1, exp2);
+            Int64 val3 = val2 / 4;
+            Int64 val4 = val3 * 8;
+            Int64 val5 = val4 - 12345;
+            var hexa = val5.ToString("X");
+            txtconfcon.Text = hexa.ToString();
+        }
+
         //metodo para agregar un usuario
         void agregarusuario()
         {
-            string query_agregar = "insert into usuario (usu_usuario,usu_nombre,usu_apellido_p,usu_apellido_m,usu_telefono,usu_email,usu_tipo_usu,usu_pass) values ( '" + txtusuario.Text + "' , '" + txtnombre.Text + "' , '" + txtap.Text + "' , '" + txtam.Text + "' , '"+txttelefono.Text+"' , '"+txtemail.Text+"' , '" +combousuario.SelectedItem+"' , SHA1('"+txtcontraseña.Text+"') )";
+            encriptar();
+            string query_agregar = "insert into usuario (usu_usuario,usu_nombre,usu_apellido_p,usu_apellido_m,usu_telefono,usu_email,usu_tipo_usu,usu_pass) values ( '" + txtusuario.Text + "' , '" + txtnombre.Text + "' , '" + txtap.Text + "' , '" + txtam.Text + "' , '" + txttelefono.Text + "' , '" + txtemail.Text + "' , '" + combousuario.SelectedItem + "' , '" + txtcontraseña.Text + "')";
             MySqlCommand cmd_queryagregar = new MySqlCommand(query_agregar, conn);
             MySqlDataReader leer;
             try
@@ -61,7 +130,8 @@ namespace ClimateReports
                     MessageBox.Show("Debe Seleccion Un Tipo De Usuario");
                 }
 
-                else if (txtcontraseña.Text.Contains(" ")) {
+                else if (txtcontraseña.Text.Contains(" "))
+                {
                     MessageBox.Show("No Se Aceptan Espacion En El Campo De Contraseña");
                 }
                 else
@@ -79,16 +149,17 @@ namespace ClimateReports
             conn.Close();
 
             //llama el metodo para borrar campos
-           // limpiarcampos();
+            // limpiarcampos();
 
         }
 
         //metodo para borrar usuario
         void borrarusuario()
         {
+            condesen();
 
             //query para buscar el usuario que se desea eliminar
-            string buscarconfirmacion = "select  * from usuario where usu_id='" + txtdelid.Text + "' and usu_pass = SHA1('" + txtconfcon.Text + "')";
+            string buscarconfirmacion = "select  * from usuario where usu_id='" + txtdelid.Text + "' and usu_pass = '" + txtconfcon.Text + "'";
             MySqlCommand cmd_buscarconfirmacion = new MySqlCommand(buscarconfirmacion, conn);
             MySqlDataReader leerconfirmacion;
 
@@ -134,8 +205,9 @@ namespace ClimateReports
 
                 }
 
-                    //atrapa cualquier error y los muestra como ventanas con el  error
-                } catch (Exception ex)
+                //atrapa cualquier error y los muestra como ventanas con el  error
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -145,7 +217,7 @@ namespace ClimateReports
 
             //manda a llamar el metodo para llamar la tabla
             filltabla();
-        
+
         }
 
 

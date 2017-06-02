@@ -18,8 +18,31 @@ namespace ClimateReports
     public partial class Form1 : Form
     {
 
+        void encriptar()
+        {
+            try
+            {
+                double exp = 2.0;
+                Int64 pal1 = int.Parse(txtcontra.Text);
+                Int64 val1 = pal1 * 2;
+                Int64 val2 = (int)Math.Pow(val1, exp);
+                Int64 val3 = val2 / 4;
+                Int64 val4 = val3 * 8;
+                Int64 val5 = val4 - 12345;
+
+                var hexa = val5.ToString("X");
+                txtcontra.Text = hexa.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
         void iniciar_sesion()
         {
+            encriptar();
             ///validacion de campos
             ///valida si uno o ambos campos del login estan vacios.
             if (txtusuario.Text.Equals("") || txtcontra.Text.Equals(""))
@@ -42,7 +65,9 @@ namespace ClimateReports
 
 
                 ///string query inicio es una declaracion de el query(CONSULTA) que se va a realizar a la base de datos.
-                string query_inicio = "select * from usuario where USU_NOMBRE = '" + txtusuario.Text + "' AND USU_PASS = SHA1('" + txtcontra.Text + "')";
+                string query_inicio = "select * from usuario where USU_NOMBRE = '" + txtusuario.Text + "' AND USU_PASS = '" + txtcontra.Text + "'";
+
+
 
 
                 ///mysql command exe_query sirve como preparacion del query(CONSULTA) junto con la variable de conexion
