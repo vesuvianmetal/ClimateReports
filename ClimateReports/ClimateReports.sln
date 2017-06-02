@@ -5,6 +5,25 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateReports", "ClimateReports\ClimateReports.csproj", "{E7DDDBB6-26F5-4A30-81F7-10A2D66DFDC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Climate", "Climate", "{AF98281A-2A81-44CE-BAAD-649998986DC5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Climate\index.html = ..\..\..\..\Documents\Climate\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "recursos", "recursos", "{BF408060-AD8E-46EF-9AE7-D30672E8FBBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{DEA5627E-72E4-43DD-AF26-2DBF75307CE6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Climate\recursos\css\estilo.css = ..\..\..\..\Documents\Climate\recursos\css\estilo.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imagen", "imagen", "{E34FF604-F9C8-42F9-9451-502FCC1A9313}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Climate\recursos\imagen\cce.png = ..\..\..\..\Documents\Climate\recursos\imagen\cce.png
+		..\..\..\..\Documents\Climate\recursos\imagen\logo2.png = ..\..\..\..\Documents\Climate\recursos\imagen\logo2.png
+		..\..\..\..\Documents\Climate\recursos\imagen\windows.png = ..\..\..\..\Documents\Climate\recursos\imagen\windows.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +37,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF408060-AD8E-46EF-9AE7-D30672E8FBBE} = {AF98281A-2A81-44CE-BAAD-649998986DC5}
+		{DEA5627E-72E4-43DD-AF26-2DBF75307CE6} = {BF408060-AD8E-46EF-9AE7-D30672E8FBBE}
+		{E34FF604-F9C8-42F9-9451-502FCC1A9313} = {BF408060-AD8E-46EF-9AE7-D30672E8FBBE}
 	EndGlobalSection
 EndGlobal
