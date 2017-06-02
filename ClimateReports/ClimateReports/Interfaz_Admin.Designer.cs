@@ -70,7 +70,7 @@
             this.txtdelid = new System.Windows.Forms.TextBox();
             this.txtdeltelefono = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -306,7 +306,7 @@
             this.groupBox2.Controls.Add(this.btneliminar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(543, 430);
+            this.groupBox2.Location = new System.Drawing.Point(542, 442);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -341,7 +341,7 @@
             // 
             // txtdelnombre
             // 
-            this.txtdelnombre.Location = new System.Drawing.Point(249, 384);
+            this.txtdelnombre.Location = new System.Drawing.Point(248, 396);
             this.txtdelnombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelnombre.Multiline = true;
             this.txtdelnombre.Name = "txtdelnombre";
@@ -351,7 +351,7 @@
             // 
             // txtdelpat
             // 
-            this.txtdelpat.Location = new System.Drawing.Point(249, 456);
+            this.txtdelpat.Location = new System.Drawing.Point(248, 468);
             this.txtdelpat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelpat.Multiline = true;
             this.txtdelpat.Name = "txtdelpat";
@@ -361,7 +361,7 @@
             // 
             // txtdelmat
             // 
-            this.txtdelmat.Location = new System.Drawing.Point(249, 517);
+            this.txtdelmat.Location = new System.Drawing.Point(248, 529);
             this.txtdelmat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelmat.Multiline = true;
             this.txtdelmat.Name = "txtdelmat";
@@ -371,7 +371,7 @@
             // 
             // txtdelusuario
             // 
-            this.txtdelusuario.Location = new System.Drawing.Point(249, 322);
+            this.txtdelusuario.Location = new System.Drawing.Point(248, 334);
             this.txtdelusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelusuario.Multiline = true;
             this.txtdelusuario.Name = "txtdelusuario";
@@ -384,7 +384,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(242, 361);
+            this.label5.Location = new System.Drawing.Point(241, 373);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 18);
@@ -396,7 +396,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(242, 428);
+            this.label6.Location = new System.Drawing.Point(241, 440);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 18);
@@ -408,7 +408,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(246, 492);
+            this.label7.Location = new System.Drawing.Point(245, 504);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(139, 18);
@@ -420,7 +420,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(243, 297);
+            this.label8.Location = new System.Drawing.Point(242, 309);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 18);
@@ -432,7 +432,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(537, 366);
+            this.label10.Location = new System.Drawing.Point(536, 378);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(180, 18);
@@ -441,7 +441,7 @@
             // 
             // txtconfcon
             // 
-            this.txtconfcon.Location = new System.Drawing.Point(540, 386);
+            this.txtconfcon.Location = new System.Drawing.Point(539, 398);
             this.txtconfcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtconfcon.Multiline = true;
             this.txtconfcon.Name = "txtconfcon";
@@ -454,7 +454,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(537, 298);
+            this.label11.Location = new System.Drawing.Point(536, 310);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(157, 18);
@@ -463,7 +463,7 @@
             // 
             // txtdelemail
             // 
-            this.txtdelemail.Location = new System.Drawing.Point(540, 323);
+            this.txtdelemail.Location = new System.Drawing.Point(539, 335);
             this.txtdelemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelemail.Multiline = true;
             this.txtdelemail.Name = "txtdelemail";
@@ -514,7 +514,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(245, 229);
+            this.label16.Location = new System.Drawing.Point(244, 241);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(29, 18);
@@ -523,7 +523,7 @@
             // 
             // txtdelid
             // 
-            this.txtdelid.Location = new System.Drawing.Point(248, 253);
+            this.txtdelid.Location = new System.Drawing.Point(247, 265);
             this.txtdelid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdelid.Multiline = true;
             this.txtdelid.Name = "txtdelid";
@@ -533,7 +533,7 @@
             // 
             // txtdeltelefono
             // 
-            this.txtdeltelefono.Location = new System.Drawing.Point(540, 255);
+            this.txtdeltelefono.Location = new System.Drawing.Point(539, 267);
             this.txtdeltelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdeltelefono.Multiline = true;
             this.txtdeltelefono.Name = "txtdeltelefono";
@@ -546,7 +546,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(540, 229);
+            this.label17.Location = new System.Drawing.Point(539, 241);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(79, 18);
@@ -554,12 +554,14 @@
             this.label17.Text = "Telefono:";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // panel1
+            // groupBox3
             // 
-            this.panel1.Location = new System.Drawing.Point(212, 219);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(547, 345);
-            this.panel1.TabIndex = 24;
+            this.groupBox3.Location = new System.Drawing.Point(203, 219);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(576, 365);
+            this.groupBox3.TabIndex = 24;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Datos del Usuario:";
             // 
             // Interfaz_Admin
             // 
@@ -584,12 +586,13 @@
             this.Controls.Add(this.txtdelpat);
             this.Controls.Add(this.txtdelnombre);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "Interfaz_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
@@ -650,6 +653,6 @@
         private System.Windows.Forms.TextBox txtdelid;
         private System.Windows.Forms.TextBox txtdeltelefono;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
