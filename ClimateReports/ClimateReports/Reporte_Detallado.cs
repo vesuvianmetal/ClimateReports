@@ -287,9 +287,9 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //Form1 cerrarsesion = new Form1();
-            //cerrarsesion.ShowDialog();
+            this.Dispose();
+            Form1 cerrarsesion = new Form1();
+            cerrarsesion.Show();
             
         }
 

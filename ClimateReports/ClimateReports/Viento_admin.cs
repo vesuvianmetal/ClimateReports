@@ -96,5 +96,26 @@ namespace ClimateReports
             Reporte_Detallado_admin RPadmins = new Reporte_Detallado_admin();
             RPadmins.Show();
         }
+
+        private void reporteDetalladoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte_Detallado_admin rpa = new Reporte_Detallado_admin();
+            rpa.Show();
+            this.Dispose();
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2_admin f2a = new Form2_admin();
+            f2a.Show();
+            this.Show();
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 log = new Form1();
+            log.Show();
+            this.Dispose();
+        }
     }
 }

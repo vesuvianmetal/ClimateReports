@@ -145,5 +145,10 @@ namespace ClimateReports
             IA.Show();
             this.Hide();
         }
+
+        private void mesaDeAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

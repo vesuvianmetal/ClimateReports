@@ -194,11 +194,11 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // this.Dispose();
+            this.Dispose();
 
             //abre el login
-            //Form1 F1 = new Form1();
-            //F1.Show();
+            Form1 F1 = new Form1();
+            F1.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
