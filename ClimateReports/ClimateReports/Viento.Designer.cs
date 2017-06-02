@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartvientos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radiomilla = new System.Windows.Forms.RadioButton();
@@ -64,18 +64,18 @@
             // 
             // chartvientos
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartvientos.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartvientos.Legends.Add(legend8);
-            this.chartvientos.Location = new System.Drawing.Point(235, 267);
+            chartArea2.Name = "ChartArea1";
+            this.chartvientos.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartvientos.Legends.Add(legend2);
+            this.chartvientos.Location = new System.Drawing.Point(258, 260);
             this.chartvientos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartvientos.Name = "chartvientos";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.Name = "Viento";
-            this.chartvientos.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Viento";
+            this.chartvientos.Series.Add(series2);
             this.chartvientos.Size = new System.Drawing.Size(405, 173);
             this.chartvientos.TabIndex = 8;
             this.chartvientos.Text = "chart1";
@@ -179,7 +179,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 18);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Velocidad Minima:";
+            this.label3.Text = "Velocidad Mínima:";
             // 
             // label2
             // 
@@ -191,7 +191,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 18);
             this.label2.TabIndex = 29;
-            this.label2.Text = "Velocidad Maxima:";
+            this.label2.Text = "Velocidad Máxima:";
             // 
             // label1
             // 
@@ -342,6 +342,7 @@
             this.Controls.Add(this.chartvientos);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "Viento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viento";
