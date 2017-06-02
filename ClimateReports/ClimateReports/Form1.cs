@@ -237,7 +237,8 @@ namespace ClimateReports
         //evento que sucedera cuando se presione el link label de ayuda
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.facebook.com/");
+            System.Diagnostics.Process.Start("");
+
         }
 
         private void txtcontra_Leave(object sender, EventArgs e)
