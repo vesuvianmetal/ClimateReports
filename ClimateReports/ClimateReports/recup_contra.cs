@@ -74,7 +74,7 @@ namespace ClimateReports
 
                     string query_inicio = "select  USU_PASS  from usuario where USU_nombre = "+ usu + " and USU_EMAIL= "+email+"";
                     MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
-                   contra= query_inicio.ToString();
+                   contra= exe_query_inicio.ExecuteScalar().ToString();
 
 
                     To = correo.Text;
