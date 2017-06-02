@@ -112,13 +112,13 @@ namespace ClimateReports
 
                            // Interfaz_Admin IA = new Interfaz_Admin();
                             //IA.Show();
-                            this.Hide();
+                            this.Dispose();
                         }
                         else if (cap.Equals("General"))
                         {
                             Form2 menu = new Form2();
                             menu.Show();
-                            this.Hide();
+                            this.Dispose();
                         }
                     }
 

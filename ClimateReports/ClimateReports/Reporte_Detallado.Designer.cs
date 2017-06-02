@@ -86,7 +86,7 @@
             this.label1.Location = new System.Drawing.Point(11, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 25);
+            this.label1.Size = new System.Drawing.Size(292, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "[ Reporte Detallado ] ";
             // 
@@ -141,7 +141,7 @@
             this.label6.Location = new System.Drawing.Point(23, 22);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 16);
+            this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Temperatura:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -155,7 +155,7 @@
             this.label5.Location = new System.Drawing.Point(286, 22);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 16);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Presión:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -169,7 +169,7 @@
             this.label4.Location = new System.Drawing.Point(63, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 14;
             this.label4.Text = "Viento:";
             // 
@@ -182,7 +182,7 @@
             this.label3.Location = new System.Drawing.Point(257, 60);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 16);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "% Humedad:";
             // 
@@ -194,7 +194,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(113, 45);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 20);
+            this.label8.Size = new System.Drawing.Size(124, 25);
             this.label8.TabIndex = 29;
             this.label8.Text = "Temperatura";
             // 
@@ -206,7 +206,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(113, 134);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 20);
+            this.label9.Size = new System.Drawing.Size(68, 25);
             this.label9.TabIndex = 30;
             this.label9.Text = "Viento";
             // 
@@ -218,7 +218,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(113, 231);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 20);
+            this.label11.Size = new System.Drawing.Size(78, 25);
             this.label11.TabIndex = 32;
             this.label11.Text = "Presión";
             // 
@@ -285,7 +285,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(113, 317);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.Size = new System.Drawing.Size(97, 25);
             this.label2.TabIndex = 31;
             this.label2.Text = "Humedad";
             // 
@@ -329,7 +329,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(753, 28);
             this.menuStrip1.TabIndex = 55;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -340,21 +340,21 @@
             this.cerrarSesionToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.inicioToolStripMenuItem.Text = "Inicio";
             this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
@@ -368,31 +368,31 @@
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // reportarUnProblemaToolStripMenuItem
             // 
             this.reportarUnProblemaToolStripMenuItem.Name = "reportarUnProblemaToolStripMenuItem";
-            this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
             this.reportarUnProblemaToolStripMenuItem.Text = "Ver la Ayuda";
             // 
             // mesaDeAyudaToolStripMenuItem
             // 
             this.mesaDeAyudaToolStripMenuItem.Name = "mesaDeAyudaToolStripMenuItem";
-            this.mesaDeAyudaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.mesaDeAyudaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
             this.mesaDeAyudaToolStripMenuItem.Text = "Notificar un Problema";
             // 
             // proporcionarUnaSugerenciaToolStripMenuItem
             // 
             this.proporcionarUnaSugerenciaToolStripMenuItem.Name = "proporcionarUnaSugerenciaToolStripMenuItem";
-            this.proporcionarUnaSugerenciaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.proporcionarUnaSugerenciaToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
             this.proporcionarUnaSugerenciaToolStripMenuItem.Text = "Proporcionar una Sugerencia";
             // 
             // soporteTecnicoToolStripMenuItem
             // 
             this.soporteTecnicoToolStripMenuItem.Name = "soporteTecnicoToolStripMenuItem";
-            this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
+            this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(328, 26);
             this.soporteTecnicoToolStripMenuItem.Text = "Soporte Tecnico";
             // 
             // acercaDeToolStripMenuItem
@@ -402,14 +402,14 @@
             this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // climateReportsToolStripMenuItem
             // 
             this.climateReportsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.climateReportsToolStripMenuItem.Name = "climateReportsToolStripMenuItem";
-            this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.climateReportsToolStripMenuItem.Text = "Climate Reports";
             // 
             // panel2
@@ -498,7 +498,7 @@
             // 
             // Reporte_Detallado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(753, 469);
@@ -513,7 +513,7 @@
             this.MaximizeBox = false;
             this.Name = "Reporte_Detallado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte Detallado";
+            this.Text = "+";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reporte_Detallado_FormClosed);
             this.Load += new System.EventHandler(this.Reporte_Detallado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

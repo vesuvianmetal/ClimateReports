@@ -97,7 +97,7 @@ namespace ClimateReports
 
         private void Reporte_Detallado_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
 
             Form2_admin F2 = new Form2_admin();
             F2.Show();
@@ -176,14 +176,14 @@ namespace ClimateReports
         private void button1_Click(object sender, EventArgs e)
         {
             //abre la ventana de temperatura
-            this.Hide();
+            this.Dispose();
             Temperatura IT = new Temperatura();
             IT.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             //abre la ventana de viento
             Viento VIE = new Viento();
             VIE.Show();
@@ -191,7 +191,7 @@ namespace ClimateReports
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             //abre la ventana de presion
             Presion PRE = new Presion();
             PRE.Show();
@@ -199,7 +199,7 @@ namespace ClimateReports
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             //abre la ventana de humedad
             Humedad IH = new Humedad();
             IH.Show();

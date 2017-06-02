@@ -58,7 +58,7 @@ namespace ClimateReports
 
         private void Reporte_General_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Form2 f2 = new Form2();
             f2.Show();
         }
@@ -180,7 +180,7 @@ namespace ClimateReports
         {
             Form1 cerrarsession = new Form1();
             cerrarsession.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void inicioToolStripMenuItem_Click(object sender, EventArgs e)

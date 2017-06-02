@@ -327,7 +327,7 @@ namespace ClimateReports
         {
             Form1 cerrarsession = new Form1();
             cerrarsession.Show();
-            this.Hide();
+            this.Dispose();
            
         }
 

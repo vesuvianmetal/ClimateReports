@@ -121,7 +121,7 @@ namespace ClimateReports
         //metodo para cuando se cierre la ventana
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Form1 Login = new Form1();
             Login.ShowDialog();
             
