@@ -77,7 +77,7 @@
             this.correo.Multiline = true;
             this.correo.Name = "correo";
             this.correo.Size = new System.Drawing.Size(265, 25);
-            this.correo.TabIndex = 14;
+            this.correo.TabIndex = 2;
             this.correo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // usuario
@@ -86,7 +86,7 @@
             this.usuario.Multiline = true;
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(265, 25);
-            this.usuario.TabIndex = 15;
+            this.usuario.TabIndex = 1;
             this.usuario.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3

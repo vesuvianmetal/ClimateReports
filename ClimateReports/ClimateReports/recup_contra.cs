@@ -23,10 +23,28 @@ namespace ClimateReports
         private string Body;
 
         private MailMessage mail;
-       // private Attachment Data;
+        // private Attachment Data;
 
+        string vara = "";
+        void encriptar()
+        {
+            try
+            {
+                double exp = 2.0;
+                Int64 numero1 = Int64.Parse(vara, System.Globalization.NumberStyles.HexNumber);
+                Int64 numero2 = numero1 + 12345;
+                Int64 numero3 = numero2 / 8;
+                Int64 numero4 = numero3 * 4;
+                Int64 numero5 = (int)Math.Sqrt(numero4);
+                Int64 numero6 = numero5 / 2;
+                vara = numero6.ToString();
 
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
 
         public recup_contra()
         {
@@ -52,7 +70,9 @@ namespace ClimateReports
         private void button5_Click(object sender, EventArgs e)
         {
 
-           string  usu = usuario.Text;
+
+
+            string  usu = usuario.Text;
            string email = correo.Text;
             string contra;
            
@@ -60,7 +80,6 @@ namespace ClimateReports
           try
             {
 
-             conn.Open();
 
           //  MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
             //    string query_inicio = "Select USU_Usuario, USU_ ";
@@ -71,20 +90,36 @@ namespace ClimateReports
                 //el if.
                 if (!(correo.Text.Trim() == ""))
                 {
-
-                    string query_inicio = "select  USU_PASS  from usuario where USU_nombre = "+ usu + " and USU_EMAIL= "+email+"";
+                    
+                    string query_inicio = "select USU_PASS from usuario where USU_nombre = '"+ usu + "' and USU_EMAIL= '"+email+"'";
                     MySqlCommand exe_query_inicio = new MySqlCommand(query_inicio, conn);
-                   contra= exe_query_inicio.ExecuteScalar().ToString();
+                    MySqlDataReader leer;
 
+                    try
+                    {
+                        conn.Open();
+                        leer = exe_query_inicio.ExecuteReader();
 
+                        if(leer.Read())
+                        {
+                            vara = leer[0].ToString();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+
+                    encriptar();
                     To = correo.Text;
                     mail = new MailMessage();
                     mail.To.Add(new MailAddress(this.To));
                     mail.From = new MailAddress("SoftwareDevelopers13@gmail.com");
                     mail.Subject = "RECUPERACION DE CONTRASEÑA";
-                    mail.Body = " " + usu + "Usted ha solicitado una recuperacion de contraseña" +contra;
+                    mail.Body = " " + usu + " Usted ha solicitado una recuperacion de contraseña: " +vara.ToString();
                     mail.IsBodyHtml = false;
 
+                    conn.Close();
                     /*if (!(archivoAdjTxt.Text.Trim() == ""))
                     {
                         Data = new Attachment(archivoAdjTxt.Text, MediaTypeNames.Application.Octet);
