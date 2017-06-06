@@ -237,7 +237,7 @@ namespace ClimateReports
         //evento que sucedera cuando se presione el link label de ayuda
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
 
         }
 

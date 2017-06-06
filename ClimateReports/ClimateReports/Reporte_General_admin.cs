@@ -152,5 +152,15 @@ namespace ClimateReports
             Form2_admin Form2admin = new Form2_admin();
             Form2admin.Show();
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
+        }
+
+        private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
+        }
     }
 }

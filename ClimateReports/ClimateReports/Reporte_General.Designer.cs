@@ -278,6 +278,7 @@
             this.reportarUnProblemaToolStripMenuItem.Name = "reportarUnProblemaToolStripMenuItem";
             this.reportarUnProblemaToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.reportarUnProblemaToolStripMenuItem.Text = "Ver la Ayuda";
+            this.reportarUnProblemaToolStripMenuItem.Click += new System.EventHandler(this.reportarUnProblemaToolStripMenuItem_Click);
             // 
             // mesaDeAyudaToolStripMenuItem
             // 
@@ -296,6 +297,7 @@
             this.soporteTecnicoToolStripMenuItem.Name = "soporteTecnicoToolStripMenuItem";
             this.soporteTecnicoToolStripMenuItem.Size = new System.Drawing.Size(278, 22);
             this.soporteTecnicoToolStripMenuItem.Text = "Soporte Tecnico";
+            this.soporteTecnicoToolStripMenuItem.Click += new System.EventHandler(this.soporteTecnicoToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -313,6 +315,7 @@
             this.climateReportsToolStripMenuItem.Name = "climateReportsToolStripMenuItem";
             this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.climateReportsToolStripMenuItem.Text = "Climate Reports";
+            this.climateReportsToolStripMenuItem.Click += new System.EventHandler(this.climateReportsToolStripMenuItem_Click);
             // 
             // panel3
             // 

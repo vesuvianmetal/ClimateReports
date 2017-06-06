@@ -215,5 +215,20 @@ namespace ClimateReports
             Form2 f2 = new Form2();
             f2.Show();
         }
+
+        private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
+        }
+
+        private void soporteTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/manual_tecnico.html");
+        }
+
+        private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
+        }
     }
 }

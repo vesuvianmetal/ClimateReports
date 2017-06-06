@@ -395,5 +395,15 @@ namespace ClimateReports
             }
            
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/manual_tecnico.html");
+        }
+
+        private void acercaDeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
+        }
     }
 }

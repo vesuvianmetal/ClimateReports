@@ -88,7 +88,7 @@ namespace ClimateReports
 
         private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.facebook.com");
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -147,6 +147,21 @@ namespace ClimateReports
         }
 
         private void mesaDeAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
+        }
+
+        private void soporteTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/manual_tecnico.html");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

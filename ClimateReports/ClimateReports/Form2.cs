@@ -156,7 +156,7 @@ namespace ClimateReports
         //cuando se presione reportar un problema en el menustrip, se abrira el navegaor predeterminado con la pagina asiganada en el URL
         private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.facebook.com");
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
         }
 
         private void chart1_Click(object sender, EventArgs e)
@@ -176,12 +176,12 @@ namespace ClimateReports
 
         private void soporteTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/manual_tecnico.html");
         }
 
         private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
         }
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)

@@ -376,6 +376,7 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // reportarUnProblemaToolStripMenuItem
             // 
@@ -417,6 +418,7 @@
             this.climateReportsToolStripMenuItem.Name = "climateReportsToolStripMenuItem";
             this.climateReportsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.climateReportsToolStripMenuItem.Text = "Climate Reports";
+            this.climateReportsToolStripMenuItem.Click += new System.EventHandler(this.climateReportsToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 

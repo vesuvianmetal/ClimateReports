@@ -317,5 +317,30 @@ namespace ClimateReports
         {
 
         }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/index.html");
+        }
+
+        private void soporteTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/manual_tecnico.html");
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void climateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
+        }
     }
 }
