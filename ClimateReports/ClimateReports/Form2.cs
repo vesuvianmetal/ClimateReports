@@ -145,12 +145,21 @@ namespace ClimateReports
         //funciona que se realizara al presionar el boton de cerrar session en el menustrip
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //cierra la ventana
-            this.Dispose();
+            DialogResult result = MessageBox.Show("¿Seguro Que Desea Cerrar Sesion?", "Cerrar Sesion", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.Yes))
+            {
+                
+                //cierra la ventana
+                this.Dispose();
 
-            //abre el login
-            Form1 F1 = new Form1();
-            F1.Show();
+                //abre el login
+                Form1 F1 = new Form1();
+                F1.Show();
+            }
+            else
+            {
+            }
+            
         }
 
         //cuando se presione reportar un problema en el menustrip, se abrira el navegaor predeterminado con la pagina asiganada en el URL

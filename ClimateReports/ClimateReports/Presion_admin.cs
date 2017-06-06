@@ -130,9 +130,26 @@ namespace ClimateReports
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Form1 f1 = new Form1();
-            f1.Show();
+            DialogResult result = MessageBox.Show("¿Seguro Que Desea Cerrar Sesion?", "Cerrar Sesion", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.Yes))
+            {
+
+                this.Dispose();
+                Form1 f1 = new Form1();
+                f1.Show();
+
+            }
+            else
+            {
+            }
+
+
+
+
+
+
+
+           
         }
 
         private void reportarUnProblemaToolStripMenuItem_Click(object sender, EventArgs e)
