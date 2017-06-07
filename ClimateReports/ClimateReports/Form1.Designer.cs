@@ -51,11 +51,11 @@
             // 
             this.txtusuario.BackColor = System.Drawing.Color.White;
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(84, 59);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtusuario.Location = new System.Drawing.Point(63, 48);
+            this.txtusuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtusuario.MaxLength = 20;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(255, 45);
+            this.txtusuario.Size = new System.Drawing.Size(192, 37);
             this.txtusuario.TabIndex = 4;
             this.usuario.SetToolTip(this.txtusuario, "Ingrese Nombre de Usuario.");
             this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
@@ -66,10 +66,9 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ClimateReports.Properties.Resources.usuario_1;
-            this.button1.Location = new System.Drawing.Point(13, 57);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(10, 46);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 53);
+            this.button1.Size = new System.Drawing.Size(48, 43);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -79,10 +78,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(77, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(58, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 39);
+            this.label1.Size = new System.Drawing.Size(108, 31);
             this.label1.TabIndex = 10;
             this.label1.Text = "Usuario";
             // 
@@ -92,10 +90,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 130);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(58, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 39);
+            this.label2.Size = new System.Drawing.Size(155, 31);
             this.label2.TabIndex = 11;
             this.label2.Text = "Contraseña";
             // 
@@ -106,10 +103,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::ClimateReports.Properties.Resources.iniciar_sesion_21;
-            this.button3.Location = new System.Drawing.Point(141, 231);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(106, 188);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 44);
+            this.button3.Size = new System.Drawing.Size(81, 36);
             this.button3.TabIndex = 12;
             this.BotonL.SetToolTip(this.button3, "Enter");
             this.button3.UseVisualStyleBackColor = false;
@@ -121,10 +117,9 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::ClimateReports.Properties.Resources.palabras_clave;
-            this.button2.Location = new System.Drawing.Point(16, 174);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(12, 141);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 53);
+            this.button2.Size = new System.Drawing.Size(48, 43);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -140,10 +135,9 @@
             this.panel1.Controls.Add(this.txtusuario);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(63, 250);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(47, 203);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(449, 350);
+            this.panel1.Size = new System.Drawing.Size(337, 284);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -151,9 +145,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(13, 279);
+            this.linkLabel1.Location = new System.Drawing.Point(10, 227);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(152, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(114, 13);
             this.linkLabel1.TabIndex = 16;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Recuperar Contraseña";
@@ -163,9 +158,10 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(13, 319);
+            this.linkLabel2.Location = new System.Drawing.Point(10, 259);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(48, 17);
+            this.linkLabel2.Size = new System.Drawing.Size(37, 13);
             this.linkLabel2.TabIndex = 17;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Ayuda";
@@ -176,25 +172,29 @@
             // 
             this.txtcontra.AcceptsTab = true;
             this.txtcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontra.Location = new System.Drawing.Point(81, 177);
-            this.txtcontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcontra.Location = new System.Drawing.Point(61, 144);
+            this.txtcontra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcontra.MaxLength = 45;
             this.txtcontra.Name = "txtcontra";
-            this.txtcontra.Size = new System.Drawing.Size(255, 45);
+            this.txtcontra.Size = new System.Drawing.Size(192, 37);
             this.txtcontra.TabIndex = 5;
             this.Contraseña.SetToolTip(this.txtcontra, "Ingrese Su Contraseña.");
             this.txtcontra.UseSystemPasswordChar = true;
             this.txtcontra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcontra_KeyDown);
             this.txtcontra.Leave += new System.EventHandler(this.txtcontra_Leave);
             // 
+            // Contraseña
+            // 
+            this.Contraseña.Popup += new System.Windows.Forms.PopupEventHandler(this.Contraseña_Popup);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ClimateReports.Properties.Resources.fondologinnn;
-            this.ClientSize = new System.Drawing.Size(581, 614);
+            this.ClientSize = new System.Drawing.Size(436, 499);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

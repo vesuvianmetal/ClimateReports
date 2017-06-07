@@ -273,6 +273,11 @@ namespace ClimateReports
         {
 
         }
+
+        private void Contraseña_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }
 
