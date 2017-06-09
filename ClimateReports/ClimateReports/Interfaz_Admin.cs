@@ -25,7 +25,7 @@ namespace ClimateReports
             
             txtam.Clear();
             txtap.Clear();
-            txtconfcon.Clear();
+            //txtconfcon.Clear();
             txtcontraseña.Clear();
             //txtdelcontra.Clear();
             txtdelemail.Clear();
@@ -56,7 +56,7 @@ namespace ClimateReports
 
                 var hexa = val5.ToString("X");
                 txtcontraseña.Text = hexa.ToString();
-                txtconfcon.Text = hexa.ToString();
+                //txtconfcon.Text = hexa.ToString();
             }
             catch (Exception ex)
             {
@@ -74,49 +74,7 @@ namespace ClimateReports
             Int64 numero6 = numero5 / 2;
             txtcontraseña.Text = numero6.ToString();
         }
-        void condesen()
-        {
-            string vara = "";
-            string contra = "select usu_pass from usuario where usu_id = '" + txtdelid.Text + "'";
-            MySqlCommand cmd_query = new MySqlCommand(contra, conn);
-            MySqlDataReader leerx;
-            try
-            {
-                conn.Open();
-                leerx = cmd_query.ExecuteReader();
-
-                if (leerx.Read())
-                {
-                    vara = leerx[0].ToString();
-                }
-
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
-            conn.Close();
-            try
-            {
-                double exp2 = 2.0;
-                Int64 numero1 = Int64.Parse(txtconfcon.Text);
-                Int64 val1 = numero1 * 2;
-                Int64 val2 = (int)Math.Pow(val1, exp2);
-                Int64 val3 = val2 / 4;
-                Int64 val4 = val3 * 8;
-                Int64 val5 = val4 - 12345;
-                var hexa = val5.ToString("X");
-                txtconfcon.Text = hexa.ToString();
-            }
-            catch(Exception ex)
-
-            {
-                MessageBox.Show("Ingresa el campo de confirmar contraseña para eliminar correctamente");
-            }
-
-        }
+       
 
         //metodo para agregar un usuario
         void agregarusuario()
@@ -164,39 +122,24 @@ namespace ClimateReports
         //metodo para borrar usuario
         void borrarusuario()
         {
-            condesen();
+           // condesen();
 
-            //query para buscar el usuario que se desea eliminar
-            string buscarconfirmacion = "select  * from usuario where usu_id='" + txtdelid.Text + "' and usu_pass = '" + txtconfcon.Text + "'";
-            MySqlCommand cmd_buscarconfirmacion = new MySqlCommand(buscarconfirmacion, conn);
-            MySqlDataReader leerconfirmacion;
-
-
+            
             //query para eliminar el usuario
             string query_borrar = "delete from usuario where usu_id = '" + txtdelid.Text + "'";
             MySqlCommand cmd_query_borrar = new MySqlCommand(query_borrar, conn);
             MySqlDataReader leerqueryborrar;
             try
             {
-                if (txtconfcon.Text.Equals(""))
-                {
-                    
-                }
-                else
-                {
+                
+               
+                
 
 
                     //abre la conexion a la base de datos
                     conn.Open();
 
-                    //ejecuta el el comando que busca la confirmacion de la contraseña del usuario
-                    leerconfirmacion = cmd_buscarconfirmacion.ExecuteReader();
-
-                    //si la confirmacion de la contraseña es correcta entonces procede
-                    if (leerconfirmacion.Read())
-                    {
-                        //cierra conexion a del comando de confimacion
-                        leerconfirmacion.Close();
+                    
 
                         //ejecuta el comando para borrar el usuario
                         leerqueryborrar = cmd_query_borrar.ExecuteReader();
@@ -204,14 +147,13 @@ namespace ClimateReports
                         //una vez eliminado el usuario muestra el siguiente mensaje
                         MessageBox.Show("Usuario Eliminado Correctamente");
 
-                    }
+                    //cierra la conexion a la base de datos
+                    conn.Close();
 
-                    else if (leerconfirmacion.Read() == false)
-                    {
-                        MessageBox.Show("Confirmacion De Contraseña Es Incorrecta");
-                    }
+                    //manda a llamar el metodo para llamar la tabla
+                    filltabla();
 
-                }
+                
 
                 //atrapa cualquier error y los muestra como ventanas con el  error
             }
@@ -220,11 +162,7 @@ namespace ClimateReports
                 MessageBox.Show(ex.Message);
             }
 
-            //cierra la conexion a la base de datos
-            conn.Close();
-
-            //manda a llamar el metodo para llamar la tabla
-            filltabla();
+           
 
         }
 
@@ -312,15 +250,25 @@ namespace ClimateReports
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("¿Seguro Que Desea Eliminar El Usuario Seleccionado?", "Eliminar Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result.Equals(DialogResult.Yes))
+            {
 
-            //manda a llamar el metodo para borrar un usuario
-            borrarusuario();
+                //manda a llamar el metodo para borrar un usuario
+                borrarusuario();
 
-            //manda a llamar el metodo para llenar la tabla
-            filltabla();
+                //manda a llamar el metodo para llenar la tabla
+                filltabla();
 
-            //manda a llama el metodo para borrar los campos
-            limpiarcampos();
+                //manda a llama el metodo para borrar los campos
+                limpiarcampos();
+
+            }
+            else
+            {
+            }
+
+          
         }
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)

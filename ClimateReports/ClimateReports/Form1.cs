@@ -97,7 +97,7 @@ namespace ClimateReports
                     if (leer_exe.Read())
                     {
 
-                        MessageBox.Show("CONECTADO");
+                        MessageBox.Show("Bienvendio a Climate Reports " + txtusuario.Text);
 
                         ///se le indica a la variable cap que valor de la columna va a obtener, el (8) significa el numero
                         ///de columna que va a obtener

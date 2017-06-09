@@ -20,7 +20,7 @@ namespace ClimateReports
         //seran enviados en el mensaje.
         private string To;
         //private string Subject;
-        private string Body;
+       // private string Body;
 
         private MailMessage mail;
         // private Attachment Data;

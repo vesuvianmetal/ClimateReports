@@ -47,10 +47,10 @@ namespace ClimateReports
                 leergrafica = cmd_query_grafica.ExecuteReader();
 
                 ///antes de graficar se le borran todos los puntos a la grafica ya que al actualizar la grafica se tiene que re grafica todo de neuvo
-                chart1.Series["Humedad"].Points.Clear();
-                chart1.Series["Temperatura"].Points.Clear();
-                chart1.Series["Presión"].Points.Clear();
-                chart1.Series["Viento"].Points.Clear();
+              //  chart1.Series["Humedad"].Points.Clear();
+                //chart1.Series["Temperatura"].Points.Clear();
+                //chart1.Series["Presión"].Points.Clear();
+                //chart1.Series["Viento"].Points.Clear();
 
                 //si la lectura de los datos es correcta de procede a graficar
                 while (leergrafica.Read())
@@ -58,10 +58,10 @@ namespace ClimateReports
                     ///se le declaran los valores que serviran para X y Y dentro de la grafica junto con los datos dentro de la base
                     ///de datos
 
-                    this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
-                    this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
-                    this.chart1.Series["Presión"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
-                    this.chart1.Series["Viento"].Points.AddXY(leergrafica.GetString("vie_nombre_sensor"), leergrafica.GetFloat("vie_dato"));
+                  //  this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
+                    //this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
+                    //this.chart1.Series["Presión"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
+                    //this.chart1.Series["Viento"].Points.AddXY(leergrafica.GetString("vie_nombre_sensor"), leergrafica.GetFloat("vie_dato"));
                 }
 
 
@@ -135,7 +135,7 @@ namespace ClimateReports
         {
             this.Dispose();
             //abre la ventana de humedad
-            Humedad IH = new Humedad();
+            Humedad_admin IH = new Humedad_admin();
             IH.Show();
         }
 
@@ -178,7 +178,7 @@ namespace ClimateReports
                 conn.Open();
                 string Query = "select pre_dato from presion where pre_id=(select Max(pre_id) from presion) ;";
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
-                txtpresion.Text = MyCommand2.ExecuteScalar().ToString();
+                //txtpresion.Text = MyCommand2.ExecuteScalar().ToString();
                 conn.Close();
             }
             catch (Exception ex)
