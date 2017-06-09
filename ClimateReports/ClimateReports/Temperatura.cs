@@ -124,7 +124,7 @@ namespace ClimateReports
                 conn.Open();
                 string Query = "select MAX(TEMP_DATO) from temperatura;";
                 MySqlCommand MyCommand2 = new MySqlCommand(Query,conn);
-                respuestatmax.Text = MyCommand2.ExecuteScalar().ToString();
+                respuestatmax.Text = MyCommand2.ExecuteScalar().ToString() ;
                 conn.Close();
             }
             catch (Exception ex)
@@ -140,7 +140,7 @@ namespace ClimateReports
                 conn.Open();
                 string Query = "select MIN(TEMP_DATO) from temperatura;";
                 MySqlCommand MyCommand2 = new MySqlCommand(Query, conn);
-                respuestatmin.Text = MyCommand2.ExecuteScalar().ToString();
+                respuestatmin.Text = MyCommand2.ExecuteScalar().ToString()  ;
                 conn.Close();
             }
             catch (Exception ex)
@@ -158,13 +158,13 @@ namespace ClimateReports
             string tmax, tmin, tmedia;
             float tempmax, tempmin, tempmedia;
 
-            tmax = respuestatmax.Text.ToString();
-            tmin = respuestatmin.Text.ToString();
+            tmax = respuestatmax.Text.ToString() ;
+            tmin = respuestatmin.Text.ToString() ;
             tempmax = float.Parse(tmax);
             tempmin = float.Parse(tmin);
             tempmedia = (tempmax + tempmin) / 2;
             tmedia = tempmedia.ToString();
-            respuestatmedia.Text = tmedia;
+            respuestatmedia.Text = tmedia ;
             
         }
 

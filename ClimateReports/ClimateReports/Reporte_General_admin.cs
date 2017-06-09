@@ -175,5 +175,10 @@ namespace ClimateReports
         {
             System.Diagnostics.Process.Start("C:/Users/Paul/Documents/Climate/contacto.html");
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            filltabla();
+        }
     }
 }

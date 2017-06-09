@@ -262,6 +262,11 @@ namespace ClimateReports
             Form3 f3 = new Form3();
              f3.Show();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            filltabla();
+        }
     }
             
 

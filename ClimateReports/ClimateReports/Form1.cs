@@ -59,6 +59,7 @@ namespace ClimateReports
             ///si los campos no presentan error de que esten vacios se procede a correr este codigo
             else
             {
+                encriptar();
                 ///con.open() sirve para abrir la conexion a la base de datos.
                 conn.Open();
 
@@ -88,7 +89,7 @@ namespace ClimateReports
 
                 try
                 {
-                    encriptar();
+                    
                     ///de establece la orden de ejecucion de query (CONSULTAS)
                     leer_exe = exe_query_inicio.ExecuteReader();
 
