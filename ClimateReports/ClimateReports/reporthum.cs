@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClimateReports
 {
-    public partial class Form4 : Form
+    public partial class reporthum : Form
     {
-        public Form4()
+        public reporthum()
         {
             InitializeComponent();
         }

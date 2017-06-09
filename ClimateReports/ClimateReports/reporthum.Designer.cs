@@ -1,6 +1,6 @@
 ﻿namespace ClimateReports
 {
-    partial class Form4
+    partial class reporthum
     {
         /// <summary>
         /// Required designer variable.
