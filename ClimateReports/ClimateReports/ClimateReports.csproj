@@ -89,6 +89,12 @@
     <Compile Include="reportem.Designer.cs">
       <DependentUpon>reportem.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteTemper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTemper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="reporthum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reportem.resx">
       <DependentUpon>reportem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTemper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTemper.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reporthum.resx">
       <DependentUpon>reporthum.cs</DependentUpon>
@@ -398,6 +408,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\carta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
