@@ -42,7 +42,7 @@ namespace ClimateReports
 
         void iniciar_sesion()
         {
-            encriptar();
+            
             ///validacion de campos
             ///valida si uno o ambos campos del login estan vacios.
             if (txtusuario.Text.Equals("") || txtcontra.Text.Equals(""))
@@ -88,6 +88,7 @@ namespace ClimateReports
 
                 try
                 {
+                    encriptar();
                     ///de establece la orden de ejecucion de query (CONSULTAS)
                     leer_exe = exe_query_inicio.ExecuteReader();
 
