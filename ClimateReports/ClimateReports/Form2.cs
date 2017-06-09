@@ -20,64 +20,7 @@ namespace ClimateReports
         MySqlConnection conn = ConexionBD.ObtenerConexion();
 
 
-        //metodo para llenar la grafica con datos d ela base de datos
-        void llenargrafica()
-        {
-            
-            
-                //se hace la consulta a las tablas dentro de la base de datos
-                string query_grafica = "select distinct hum_nombre_sensor,hum_dato,temp_nombre_sensor,temp_dato,pre_nombre_sensor,pre_dato,vie_nombre_sensor,vie_dato from viento,presion,temperatura,humedad where hum_id=pre_id and temp_id=vie_id and hum_id=temp_id and pre_id=vie_id ;";
-
-                // se declara el comando que se le hara a mysql con la consulta que se hizo anteriormente
-                MySqlCommand cmd_query_grafica = new MySqlCommand(query_grafica, conn);
-
-                // se declara una variable que mas adenate servira para ejecutar el comando a mysql
-                MySqlDataReader leergrafica;
-
-            try
-                {
-                //conn.open() abre la conexion a la base de datos
-                    conn.Open();
-
-                    // se le asigna valor a leergrafica 
-                    leergrafica = cmd_query_grafica.ExecuteReader();
-
-                    ///antes de graficar se le borran los puntos a la grafica ya que cuando se actualiza se vuelve a realizar la misma operacion
-                    ///de graficacion
-                    chart1.Series["Humedad"].Points.Clear();
-                    chart1.Series["Temperatura"].Points.Clear();
-                    chart1.Series["Presión"].Points.Clear();
-                    chart1.Series["Viento"].Points.Clear();
-
-                    //si la lectura de los datos de la bd es correcta entonces comenzara a graficar
-                    while (leergrafica.Read())
-                    {
-
-                        //con estos valores se les asigna los datos a cada una de las lineas de dispercion desde la base de datos segun sus valores
-                        //y las tablas
-                        this.chart1.Series["Humedad"].Points.AddXY(leergrafica.GetString("hum_nombre_sensor"), leergrafica.GetFloat("hum_dato"));
-                        this.chart1.Series["Temperatura"].Points.AddXY(leergrafica.GetString("temp_nombre_sensor"), leergrafica.GetFloat("temp_dato"));
-                        this.chart1.Series["Presión"].Points.AddXY(leergrafica.GetString("pre_nombre_sensor"), leergrafica.GetFloat("pre_dato"));
-                        this.chart1.Series["Viento"].Points.AddXY(leergrafica.GetString("vie_nombre_sensor"), leergrafica.GetFloat("vie_dato"));
-                    }
-
-
-
-                }
-
-            //atrapa cualquier error 
-                catch (Exception ex)
-                {
-                //cuando se atrapan los errores los muestra en una ventana
-                    MessageBox.Show(ex.Message);
-                }
-
-            //cierra la conexion a la base de datos
-                conn.Close();
-
-
-            
-        }
+       
 
 
 
@@ -137,8 +80,7 @@ namespace ClimateReports
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            ///cada vez que el timer haga un tick (en este caso es de 10 segundos) va a realizar la funcion de llenar la grafica 
-            llenargrafica();
+            
         }
 
 
