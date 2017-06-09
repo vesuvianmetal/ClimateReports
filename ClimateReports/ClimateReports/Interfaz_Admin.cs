@@ -79,7 +79,7 @@ namespace ClimateReports
         //metodo para agregar un usuario
         void agregarusuario()
         {
-            encriptar();
+            
             string query_agregar = "insert into usuario (usu_usuario,usu_nombre,usu_apellido_p,usu_apellido_m,usu_telefono,usu_email,usu_tipo_usu,usu_pass) values ( '" + txtusuario.Text + "' , '" + txtnombre.Text + "' , '" + txtap.Text + "' , '" + txtam.Text + "' , '" + txttelefono.Text + "' , '" + txtemail.Text + "' , '" + combousuario.SelectedItem + "' , '" + txtcontraseña.Text + "')";
             MySqlCommand cmd_queryagregar = new MySqlCommand(query_agregar, conn);
             MySqlDataReader leer;
@@ -98,10 +98,11 @@ namespace ClimateReports
 
                 else if (txtcontraseña.Text.Contains(" "))
                 {
-                    MessageBox.Show("No Se Aceptan Espacion En El Campo De Contraseña");
+                    MessageBox.Show("No Se Aceptan Espacios En El Campo De Contraseña");
                 }
                 else
                 {
+                    encriptar();
                     leer = cmd_queryagregar.ExecuteReader();
                     MessageBox.Show("Usuario Agregado");
                 }
