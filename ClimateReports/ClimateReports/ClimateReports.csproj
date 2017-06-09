@@ -163,6 +163,12 @@
     <Compile Include="Reporte_General_admin.Designer.cs">
       <DependentUpon>Reporte_General_admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="reportpre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportpre.Designer.cs">
+      <DependentUpon>reportpre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Temperatura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_General_admin.resx">
       <DependentUpon>Reporte_General_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportpre.resx">
+      <DependentUpon>reportpre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Temperatura.resx">
       <DependentUpon>Temperatura.cs</DependentUpon>
